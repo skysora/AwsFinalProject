@@ -1,1670 +1,1763 @@
-
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <!-- <base href="https://www.sinyi.com.tw/rent/"> -->
 
-<head>
-	<base href="https://www.sinyi.com.tw/rent/">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Test</title>
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sinyi.com.tw/rent/">
-    <meta property="og:site_name" content="信義房屋">
-    <meta property="og:title" content="[租屋]-長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月">
-    <meta property="og:description" content="長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月,46.12坪,3房2廳2衛0室,沙發、床組、衣櫃、電視、冰箱、冷氣、洗衣機、熱水器、天然瓦斯、網路,可開伙、近學校、近傳統市場、近便利商店、近公園、有警衛管理,信義房屋給您最即時的租屋訊息。">
-    <meta property="og:image" content="https://res.sinyi.com.tw/rent/img/buy_og_img.jpg">
-    <meta name="description" content="長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月,46.12坪,3房2廳2衛0室,沙發、床組、衣櫃、電視、冰箱、冷氣、洗衣機、熱水器、天然瓦斯、網路,可開伙、近學校、近傳統市場、近便利商店、近公園、有警衛管理,信義房屋給您最即時的租屋訊息。">
-    <meta name="keywords" content="租屋,找店面,租房,台中市租屋,西屯區租屋,長安路二段租屋">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://res.sinyi.com.tw/img/icon/favicon.ico">
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
-    <script src="https://www.sinyi.com.tw/component/header.js.php?header=green&site=sinyirent"></script>
-    <script src="https://www.sinyi.com.tw/component/footer.js.php"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Test</title>
+      <meta property="og:type" content="website">
+      <!-- <meta property="og:url" content="https://www.sinyi.com.tw/rent/"> -->
+      <meta property="og:site_name" content="信義房屋">
+      <meta property="og:title" content="[租屋]-長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月">
+      <meta property="og:description" content="長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月,46.12坪,3房2廳2衛0室,沙發、床組、衣櫃、電視、冰箱、冷氣、洗衣機、熱水器、天然瓦斯、網路,可開伙、近學校、近傳統市場、近便利商店、近公園、有警衛管理,信義房屋給您最即時的租屋訊息。">
+      <meta property="og:image" content="https://res.sinyi.com.tw/rent/img/buy_og_img.jpg">
+      <meta name="description" content="長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月,46.12坪,3房2廳2衛0室,沙發、床組、衣櫃、電視、冰箱、冷氣、洗衣機、熱水器、天然瓦斯、網路,可開伙、近學校、近傳統市場、近便利商店、近公園、有警衛管理,信義房屋給您最即時的租屋訊息。">
+      <meta name="keywords" content="租屋,找店面,租房,台中市租屋,西屯區租屋,長安路二段租屋">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="https://res.sinyi.com.tw/img/icon/favicon.ico">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+      <script src="https://www.sinyi.com.tw/component/header.js.php?header=green&site=sinyirent"></script>
+      <script src="https://www.sinyi.com.tw/component/footer.js.php"></script>
+      <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/module/jquery.fancybox.css">
+      <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/buy.css">
+      <link rel="stylesheet" type="text/css" href="css/buy_fix.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/Details-style.css">
+      <link rel="stylesheet" type="text/css" href="css/fix.css">
+      <script async="" src="//www.google-analytics.com/analytics.js"></script>
+      <script src="Scripts/html2canvas.js"></script>
+      <script src="Scripts/html2canvas.min.js"></script>
+      <script src="js/rent_house_ddd.js" defer ></script>
 
-    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/module/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/buy.css">
-    <link rel="stylesheet" type="text/css" href="css/buy_fix.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/Details-style.css">
-	<link rel="stylesheet" type="text/css" href="css/fix.css">
-	
-	
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script>
+         var search_type = "houseno",
+             www_web_root = "https://www.sinyi.com.tw/rent/",
+             www_web_rootns = "https://www.sinyi.com.tw/rent",
+             file_web_root = "https://www.sinyi.com.tw/rent/",
+             rema_img_root = "http://www.sinyi-rema.com.tw";
+         
+         var houseno='C214530';
+         var zipcode='407';
+         
+         var ssobase="SSOBASE_URL";
+         var sid_check=false;
+         var no_img="./i/noimg-thumb.jpg";
+         
+         var contact_url="ajaxSendEmail.php?ab=1";
+         var contact_clicktype="";
+         
+         var rwdmodel="PC";
+         var send_mode="";
+         var ckrs=0;
+         
+         var map=null;
+         $(document).ready(function() {
+         /*
+             $(".next").click(function() {
+                 $(".arrows").removeClass("arrows-prev-opacity");
+                 $(".arrows-next").addClass("arrows-prev-opacity");
+             });
+         
+             $(".prev").click(function() {
+                 $(".arrows").removeClass("arrows-prev-opacity");
+                 $(".arrows-prev").addClass("arrows-prev-opacity");
+             });
+         */
+         
+         /*
+         //釘選bar留言
+             $(".nail-message").click(function() {
+                 $(window).scrollTop("0");
+             });
+         
+         //留言
+             $(".leave-word").click(function() {
+                 $(window).scrollTop("0");
+             });
+         */
+         
+         $(".text-A").click(function() {
+                 $(".text-remote-control").removeClass("b-text");
+                 $(".text-remote-control").removeClass("c-text");
+                 $(".text-remote-control").addClass("a-text");
+         if (window.console){ console.log("click a"); }
+         updFontSize('A');
+             });
+             $(".text-B").click(function() {
+                 $(".text-remote-control").removeClass("a-text");
+                 $(".text-remote-control").removeClass("c-text");
+                 $(".text-remote-control").addClass("b-text");
+         if (window.console){ console.log("click b"); }
+         updFontSize('B');
+             });
+             $(".text-C").click(function() {
+                 $(".text-remote-control").removeClass("a-text");
+                 $(".text-remote-control").removeClass("b-text");
+                 $(".text-remote-control").addClass("c-text");
+         if (window.console){ console.log("click c"); }
+         updFontSize('C');
+             });	
+             $(window).resize(function() {
+                 if ($(window).innerWidth() < 1100) {
+                     $(".text-remote-control").removeClass("a-text");
+                     $(".text-remote-control").removeClass("b-text");
+                     $(".text-remote-control").removeClass("c-text");
+                 }
+         
+             });
+         
+         
+         $("#liquid ul li a").each(function (index){
+         $(this).click(function (){
+         $(".product-bigpic").attr("src",$(this).find("img").attr("data-big"));
+         });
+         
+         });
+         
+         /*
+         $("#theForm").is(":visible").focus(function (){
+         rwdmodel="PC";
+         });
+         $("#theFormM:visible").focus(function (){
+         rwdmodel="M";
+         });
+         */
+         
+         //全站服務需求留言
+         $("a.fakepopout_btn").click(function() {
+         //$(".other_com").toggleClass("other_com_show");console.log('f');
+         //if(window.parent.$("#fancybox-frame").css('height') && window.parent.$("#fancybox-frame").css('height').replace('px','') < 665){
+         //	window.parent.$("#fancybox-frame").css('height', '665px');
+         //}
+         });
+         
+         $(".information-content .ping-readme-link").on({
+         mouseenter:function (){
+         $(".information-content .ping-readme-txt").addClass("selected");
+         },mouseleave:function (){
+         $(".information-content .ping-readme-txt").removeClass("selected");
+         }
+         });
+         
+         $(".information-content-1 .ping-readme-link").on({
+         mouseenter:function (){
+         $(".information-content-1 .ping-readme-txt").addClass("selected");
+         }
+         });
+         $(".information-content-1 .ping-readme-close").on('click',function (){
+         console.log(".information-content-1 .ping-readme-close click");
+         $(".information-content-1 .ping-readme-txt").removeClass("selected");
+         });		
+         
+             $(".county-button").click(function() {
+                 $(".county-content").slideToggle("slow");
+             });
+             $(".administrative-button").click(function() {
+                 $(".administrative-content").slideToggle("slow");
+             });
+             $(".unlimited-button").click(function() {
+                 $(".unlimited-content").slideToggle("slow");
+             });
+             $(".home-button").click(function() {
+                 $(".home-content").slideToggle("slow");
+             });
+             $(".size-button").click(function() {
+                 $(".size-content").slideToggle("slow");
+             });
+         
+             $(".more-button").click(function() {
+                 $(".more-content").slideToggle("slow");
+             });
+         
+         
+         
+             $(".data-selection").click(function() {
+                 $(".more-content").css("slow");
+             });
+         
+         
+             $(".phone-down-menu-1").click(function() {
+                 $(".phone-down-menu-box").slideToggle("slow");
+             });
+             $(".information-content-1-button").click(function() {
+         if($(this).hasClass("up")){ $(this).removeClass("up"); }
+         else{ $(this).addClass("up"); }
+                 $(".margin-2").slideToggle("slow");
+             });
+             $(".community-phone-button").click(function() {
+         if($(this).hasClass("up")){ $(this).removeClass("up"); }
+         else{ $(this).addClass("up"); }
+                 $(".community-phone-p").slideToggle("slow");
+             });
+         
+         
+             $(".main-button-2").click(function() {
+                 $(".main-button-2").css("background-image", "url(img/tab-house-photo-active.gif)");
+                 $(".main-button-2").css("box-shadow", "1px 6px 0px rgb(255, 255, 255)");
+                 $(".main-button-1").css("box-shadow", "0px 0px 0px rgb(255, 255, 255)");
+                 $(".main-button-1").css("background-image", "url(img/tab-house-photo.gif)");
+         
+                 $(".product-display-1").css("display", "block");
+                 $(".product-display").css("display", "none");
+                 $(".note").css("display", "none");
+         
+         if(!$(this).hasClass("loaded")){
+         $(this).addClass("loaded");
+         initMapImg();
+         }
+         
+         if (window.console){ console.log("map tab click"); }
+             });
+         
+         
+             $(".main-button-1").click(function() {		
+                 $(".main-button-1").css("background-image", "url(img/tab-house-photo-active.gif)");
+                 $(".main-button-1").css("box-shadow", "1px 6px 0px rgb(255, 255, 255)");
+                 $(".main-button-2").css("box-shadow", "0px 0px 0px rgb(255, 255, 255)");
+                 $(".main-button-2").css("background-image", "url(img/tab-house-photo.gif)");
+         
+                 $(".product-display-1").css("display", "none");
+                 $(".product-display").css("display", "block");
+                 $(".note").css("display", "block");
+             });
+         
+             $(".light-box-cancel").click(function() {
+                 $(".light-box-bg").css("display", "none");
+             });
+         
+         
+         //物件留言
+             $(".leave-word").click(function() {	
+         //PC留言-click
+         if($(this).hasClass("trackpc")){ 
+         sendLog('C214530','rent_house_message_result',['rent_house_message_btn_pc'],"ok",""); 
+         contact_clicktype="pc-click";
+         }
+         //RWD留言-click
+         if($(this).hasClass("trackrwd")){ 
+         sendLog('C214530','rent_house_message_result',['rent_house_message_btn_mobile'],"ok",""); 
+         contact_clicktype="rwd-click";
+         }
+         
+         $("#theForm")[0].reset();
+         $("#theFormM")[0].reset();
+                 $(".light-box-bg").css("display", "block");
+         //$(".light-box-bg").css("top", $(".header-space").outerHeight()+"px");
+         $(".surroundings-content").attr("style", "");
+                 $(".surroundings-content-1").css("display", "none");
+         $(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
+         
+         $(window).scrollTop("0");
+         //$("#surroundings-ckrs").focus();
+         });
+         
+         //釘選bar留言
+             $(".nail-message").click(function() {
+         //PC留言-釘選bar-click
+         if($(this).hasClass("trackpc")){
+         sendLog('C214530','rent_house_message_result',['rent_house_message_btn-bar_pc'],"ok",""); 
+         contact_clicktype="pc-bar-click";
+         }
+         //RWD留言-釘選bar-click
+         if($(this).hasClass("trackrwd")){
+         sendLog('C214530','rent_house_message_result',['rent_house_message_btn-bar_mobile'],"ok",""); 
+         contact_clicktype="rwd-bar-click";
+         }
+         
+         $("#theForm")[0].reset();
+         $("#theFormM")[0].reset();
+                 $(".light-box-bg").css("display", "block");
+                 //$(".light-box-bg").css("top", $(".header-space").outerHeight()+"px");
+         $(".surroundings-content").attr("style", "");
+                 $(".surroundings-content-1").css("display", "none");
+         $(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
+         
+         $(window).scrollTop("0");
+         //$("#surroundings-ckrs").focus();
+             });
+         
+             $(".light-box-Send").click(function() {
+         if($(this).attr("data-lock")=="0"){
+         if($("#cbagree:checked").length==0){
+         	alert("請勾選服務條款與隱私權聲明後，方可送出");
+         	$("#cbagree").focus();
+         	return false;
+         }
+         
+         sendContact();
+         
+         $(window).scrollTop("0");
+         //$("#surroundings-ckrs").focus();
+         }else{
+         
+         }
+             });
+         
+         sendLog(houseno,'house_rent_view_log',[zipcode,houseno],null,"");
+         });
+         
+         function initMapImg(){
+         if (window.console){ console.log("initMapImg"); }
+         
+         var img_src=$(".product-display-1 img").data("src");
+         $(".product-display-1 img")
+         .attr("src","")
+         .show(function (){
+         //因應ie將code搬移
+         $(".product-display-1 img")
+         .attr("onclick","loadMapAPI()")
+         .attr("onerror","loadMapError()")
+         .addClass("mapCursor")
+         .attr("src",img_src);	
+         });
+         }
+         
+         function loadMapError(){
+         $(".product-display-1 img")
+         .attr("onclick","")
+         .attr("onerror","")
+         .removeClass("mapCursor")
+         .attr("src","i/map_loading.jpg");
+         
+         var mapRetry=parseInt($(".product-display-1 img").attr("data-retry"),10);
+         console.log("MapError retry:"+mapRetry);
+         if(mapRetry>1){ 
+         if (window.console){ console.log("initMapImg stop"); }
+         return false; 
+         }
+         
+         mapRetry++;
+         $(".product-display-1 img").attr("data-retry",mapRetry);
+         //var mapRetry=parseInt($(".product-display-1 img").attr("data-retry"),10);
+         console.log("MapError retry2:"+$(".product-display-1 img").attr("data-retry"));
+         
+         
+         if('120.665323'=='' && '24.175169'==''){ 
+         $(".product-display-1 img")
+         .attr("src","i/noimge2.jpg");
+         console.log("no latlng");
+         return false;
+         }
+         
+         $.ajax({
+         url: 'ajaxSaveMap.php',
+         type: 'POST',
+         data: { 
+         "houseno": "C214530",
+         				//"lat":'24.175169',
+         //"lng":'120.665323',
+         "end":""
+         
+         },
+         dataType: 'json',
+         success: function(data){
+         console.log("ajaxSaveMap back");
+         if(data.rs=="ok"){
+         	initMapImg();
+         }else{
+         						if(data.rs=="fail"){
+         		initMapImg();
+         	}
+         }
+         
+         },error:function (data){
+                         //alert('執行錯誤:'+data);
+                 }      
+         });
+         }
+         
+         function loadMapAPI(){
+         if (window.console){ console.log("loadMap"); }
+         /*
+         if(typeof map_flag != "undefined" && map_flag==1){ 
+         return false;
+         }
+         else{
+         map_flag=1;
+         }
+         */
+         
+         var mapapi_url="https://maps.googleapis.com/maps/api/js?key=AIzaSyBooQAGwYtbnOSoUfyIZPJWfr641ho9O_U";
+         //var mapapi_url="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&client=gme-sinyirealtyinc1&channel=Channel_Buy_Detail&callback=initialize'";
+         $.getScript(mapapi_url,function(){
+         loadMap2();
+         });
+         }
+         
+         function sendContact(){
+         var name="";
+         var email="";
+         var sex="";
+         var date="";
+         var tel="";
+         var content="";
+         
+         var rdsex="";
+         
+         if($(".surroundings-content").eq(0).is(":visible")){
+         rwdmodel="PC";
+         }
+         if($(".surroundings-content").eq(1).is(":visible")){
+         rwdmodel="M";
+         }		
+         
+         if(rwdmodel=="PC"){
+         if ($("#theForm input[name='name']").val() == "") {
+         $("#theForm input[name='name']").focus();
+         alert("請輸入「姓名」");
+         return false;
+         }
+         rdsex=$('#theForm input[name=sex]:checked').val();
+         if(typeof(rdsex) == "undefined"){
+         $("#theForm input[name='sex']")[0].focus();
+         alert("請選擇「稱謂」");
+         return false;
+         }
+         
+         if ($("#theForm input[name='sex']:checked").val() == "") {
+         
+         }
+         if ($("#theForm input[name='tel']").val() == "") {
+         $("#theForm input[name='tel']").focus();
+         alert("請輸入「手機號碼」");
+         return false;
+         }else{
+         if(!checkTel($("#theForm input[name='tel']").val())){
+         	$("#theForm input[name='tel']").focus();
+         	alert("「手機號碼」格式不符");
+         	return false;
+         }
+         }
+         /*
+         if ($("#theForm textarea[name='content']").val() == "") {
+         $("#theForm textarea[name='content']").focus();
+         alert("請輸入「內容」");
+         return false;
+         }
+         */
+         
+         name=$("#theForm [name='name']").val();
+         tel=$("#theForm [name='tel']").val();
+         email=$("#theForm [name='email']").val();
+         date=$("#theForm [name='date']").val();
+         content=$("#theForm [name='content']").val();
+         }
+         if(rwdmodel=="M"){
+         if ($("#theFormM input[name='name']").val() == "") {
+         $("#theFormM input[name='name']").focus();
+         alert("請輸入「姓名」");
+         return false;
+         }
+         rdsex=$('#theFormM input[name=sex]:checked').val();
+         if(typeof(rdsex) == "undefined"){
+         $("#theFormM input[name='sex']")[0].focus();
+         alert("請選擇「稱謂」");
+         return false;
+         }
+         if ($("#theFormM input[name='tel']").val() == "") {
+         $("#theFormM input[name='tel']").focus();
+         alert("請輸入「手機號碼」");
+         return false;
+         }else{
+         if(!checkTel($("#theFormM input[name='tel']").val())){
+         	$("#theFormM input[name='tel']").focus();
+         	alert("「手機號碼」格式不符");
+         	return false;
+         }
+         }
+         /*
+         if ($("#theFormM textarea[name='content']").val() == "") {
+         $("#theFormM textarea[name='content']").focus();
+         alert("請輸入「內容」");
+         return false;
+         }
+         */
+         
+         name=$("#theFormM [name='name']").val();
+         tel=$("#theFormM [name='tel']").val();
+         email=$("#theFormM [name='email']").val();
+         date=$("#theFormM [name='date']").val();
+         content=$("#theFormM [name='content']").val();
+         
+         }
+         
+         //PC留言-submit-click
+         //if(rwdmodel=="PC"){ sendLog('C214530','rent_house_message_result',['xxxx'],"ok"); }
+         //RWD留言-submit-click
+         //if(rwdmodel=="M"){ sendLog('C214530','rent_house_message_result',['xxxx'],"ok"); }
+         
+         $(".light-box-bg .loading_bg,.light-box-bg .loading").addClass("start");
+         
+         var timestamp = new Date().getTime();
+         //if (window.console){ console.log("rwdmodel:"+rwdmodel); }
+         //return false;
+         $.ajax({
+         url: contact_url+"&time="+timestamp,
+         type: 'POST',
+         cache:false,
+         data: { 
+         "send_mode":send_mode,
+         "houseno": "C214530",
+         "agentId":"419071",
+         "storeNo":"R632",
+         "name":name,
+         "email":email,
+         "mailAgent":"sales",
+         "gender":rdsex,
+         "date":date,
+         "tel":tel,
+         "content":content,
+         				"end":""
+         
+         },
+         dataType: 'json',
+         success: function(data){
+         var log_rsv="send_fail";
+         if(data.rs=="ok"){
+         	log_rsv="send_ok";
+         }else{
+         					}
+         
+         if(contact_clicktype=="pc-click"){ //PC留言-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'_pc'],log_rsv,""); 
+         }
+         if(contact_clicktype=="pc-bar-click"){ //PC留言-釘選bar-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'-bar_pc'],log_rsv,""); 
+         }
+         if(contact_clicktype=="rwd-click"){ //RWD留言-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'_mobile'],log_rsv,""); 
+         }
+         if(contact_clicktype=="rwd-bar-click"){ //RWD留言-釘選bar-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'-bar_mobile'],log_rsv,""); 
+         }
+         
+         if(data.rs=="ok"){
+         	$(".surroundings-content").css("display", "none");
+         	$(".surroundings-content-1").css("display", "block");
+         	$(".surroundings-content-1 .ok").show();
+         	$(".surroundings-content-1 .fail").hide();
+         }else{				
+         	$(".surroundings-content").css("display", "none");
+         	$(".surroundings-content-1").css("display", "block");
+         	$(".surroundings-content-1 .ok").hide();
+         	$(".surroundings-content-1 .fail").show();
+         }
+         $("#surroundings-ckrs").focus();
+         ckrs=1;
+         },error:function (data){
+         if(contact_clicktype=="pc-click"){ //PC留言-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail_pc'],"fail",""); 
+         }
+         if(contact_clicktype=="pc-bar-click"){ //PC留言-釘選bar-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail-bar_pc'],"fail",""); 
+         }
+         if(contact_clicktype=="rwd-click"){ //RWD留言-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail_mobile'],"fail",""); 
+         }
+         if(contact_clicktype=="rwd-bar-click"){ //RWD留言-釘選bar-click
+         	sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail-bar_mobile'],"fail",""); 
+         }
+                         //alert('執行錯誤:'+data);
+         	
+         $(".surroundings-content").css("display", "none");
+         $(".surroundings-content-1").css("display", "block");
+         $(".surroundings-content-1 .ok").hide();
+         $(".surroundings-content-1 .fail").show();
+         $("#surroundings-ckrs").focus();
+         ckrs=1;
+                 },complete:function (){
+         $(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
+         }
+         });
+         }
+         
+         function callAgent(cmode){
+         //M版call
+         if(cmode=="none"){ sendLog('C214530','rent_house_agent_btn',['rent_house_agency_btn_mobile'],"ok",""); }
+         //釘選bar-call
+         if(cmode=="bar"){ sendLog('C214530','rent_house_agent_btn',['rent_house_agency_btn-bar_mobile'],"ok",""); }
+         }
+         
+         //緯度location_y
+         var myLatitude_arr = new Array();
+         //經度location_x
+         var myLongitude_arr = new Array();
+         //顯示在地圖上的說明
+         var htmlText_arr = new Array();  
+         myLatitude_arr[0] = '24.175169';		
+         myLongitude_arr[0] = '120.665323';
+         
+         function loadMap2(){
+         if (window.console){ console.log("loadMap2:"+myLatitude_arr[0]+","+myLongitude_arr[0]); }
+         $(".product-display-1 img").hide();
+         $("#map_canvas").show();
+         var divId="map_canvas";
+         var zoom_num=15;
+         var record_num=1;
+         var mapOptions = {
+         zoom: zoom_num,		
+         center: new google.maps.LatLng(myLatitude_arr[0],myLongitude_arr[0]),	
+         title: htmlText_arr[0],
+         mapTypeId: google.maps.MapTypeId.ROADMAP	
+         }
+         map = new google.maps.Map(document.getElementById(divId),mapOptions);
+         setMarkers(map);
+         }
+         
+         //在google map 上標上多個小紅點
+         function setMarkers(map) 
+         {	
+         var shape = {
+         coord: [1, 1, 1, 20, 18, 20, 18 , 1],
+         type: 'poly'
+         };
+         for (var i = 0; i < myLatitude_arr.length; i++) 
+         {
+         j=i+1;
+         var img_name = 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png';
+         var image = new google.maps.MarkerImage(img_name,
+         // This marker is 20 pixels wide by 32 pixels tall.
+         new google.maps.Size(22, 40),
+         // The origin for this image is 0,0.
+         new google.maps.Point(0,0)
+         );
+         
+         
+         var myLatLng = new google.maps.LatLng(myLatitude_arr[i],myLongitude_arr[i]);
+         var marker = new google.maps.Marker({
+         position: myLatLng,
+         map: map,
+         //shadow: shadow,
+         icon: image,
+         shape: shape,
+         //title: htmlText_arr[i],
+         zIndex: i + 1
+         });
+         }
+         }
+         
+      </script>
+      <!--
+         <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>	
+         -->
+      <script src="js/jquery_sinyiLibrary.js"></script>
+      <script src="https://res.sinyi.com.tw/rent/js/integrate.js"></script>
+      <script src="https://res.sinyi.com.tw/rent/js/jquery-ui.js"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <script src="js/functions.js"></script>
+      <script src="js/buy.js"></script>
+      <script src="js/leave-comments.js"></script>
+      <!--<script src="js/l-slide.js"></script>-->
+      <script type="text/javascript" src="js/jquery.liquidcarousel.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/liquidcarousel.css">
+      <script>	
+         $(document).ready(function() {
+         	$('#liquid').liquidcarousel({
+         		height: 65,		//the height of the list
+         		duration: 100,		//the duration of the animation
+         		hidearrows: true	//hide arrows if all of the list items are visible
+         	});
+         });
+      </script>
+      <script src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+      <script>
+         $(function (){
+         		//chkLogin($('#login_error'));
+         		
+         	
+         	chkMember(localStorage.getItem("memberId"),localStorage.getItem("sid"));
+         
+         });
+         
+         function chkMember(memberId,sid){
+             if(memberId!=null){
+                 memberId=aes_decrypt2(memberId);
+             }
+             if(sid!=null){
+                 sid=aes_decrypt2(sid);
+             }
+             
+         	$.ajax({
+         		type: 'POST',
+         		url: 'ajaxChkMember.php',
+         		xhrFields: { withCredentials:true },
+         		data: {
+         			"memberId":memberId,
+         			"sid":sid,
+         			"end":""
+         		},
+         		dataType: 'json'
+         	}).done(function(obj) {
+         		if(obj.rs){
+                     if(obj.act=="ini"){
+                         localStorage.setItem("sid",aes_encrypt2(obj.sid));
+                     }
+         			sid_check=true;
+         		}
+         	});
+         
+         	
+         }
+         
+         function aes_encrypt2(text){
+             var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
+         		// 定義初始向量（16 bytes）
+             var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
+             var textBytes = aesjs.utils.utf8.toBytes(text);
+             textBytes = aesjs.padding.pkcs7.pad(textBytes);
+             var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
+             var encryptedBytes = aesCbc.encrypt(textBytes);
+             var encryptedHex = aesjs.utils.hex.fromBytes(encryptedBytes);
+             return encryptedHex; 
+         }
+         function aes_decrypt2(text){
+             var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
+         		// 定義初始向量（16 bytes）
+             var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
+             var encryptedBytes = aesjs.utils.hex.toBytes(text);
+             var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
+             var decryptedBytes = aesCbc.decrypt(encryptedBytes);
+             decryptedBytes = aesjs.padding.pkcs7.strip(decryptedBytes);
+         decryptedText = aesjs.utils.utf8.fromBytes(decryptedBytes);
+             	return decryptedText;
+         }
+      </script>
+      <style>
+         .async-hide {
+         opacity: 0 !important;
+         }
+      </style>
+      <script>
+         (function (a, s, y, n, c, h, i, d, e) {
+             s.className += ' ' + y; h.start = 1 * new Date;
+             h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+             (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+         })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+             { 'GTM-TS765C4': true });
+      </script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-TS765C4');
+      </script>
+      <!-- End Google Tag Manager -->
+      <script>
+         // for cross domain
+         try{document.domain = "sinyi.com.tw";}
+         catch(e){}
+      </script>
+   </head>
 
-    <script src="Scripts/html2canvas.js"></script>
-    <script src="Scripts/html2canvas.min.js"></script>
-	<script src="js/rent_house_ddd.js" defer ></script>
-    <script>
-    var search_type = "houseno",
-        www_web_root = "https://www.sinyi.com.tw/rent/",
-        www_web_rootns = "https://www.sinyi.com.tw/rent",
-        file_web_root = "https://www.sinyi.com.tw/rent/",
-        rema_img_root = "http://www.sinyi-rema.com.tw";
+   <body class="ch-house">
 
-	var houseno='C214530';
-	var zipcode='407';
-	
-	var ssobase="SSOBASE_URL";
-	var sid_check=false;
-	var no_img="./i/noimg-thumb.jpg";
-	
-	var contact_url="ajaxSendEmail.php?ab=1";
-	var contact_clicktype="";
-	
-	var rwdmodel="PC";
-	var send_mode="";
-	var ckrs=0;
-		
-	var map=null;
-    $(document).ready(function() {
-		/*
-        $(".next").click(function() {
-            $(".arrows").removeClass("arrows-prev-opacity");
-            $(".arrows-next").addClass("arrows-prev-opacity");
-        });
+   	<div class="modal fade" id="feature1" style="z-index: 10000;padding-bottom:100px;padding-right:17px;" tabindex="-1" role="dialog" aria-labelledby="title1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title1" style="font-family:'微軟正黑體';width: 100%;font-size: 25px">以租代買！</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size:20px;text-align:justify;font-family:'微軟正黑體'">
+                    <ul type="disc">
+                        <img src="./rent/img/money.jpg" alt=""style="width: 100%;>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        $(".prev").click(function() {
-            $(".arrows").removeClass("arrows-prev-opacity");
-            $(".arrows-prev").addClass("arrows-prev-opacity");
-        });
-		*/
-		
-		/*
-		//釘選bar留言
-        $(".nail-message").click(function() {
-            $(window).scrollTop("0");
-        });
-		
-		//留言
-        $(".leave-word").click(function() {
-            $(window).scrollTop("0");
-        });
-		*/
+          <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS765C4"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
-		$(".text-A").click(function() {
-            $(".text-remote-control").removeClass("b-text");
-            $(".text-remote-control").removeClass("c-text");
-            $(".text-remote-control").addClass("a-text");
-			if (window.console){ console.log("click a"); }
-			updFontSize('A');
-        });
-        $(".text-B").click(function() {
-            $(".text-remote-control").removeClass("a-text");
-            $(".text-remote-control").removeClass("c-text");
-            $(".text-remote-control").addClass("b-text");
-			if (window.console){ console.log("click b"); }
-			updFontSize('B');
-        });
-        $(".text-C").click(function() {
-            $(".text-remote-control").removeClass("a-text");
-            $(".text-remote-control").removeClass("b-text");
-            $(".text-remote-control").addClass("c-text");
-			if (window.console){ console.log("click c"); }
-			updFontSize('C');
-        });	
-        $(window).resize(function() {
-            if ($(window).innerWidth() < 1100) {
-                $(".text-remote-control").removeClass("a-text");
-                $(".text-remote-control").removeClass("b-text");
-                $(".text-remote-control").removeClass("c-text");
-            }
-
-        });
-		
-		
-		$("#liquid ul li a").each(function (index){
-			$(this).click(function (){
-				$(".product-bigpic").attr("src",$(this).find("img").attr("data-big"));
-			});
-			
-		});
-		
-		/*
-		$("#theForm").is(":visible").focus(function (){
-			rwdmodel="PC";
-		});
-		$("#theFormM:visible").focus(function (){
-			rwdmodel="M";
-		});
-		*/
-		
-		//全站服務需求留言
-		$("a.fakepopout_btn").click(function() {
-			//$(".other_com").toggleClass("other_com_show");console.log('f');
-			//if(window.parent.$("#fancybox-frame").css('height') && window.parent.$("#fancybox-frame").css('height').replace('px','') < 665){
-			//	window.parent.$("#fancybox-frame").css('height', '665px');
-			//}
-		});
-		
-		$(".information-content .ping-readme-link").on({
-			mouseenter:function (){
-				$(".information-content .ping-readme-txt").addClass("selected");
-			},mouseleave:function (){
-				$(".information-content .ping-readme-txt").removeClass("selected");
-			}
-		});
-
-		$(".information-content-1 .ping-readme-link").on({
-			mouseenter:function (){
-				$(".information-content-1 .ping-readme-txt").addClass("selected");
-			}
-		});
-		$(".information-content-1 .ping-readme-close").on('click',function (){
-			console.log(".information-content-1 .ping-readme-close click");
-			$(".information-content-1 .ping-readme-txt").removeClass("selected");
-		});		
-		
-        $(".county-button").click(function() {
-            $(".county-content").slideToggle("slow");
-        });
-        $(".administrative-button").click(function() {
-            $(".administrative-content").slideToggle("slow");
-        });
-        $(".unlimited-button").click(function() {
-            $(".unlimited-content").slideToggle("slow");
-        });
-        $(".home-button").click(function() {
-            $(".home-content").slideToggle("slow");
-        });
-        $(".size-button").click(function() {
-            $(".size-content").slideToggle("slow");
-        });
-
-        $(".more-button").click(function() {
-            $(".more-content").slideToggle("slow");
-        });
-
-		
-
-        $(".data-selection").click(function() {
-            $(".more-content").css("slow");
-        });
-
-
-        $(".phone-down-menu-1").click(function() {
-            $(".phone-down-menu-box").slideToggle("slow");
-        });
-        $(".information-content-1-button").click(function() {
-			if($(this).hasClass("up")){ $(this).removeClass("up"); }
-			else{ $(this).addClass("up"); }
-            $(".margin-2").slideToggle("slow");
-        });
-        $(".community-phone-button").click(function() {
-			if($(this).hasClass("up")){ $(this).removeClass("up"); }
-			else{ $(this).addClass("up"); }
-            $(".community-phone-p").slideToggle("slow");
-        });
-
-
-        $(".main-button-2").click(function() {
-            $(".main-button-2").css("background-image", "url(img/tab-house-photo-active.gif)");
-            $(".main-button-2").css("box-shadow", "1px 6px 0px rgb(255, 255, 255)");
-            $(".main-button-1").css("box-shadow", "0px 0px 0px rgb(255, 255, 255)");
-            $(".main-button-1").css("background-image", "url(img/tab-house-photo.gif)");
-
-            $(".product-display-1").css("display", "block");
-            $(".product-display").css("display", "none");
-            $(".note").css("display", "none");
-
-			if(!$(this).hasClass("loaded")){
-				$(this).addClass("loaded");
-				initMapImg();
-			}
-
-			if (window.console){ console.log("map tab click"); }
-        });
-		
-
-        $(".main-button-1").click(function() {		
-            $(".main-button-1").css("background-image", "url(img/tab-house-photo-active.gif)");
-            $(".main-button-1").css("box-shadow", "1px 6px 0px rgb(255, 255, 255)");
-            $(".main-button-2").css("box-shadow", "0px 0px 0px rgb(255, 255, 255)");
-            $(".main-button-2").css("background-image", "url(img/tab-house-photo.gif)");
-
-            $(".product-display-1").css("display", "none");
-            $(".product-display").css("display", "block");
-            $(".note").css("display", "block");
-        });
-
-        $(".light-box-cancel").click(function() {
-            $(".light-box-bg").css("display", "none");
-        });
-		
-		
-		//物件留言
-        $(".leave-word").click(function() {	
-			//PC留言-click
-			if($(this).hasClass("trackpc")){ 
-				sendLog('C214530','rent_house_message_result',['rent_house_message_btn_pc'],"ok",""); 
-				contact_clicktype="pc-click";
-			}
-			//RWD留言-click
-			if($(this).hasClass("trackrwd")){ 
-				sendLog('C214530','rent_house_message_result',['rent_house_message_btn_mobile'],"ok",""); 
-				contact_clicktype="rwd-click";
-			}
-			
-			$("#theForm")[0].reset();
-			$("#theFormM")[0].reset();
-            $(".light-box-bg").css("display", "block");
-			//$(".light-box-bg").css("top", $(".header-space").outerHeight()+"px");
-			$(".surroundings-content").attr("style", "");
-            $(".surroundings-content-1").css("display", "none");
-			$(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
-			
-			$(window).scrollTop("0");
-			//$("#surroundings-ckrs").focus();
-		});
-		
-		//釘選bar留言
-        $(".nail-message").click(function() {
-			//PC留言-釘選bar-click
-			if($(this).hasClass("trackpc")){
-				sendLog('C214530','rent_house_message_result',['rent_house_message_btn-bar_pc'],"ok",""); 
-				contact_clicktype="pc-bar-click";
-			}
-			//RWD留言-釘選bar-click
-			if($(this).hasClass("trackrwd")){
-				sendLog('C214530','rent_house_message_result',['rent_house_message_btn-bar_mobile'],"ok",""); 
-				contact_clicktype="rwd-bar-click";
-			}
-			
-			$("#theForm")[0].reset();
-			$("#theFormM")[0].reset();
-            $(".light-box-bg").css("display", "block");
-            //$(".light-box-bg").css("top", $(".header-space").outerHeight()+"px");
-			$(".surroundings-content").attr("style", "");
-            $(".surroundings-content-1").css("display", "none");
-			$(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
-			
-			$(window).scrollTop("0");
-			//$("#surroundings-ckrs").focus();
-        });
-
-        $(".light-box-Send").click(function() {
-			if($(this).attr("data-lock")=="0"){
-				if($("#cbagree:checked").length==0){
-					alert("請勾選服務條款與隱私權聲明後，方可送出");
-					$("#cbagree").focus();
-					return false;
-				}
-				
-				sendContact();
-				
-				$(window).scrollTop("0");
-				//$("#surroundings-ckrs").focus();
-			}else{
-				
-			}
-        });
-		
-		sendLog(houseno,'house_rent_view_log',[zipcode,houseno],null,"");
-    });
-
-	function initMapImg(){
-		if (window.console){ console.log("initMapImg"); }
-		
-		var img_src=$(".product-display-1 img").data("src");
-		$(".product-display-1 img")
-		.attr("src","")
-		.show(function (){
-			//因應ie將code搬移
-			$(".product-display-1 img")
-			.attr("onclick","loadMapAPI()")
-			.attr("onerror","loadMapError()")
-			.addClass("mapCursor")
-			.attr("src",img_src);	
-		});
-	}
-
-	function loadMapError(){
-		$(".product-display-1 img")
-		.attr("onclick","")
-		.attr("onerror","")
-		.removeClass("mapCursor")
-		.attr("src","i/map_loading.jpg");
-
-		var mapRetry=parseInt($(".product-display-1 img").attr("data-retry"),10);
-		console.log("MapError retry:"+mapRetry);
-		if(mapRetry>1){ 
-			if (window.console){ console.log("initMapImg stop"); }
-			return false; 
-		}
-		
-		mapRetry++;
-		$(".product-display-1 img").attr("data-retry",mapRetry);
-		//var mapRetry=parseInt($(".product-display-1 img").attr("data-retry"),10);
-		console.log("MapError retry2:"+$(".product-display-1 img").attr("data-retry"));
-
-		
-		if('120.665323'=='' && '24.175169'==''){ 
-			$(".product-display-1 img")
-			.attr("src","i/noimge2.jpg");
-			console.log("no latlng");
-			return false;
-		}
-		
-		$.ajax({
-			url: 'ajaxSaveMap.php',
-			type: 'POST',
-			data: { 
-				"houseno": "C214530",
-								//"lat":'24.175169',
-				//"lng":'120.665323',
-				"end":""
-				
-			},
-			dataType: 'json',
-			success: function(data){
-				console.log("ajaxSaveMap back");
-				if(data.rs=="ok"){
-					initMapImg();
-				}else{
-										if(data.rs=="fail"){
-						initMapImg();
-					}
-				}
-				
-			},error:function (data){
-                    //alert('執行錯誤:'+data);
-            }      
-		});
-	}
-	
-	function loadMapAPI(){
-		if (window.console){ console.log("loadMap"); }
-		/*
-		if(typeof map_flag != "undefined" && map_flag==1){ 
-			return false;
-		}
-		else{
-			map_flag=1;
-		}
-		*/
-		
-		var mapapi_url="https://maps.googleapis.com/maps/api/js?key=AIzaSyBooQAGwYtbnOSoUfyIZPJWfr641ho9O_U";
-		//var mapapi_url="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&client=gme-sinyirealtyinc1&channel=Channel_Buy_Detail&callback=initialize'";
-		$.getScript(mapapi_url,function(){
-			loadMap2();
-		});
-	}
-	
-	function sendContact(){
-		var name="";
-		var email="";
-		var sex="";
-		var date="";
-		var tel="";
-		var content="";
-
-		var rdsex="";
-
-		if($(".surroundings-content").eq(0).is(":visible")){
-			rwdmodel="PC";
-		}
-		if($(".surroundings-content").eq(1).is(":visible")){
-			rwdmodel="M";
-		}		
-		
-		if(rwdmodel=="PC"){
-			if ($("#theForm input[name='name']").val() == "") {
-				$("#theForm input[name='name']").focus();
-				alert("請輸入「姓名」");
-				return false;
-			}
-			rdsex=$('#theForm input[name=sex]:checked').val();
-			if(typeof(rdsex) == "undefined"){
-				$("#theForm input[name='sex']")[0].focus();
-				alert("請選擇「稱謂」");
-				return false;
-			}
-
-			if ($("#theForm input[name='sex']:checked").val() == "") {
-				
-			}
-			if ($("#theForm input[name='tel']").val() == "") {
-				$("#theForm input[name='tel']").focus();
-				alert("請輸入「手機號碼」");
-				return false;
-			}else{
-				if(!checkTel($("#theForm input[name='tel']").val())){
-					$("#theForm input[name='tel']").focus();
-					alert("「手機號碼」格式不符");
-					return false;
-				}
-			}
-			/*
-			if ($("#theForm textarea[name='content']").val() == "") {
-				$("#theForm textarea[name='content']").focus();
-				alert("請輸入「內容」");
-				return false;
-			}
-			*/
-			
-			name=$("#theForm [name='name']").val();
-			tel=$("#theForm [name='tel']").val();
-			email=$("#theForm [name='email']").val();
-			date=$("#theForm [name='date']").val();
-			content=$("#theForm [name='content']").val();
-		}
-		if(rwdmodel=="M"){
-			if ($("#theFormM input[name='name']").val() == "") {
-				$("#theFormM input[name='name']").focus();
-				alert("請輸入「姓名」");
-				return false;
-			}
-			rdsex=$('#theFormM input[name=sex]:checked').val();
-			if(typeof(rdsex) == "undefined"){
-				$("#theFormM input[name='sex']")[0].focus();
-				alert("請選擇「稱謂」");
-				return false;
-			}
-			if ($("#theFormM input[name='tel']").val() == "") {
-				$("#theFormM input[name='tel']").focus();
-				alert("請輸入「手機號碼」");
-				return false;
-			}else{
-				if(!checkTel($("#theFormM input[name='tel']").val())){
-					$("#theFormM input[name='tel']").focus();
-					alert("「手機號碼」格式不符");
-					return false;
-				}
-			}
-			/*
-			if ($("#theFormM textarea[name='content']").val() == "") {
-				$("#theFormM textarea[name='content']").focus();
-				alert("請輸入「內容」");
-				return false;
-			}
-			*/
-			
-			name=$("#theFormM [name='name']").val();
-			tel=$("#theFormM [name='tel']").val();
-			email=$("#theFormM [name='email']").val();
-			date=$("#theFormM [name='date']").val();
-			content=$("#theFormM [name='content']").val();
-			
-		}
-		
-		//PC留言-submit-click
-		//if(rwdmodel=="PC"){ sendLog('C214530','rent_house_message_result',['xxxx'],"ok"); }
-		//RWD留言-submit-click
-		//if(rwdmodel=="M"){ sendLog('C214530','rent_house_message_result',['xxxx'],"ok"); }
-		
-		$(".light-box-bg .loading_bg,.light-box-bg .loading").addClass("start");
-		
-		var timestamp = new Date().getTime();
-		//if (window.console){ console.log("rwdmodel:"+rwdmodel); }
-		//return false;
-		$.ajax({
-			url: contact_url+"&time="+timestamp,
-			type: 'POST',
-			cache:false,
-			data: { 
-				"send_mode":send_mode,
-				"houseno": "C214530",
-				"agentId":"419071",
-				"storeNo":"R632",
-				"name":name,
-				"email":email,
-				"mailAgent":"sales",
-				"gender":rdsex,
-				"date":date,
-				"tel":tel,
-				"content":content,
-								"end":""
-				
-			},
-			dataType: 'json',
-			success: function(data){
-				var log_rsv="send_fail";
-				if(data.rs=="ok"){
-					log_rsv="send_ok";
-				}else{
-									}
-				
-				if(contact_clicktype=="pc-click"){ //PC留言-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'_pc'],log_rsv,""); 
-				}
-				if(contact_clicktype=="pc-bar-click"){ //PC留言-釘選bar-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'-bar_pc'],log_rsv,""); 
-				}
-				if(contact_clicktype=="rwd-click"){ //RWD留言-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'_mobile'],log_rsv,""); 
-				}
-				if(contact_clicktype=="rwd-bar-click"){ //RWD留言-釘選bar-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_'+log_rsv+'-bar_mobile'],log_rsv,""); 
-				}
-				
-				if(data.rs=="ok"){
-					$(".surroundings-content").css("display", "none");
-					$(".surroundings-content-1").css("display", "block");
-					$(".surroundings-content-1 .ok").show();
-					$(".surroundings-content-1 .fail").hide();
-				}else{				
-					$(".surroundings-content").css("display", "none");
-					$(".surroundings-content-1").css("display", "block");
-					$(".surroundings-content-1 .ok").hide();
-					$(".surroundings-content-1 .fail").show();
-				}
-				$("#surroundings-ckrs").focus();
-				ckrs=1;
-			},error:function (data){
-				if(contact_clicktype=="pc-click"){ //PC留言-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail_pc'],"fail",""); 
-				}
-				if(contact_clicktype=="pc-bar-click"){ //PC留言-釘選bar-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail-bar_pc'],"fail",""); 
-				}
-				if(contact_clicktype=="rwd-click"){ //RWD留言-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail_mobile'],"fail",""); 
-				}
-				if(contact_clicktype=="rwd-bar-click"){ //RWD留言-釘選bar-click
-					sendLog('C214530','rent_house_message_result',['rent_house_message_send_fail-bar_mobile'],"fail",""); 
-				}
-                    //alert('執行錯誤:'+data);
-					
-				$(".surroundings-content").css("display", "none");
-				$(".surroundings-content-1").css("display", "block");
-				$(".surroundings-content-1 .ok").hide();
-				$(".surroundings-content-1 .fail").show();
-				$("#surroundings-ckrs").focus();
-				ckrs=1;
-            },complete:function (){
-				$(".light-box-bg .loading_bg,.light-box-bg .loading").removeClass("start");
-			}
-		});
-	}
-	
-	function callAgent(cmode){
-		//M版call
-		if(cmode=="none"){ sendLog('C214530','rent_house_agent_btn',['rent_house_agency_btn_mobile'],"ok",""); }
-		//釘選bar-call
-		if(cmode=="bar"){ sendLog('C214530','rent_house_agent_btn',['rent_house_agency_btn-bar_mobile'],"ok",""); }
-	}
-	
-	//緯度location_y
-	var myLatitude_arr = new Array();
-	//經度location_x
-	var myLongitude_arr = new Array();
-	//顯示在地圖上的說明
-	var htmlText_arr = new Array();  
-	myLatitude_arr[0] = '24.175169';		
-	myLongitude_arr[0] = '120.665323';
-
-	function loadMap2(){
-		if (window.console){ console.log("loadMap2:"+myLatitude_arr[0]+","+myLongitude_arr[0]); }
-		$(".product-display-1 img").hide();
-		$("#map_canvas").show();
-		var divId="map_canvas";
-		var zoom_num=15;
-		var record_num=1;
-		var mapOptions = {
-			zoom: zoom_num,		
-			center: new google.maps.LatLng(myLatitude_arr[0],myLongitude_arr[0]),	
-			title: htmlText_arr[0],
-			mapTypeId: google.maps.MapTypeId.ROADMAP	
-		}
-		map = new google.maps.Map(document.getElementById(divId),mapOptions);
-		setMarkers(map);
-	}
-	
-	//在google map 上標上多個小紅點
-	function setMarkers(map) 
-	{	
-		var shape = {
-		coord: [1, 1, 1, 20, 18, 20, 18 , 1],
-		type: 'poly'
-		};
-		for (var i = 0; i < myLatitude_arr.length; i++) 
-		{
-			j=i+1;
-			var img_name = 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png';
-			var image = new google.maps.MarkerImage(img_name,
-				// This marker is 20 pixels wide by 32 pixels tall.
-				new google.maps.Size(22, 40),
-				// The origin for this image is 0,0.
-				new google.maps.Point(0,0)
-			);
-			
-			
-			var myLatLng = new google.maps.LatLng(myLatitude_arr[i],myLongitude_arr[i]);
-			var marker = new google.maps.Marker({
-				position: myLatLng,
-				map: map,
-				//shadow: shadow,
-				icon: image,
-				shape: shape,
-				//title: htmlText_arr[i],
-				zIndex: i + 1
-			});
-		}
-	}
-	
-    </script>
-	<!--
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>	
-	-->
-    <script src="js/jquery_sinyiLibrary.js"></script>
-    <script src="https://res.sinyi.com.tw/rent/js/integrate.js"></script>
-    <script src="https://res.sinyi.com.tw/rent/js/jquery-ui.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-	<script src="js/functions.js"></script>
-    <script src="js/buy.js"></script>
-    <script src="js/leave-comments.js"></script>
-    <!--<script src="js/l-slide.js"></script>-->
-	<script type="text/javascript" src="js/jquery.liquidcarousel.js"></script>
-	
-    <link rel="stylesheet" type="text/css" href="css/liquidcarousel.css">
-    <script>	
-	$(document).ready(function() {
-		$('#liquid').liquidcarousel({
-			height: 65,		//the height of the list
-			duration: 100,		//the duration of the animation
-			hidearrows: true	//hide arrows if all of the list items are visible
-		});
-	});
-	</script>
-<script src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
-<script>
-$(function (){
-		//chkLogin($('#login_error'));
-		
-	
-	chkMember(localStorage.getItem("memberId"),localStorage.getItem("sid"));
-
-});
-
-function chkMember(memberId,sid){
-    if(memberId!=null){
-        memberId=aes_decrypt2(memberId);
-    }
-    if(sid!=null){
-        sid=aes_decrypt2(sid);
-    }
-    
-	$.ajax({
-		type: 'POST',
-		url: 'ajaxChkMember.php',
-		xhrFields: { withCredentials:true },
-		data: {
-			"memberId":memberId,
-			"sid":sid,
-			"end":""
-		},
-		dataType: 'json'
-	}).done(function(obj) {
-		if(obj.rs){
-            if(obj.act=="ini"){
-                localStorage.setItem("sid",aes_encrypt2(obj.sid));
-            }
-			sid_check=true;
-		}
-	});
-
-	
-}
-
-function aes_encrypt2(text){
-    var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
-		// 定義初始向量（16 bytes）
-    var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
-    var textBytes = aesjs.utils.utf8.toBytes(text);
-    textBytes = aesjs.padding.pkcs7.pad(textBytes);
-    var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
-    var encryptedBytes = aesCbc.encrypt(textBytes);
-    var encryptedHex = aesjs.utils.hex.fromBytes(encryptedBytes);
-    return encryptedHex; 
-}
-function aes_decrypt2(text){
-    var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
-		// 定義初始向量（16 bytes）
-    var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
-    var encryptedBytes = aesjs.utils.hex.toBytes(text);
-    var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
-    var decryptedBytes = aesCbc.decrypt(encryptedBytes);
-    decryptedBytes = aesjs.padding.pkcs7.strip(decryptedBytes);
-decryptedText = aesjs.utils.utf8.fromBytes(decryptedBytes);
-    	return decryptedText;
-}
-</script>
-
-<style>
-  .async-hide {
-      opacity: 0 !important;
-  }
-</style>
-<script>
-  (function (a, s, y, n, c, h, i, d, e) {
-      s.className += ' ' + y; h.start = 1 * new Date;
-      h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-      (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-  })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-      { 'GTM-TS765C4': true });
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TS765C4');</script>
-<!-- End Google Tag Manager -->
-<script>
-// for cross domain
-try{document.domain = "sinyi.com.tw";}
-catch(e){}</script>
-</head>
-
-<body class="ch-house">
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS765C4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="light-box-bg">
-        <div class="light-box">
-			<input type="checkbox" name="surroundings-ckrs" id="surroundings-ckrs" value="1" style="display:block;opacity:0;">
-
-			<div class="loading_bg"></div>
-			<div class="loading">
-				<div class="msg">資料送出中…</div>	
-			</div>			
-			<a class="light-box-cancel" href="#" onclick="return false;"></a>
+      <div class="light-box-bg">
+         <div class="light-box">
+            <input type="checkbox" name="surroundings-ckrs" id="surroundings-ckrs" value="1" style="display:block;opacity:0;">
+            <div class="loading_bg"></div>
+            <div class="loading">
+               <div class="msg">資料送出中…</div>
+            </div>
+            <a class="light-box-cancel" href="#" onclick="return false;"></a>
             <div class="light-box-title">
-                <span>租屋留言</span>
+               <span>租屋留言</span>
             </div>
             <div style="    margin: 1% 0 0;">
-                <form id="theForm" name="theForm">
-				<table class="surroundings-content surroundings">
-                    <tbody>
+               <form id="theForm" name="theForm">
+                  <table class="surroundings-content surroundings">
+                     <tbody>
                         <tr>
-                            <td>
-                                <span>案名</span>長安高樓三房平車                            </td>
-                            <td>
-                                <span>編號</span> C214530                            </td>
+                           <td>
+                              <span>案名</span>長安高樓三房平車                            
+                           </td>
+                           <td>
+                              <span>編號</span> C214530                            
+                           </td>
                         </tr>
                         <tr>
-                            <td style="    border-right: 0;">
-								<ul class="light-box-select">
-                                    <li>
-                                        <div class="light-box-cistern">
-                                            <span class="asterisk">*</span>
-                                            <span>您的姓名：</span>
-                                        </div>
-                                        <input type="text" name="name" maxlength="20" >
-                                    </li>
-                                    <li>
-                                        <div class="light-box-cistern">
-                                            <span class="asterisk-1">*</span>
-                                            <span>稱謂：</span>
-                                        </div>
-                                        <span>
-                                                <input type="radio" name="sex" value="M" checked>
-                                                先生
-                                            </span>
-                                        <span>
-                                                <input type="radio" name="sex" value="F">
-                                                小姐
-                                            </span>
-                                    </li>
-                                    <li>
-                                        <div class="light-box-cistern">
-                                            <span class="asterisk">*</span>
-                                            <span>手機號碼：</span>
-                                        </div>
-                                        <input type="text" name="tel" maxlength="30">
-                                    </li>
-                                    <li>
-                                        <div class="light-box-cistern">
-                                            <span class="asterisk-1">*</span>
-                                            <span>電子信箱：</span>
-                                        </div>
-                                        <input type="text" name="email" maxlength="255">
-                                    </li>
-                                    <li>
-                                        <div class="light-box-cistern">
-                                            <span class="asterisk-1">*</span>
-                                            <span>聯絡時間：</span>
-                                        </div>
-                                        <input type="text" name="date" maxlength="20" >
-                                    </li>
-                                </ul>
-								
-                            </td>
-                            <td style="border-left: 0;vertical-align: top;padding-top: 10px;">
-                                <span class="content-title">
-                                        留言內容：
+                           <td style="    border-right: 0;">
+                              <ul class="light-box-select">
+                                 <li>
+                                    <div class="light-box-cistern">
+                                       <span class="asterisk">*</span>
+                                       <span>您的姓名：</span>
+                                    </div>
+                                    <input type="text" name="name" maxlength="20" >
+                                 </li>
+                                 <li>
+                                    <div class="light-box-cistern">
+                                       <span class="asterisk-1">*</span>
+                                       <span>稱謂：</span>
+                                    </div>
+                                    <span>
+                                    <input type="radio" name="sex" value="M" checked>
+                                    先生
                                     </span>
-                                <textarea class="content-title-enter" name="content"></textarea>
-                            </td>
+                                    <span>
+                                    <input type="radio" name="sex" value="F">
+                                    小姐
+                                    </span>
+                                 </li>
+                                 <li>
+                                    <div class="light-box-cistern">
+                                       <span class="asterisk">*</span>
+                                       <span>手機號碼：</span>
+                                    </div>
+                                    <input type="text" name="tel" maxlength="30">
+                                 </li>
+                                 <li>
+                                    <div class="light-box-cistern">
+                                       <span class="asterisk-1">*</span>
+                                       <span>電子信箱：</span>
+                                    </div>
+                                    <input type="text" name="email" maxlength="255">
+                                 </li>
+                                 <li>
+                                    <div class="light-box-cistern">
+                                       <span class="asterisk-1">*</span>
+                                       <span>聯絡時間：</span>
+                                    </div>
+                                    <input type="text" name="date" maxlength="20" >
+                                 </li>
+                              </ul>
+                           </td>
+                           <td style="border-left: 0;vertical-align: top;padding-top: 10px;">
+                              <span class="content-title">
+                              留言內容：
+                              </span>
+                              <textarea class="content-title-enter" name="content"></textarea>
+                           </td>
                         </tr>
-                    </tbody>
-                </table>
-				</form>
-				<form id="theFormM" name="theFormM">
-                <table class="surroundings-content surroundings-1">
-                    <tbody style="    font-size: 16px;">
+                     </tbody>
+                  </table>
+               </form>
+               <form id="theFormM" name="theFormM">
+                  <table class="surroundings-content surroundings-1">
+                     <tbody style="    font-size: 16px;">
                         <tr>
-                            <td>
-                                <span>案名</span>長安高樓三房平車                            </td>
+                           <td>
+                              <span>案名</span>長安高樓三房平車                            
+                           </td>
                         </tr>
                         <tr>
-                            <td>
-                                <span>編號</span>C214530                            </td>
+                           <td>
+                              <span>編號</span>C214530                            
+                           </td>
                         </tr>
                         <tr>
-                            <td style="padding:11% 0; position:relative; ">
-								
-                                <ul class="enter-box">
-                                    <li class="enter-list">
-                                        <span class="asterisk">*</span>
-                                        <span>您的姓名:</span>
-                                        <input class="enter-box" type="text" name="name"  maxlength="20">
-                                    </li>
-                                    <li class="enter-list">
-                                        <span class="asterisk asterisk-1">*</span>
-                                        <span class="sextitle">稱謂:</span>
-                                        <span>
-                                                <input type="radio" name="sex"  value="M" checked>
-                                                先生
-                                        </span>
-                                        <span>
-                                                <input type="radio" name="sex" value="F">
-                                                小姐
-                                        </span>
-                                    </li>
-                                    <li class="enter-list">
-                                        <span class="asterisk">*</span>
-                                        <span>手機號碼:</span>
-                                        <input class="enter-box" type="text" name="tel"  maxlength="30">
-                                    </li>
-                                    <li class="enter-list">
-                                        <span class="asterisk asterisk-1">*</span>
-                                        <span>電子信箱:</span>
-                                        <input class="enter-box" type="text" name="email"  maxlength="255">
-                                    </li>
-                                    <li class="enter-list">
-                                        <span class="asterisk asterisk-1">*</span>
-                                        <span>聯絡時間:</span>
-                                        <form style="display: inline-block;">
-                                            <select name="date" class="box-length">
-                                                <option value="皆可">皆可</option>
-                                                <option value="上午">上午</option>
-                                                <option value="中午">中午</option>
-                                                <option value="下午">下午</option>
-                                            </select>
-                                        </form>
-                                    </li>
-                                    <li class="enter-list">
-                                        <span class="asterisk asterisk-1">*</span>
-                                        <span>留言內容:</span>
-                                        <div style="    text-align: right;padding-right: 3px;">
-                                            <textarea style="width: 90%;height: 20vh;" class="enter-box" name="content"></textarea>
-											<p class="light-box-note">*為必填欄位</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                </form>
+                           <td style="padding:11% 0; position:relative; ">
+                              <ul class="enter-box">
+                                 <li class="enter-list">
+                                    <span class="asterisk">*</span>
+                                    <span>您的姓名:</span>
+                                    <input class="enter-box" type="text" name="name"  maxlength="20">
+                                 </li>
+                                 <li class="enter-list">
+                                    <span class="asterisk asterisk-1">*</span>
+                                    <span class="sextitle">稱謂:</span>
+                                    <span>
+                                    <input type="radio" name="sex"  value="M" checked>
+                                    先生
+                                    </span>
+                                    <span>
+                                    <input type="radio" name="sex" value="F">
+                                    小姐
+                                    </span>
+                                 </li>
+                                 <li class="enter-list">
+                                    <span class="asterisk">*</span>
+                                    <span>手機號碼:</span>
+                                    <input class="enter-box" type="text" name="tel"  maxlength="30">
+                                 </li>
+                                 <li class="enter-list">
+                                    <span class="asterisk asterisk-1">*</span>
+                                    <span>電子信箱:</span>
+                                    <input class="enter-box" type="text" name="email"  maxlength="255">
+                                 </li>
+                                 <li class="enter-list">
+                                    <span class="asterisk asterisk-1">*</span>
+                                    <span>聯絡時間:</span>
+               <form style="display: inline-block;">
+               <select name="date" class="box-length">
+               <option value="皆可">皆可</option>
+               <option value="上午">上午</option>
+               <option value="中午">中午</option>
+               <option value="下午">下午</option>
+               </select>
+               </form>
+               </li>
+               <li class="enter-list">
+               <span class="asterisk asterisk-1">*</span>
+               <span>留言內容:</span>
+               <div style="    text-align: right;padding-right: 3px;">
+               <textarea style="width: 90%;height: 20vh;" class="enter-box" name="content"></textarea>
+               <p class="light-box-note">*為必填欄位</p>
+               </div>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               </tbody>
+               </table>
+               </form>
             </div>
             <div class="surroundings-content light-box-button">
-                <div class="light-box-under0">
-                    <p class="light-box-Remarks">
-						<input type="checkbox" id="cbagree" name="cbagree" value="1">
-						<label for="cbagree" class="hook-red-checkbox">
-						</label>
-					
-					我已閱讀並同意信義房屋的
-					</p>
-                    <a class="light-box-user" href="./tos.php" target="_blank">【服務條款】</a>
-					
-					<p class="light-box-Remarks">與</p>
-					<a class="light-box-user" href="./privacy.php" target="_blank">【隱私權聲明】</a>
-					<br>
-                </div>
-                <div class="light-box-under">
-                    <a class="light-box-Send" href="#" data-lock="0" onclick="return false;">送出</a>
-                </div>
+               <div class="light-box-under0">
+                  <p class="light-box-Remarks">
+                     <input type="checkbox" id="cbagree" name="cbagree" value="1">
+                     <label for="cbagree" class="hook-red-checkbox">
+                     </label>
+                     我已閱讀並同意信義房屋的
+                  </p>
+                  <a class="light-box-user" href="./tos.php" target="_blank">【服務條款】</a>
+                  <p class="light-box-Remarks">與</p>
+                  <a class="light-box-user" href="./privacy.php" target="_blank">【隱私權聲明】</a>
+                  <br>
+               </div>
+               <div class="light-box-under">
+                  <a class="light-box-Send" href="#" data-lock="0" onclick="return false;">送出</a>
+               </div>
             </div>
             <div class="surroundings-content-1">
-                <div>                    
-					<img src="img/confirm-icon.jpg" alt="">
-                    <p class="ok">感謝您的留言！業務人員將盡快與您聯繫。</p>
-                    <p class="fail">感謝您的留言！系統目前忙碌中，請稍候再試。</p>
-                </div>
+               <div>
+                  <img src="img/confirm-icon.jpg" alt="">
+                  <p class="ok">感謝您的留言！業務人員將盡快與您聯繫。</p>
+                  <p class="fail">感謝您的留言！系統目前忙碌中，請稍候再試。</p>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- ========================================     -->
-    <!-- ======================================== -->
-    <div class="ddd-box">
-		<div class="ddd-area">
-			<div class="ddd-close"><a href="" onclick="closeDDD();return false;">[x關閉]</a></div>
-			<div class="ddd-content"></div>
-		</div>
-    </div>
-    <div class="nail-box">
-        <div class="nail-position">
+         </div>
+      </div>
+      <!-- ========================================     -->
+      <!-- ======================================== -->
+      <div class="ddd-box">
+         <div class="ddd-area">
+            <div class="ddd-close"><a href="" onclick="closeDDD();return false;">[x關閉]</a></div>
+            <div class="ddd-content"></div>
+         </div>
+      </div>
+      <div class="nail-box">
+         <div class="nail-position">
             <div class="nail-container">
-                <span class="nail-text-1">立即看屋</span>
-                <span class="nail-text">經紀人員</span>
-                <span class="nail-text">謝易澂</span>
-                <div class="nail-phone">
-					
-                    <h4>
-					0988172845				
-					</h4></div>
+               <span class="nail-text-1">立即看屋</span>
+               <span class="nail-text">經紀人員</span>
+               <span class="nail-text">謝易澂</span>
+               <div class="nail-phone">
+                  <h4>
+                     0988172845				
+                  </h4>
+               </div>
             </div>
-			<!-- 釘選pc版 -->
+            <!-- 釘選pc版 -->
             <a href="#" class="nail-message trackpc" onclick="return false;" >我要留言</a>
-			<!-- 釘選rwd版 -->
+            <!-- 釘選rwd版 -->
             <a href="https://www.sinyi.com.tw/rent/houseno/C214530#" class="nail-message trackrwd" onclick="return false;" >我要留言</a>
-        </div>
-    </div>
-	
-	
-	    <!-- #box_member_listGroup -->
-    <div id="container2">
-        <div class="bread-crumbs">
-            <a href="http://www.sinyi.com.tw/">首頁></a>
-            <a href="https://www.sinyi.com.tw/rent/">租屋搜尋></a>
-			<a href="list/Taichung-city/index.html">台中市></a><a href="list/Taichung-city/407-zip/index.html">西屯區></a>         
-            <a href="https://www.sinyi.com.tw/rent/houseno/C214530">長安高樓三房平車<span>(C214530)</span></a>
-        </div>
-        <div class="objects-name-phone">
-            <h1 class="product-title">長安高樓三房平車</h1>
-            <h1 class="product-number">(C214530)</h1>
-        </div>
-        <div class="main-content">
-            <div class="main-content-box">
-                <span class="main-button-1">照片</span>
-                <span class="main-button-2">地圖</span>
-                <div class="product-display">
-									<div>
-						<img src="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" class="product-bigpic" onerror="loadImgFail(this)" >
-					</div>
-					<div id="liquid" class="liquid">
-						<span class="previous"></span>
-						<div class="wrapper">				
-                            <ul>
-													
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/A.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/B.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/B.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/C.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/C.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/D.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/D.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/G.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/G.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/H.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/H.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/I.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/I.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/J.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/J.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/K.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/K.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-														
-							<li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/L.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/L.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
-							
-                            </ul>
-						</div>
-						<span class="next"></span>
-					</div>
-					
-					
-				                </div>
-                <div class="product-display-1">
-                    <img id="staticMapImg" src="" data-retry="0" data-src="https://res.sinyi.com.tw/rent/C214530/map/C214530map.jpg" style="display:none;" >		
-                    <div id='map_canvas' class='map' style='width:100%; height:400px;display:none;' ></div>		
-                </div>
-                <p class="note">請注意，以上照片如有街景，為物件附近環境介紹，非物件本身。</p>
-            </div>
-            <div class="main-content-box main-content-content interval-main">
-                <div style="    margin-bottom: 11px;">
-                    <h2 class="price-r">22,000</h2>
-                    <span>元/月</span>
-                    <p class="remarks">
-                        含：網路費                    </p>
-                </div>
-                <ul class="cutting-inline detail-list">
-                    <li class="text-Adjustment">押金：兩個月</li>
-                    <li class="text-Adjustment">坪數：46.12坪</li>
-                    <li class="text-Adjustment">格局：3房2廳2衛0室</li>
-                </ul>
-                <ul class="cutting-inline detail-list">
-                    <li class="text-Adjustment">類型：成屋</li>
-                    <li class="text-Adjustment">樓層：12樓/共12樓</li>
-                </ul>
-                <ul class=" detail-list">
-                    <li class="text-Adjustment">社區：寓上長安</li>
-                    <li class="text-Adjustment">地址：台中市西屯區長安路二段</li>
-                </ul>
-                <p style="margin: 2% 0;">租屋專線：</p>
-                <div class="contact-broker-box">
-                    <a href="" onclick="return false;" class="contact-broker redred">
-                        <div>
-                            <span>經紀人員</span><span>謝易澂</span>
-                        </div>
-                        <h2>
-						0988172845	
-						</h2>
-                    </a>
-					<!--pc版 -->
-                    <a href="#" onclick="return false;" class="contact-broker leave-word trackpc">
-                        <h2>我要留言</h2>
-                    </a>
-					<!--rwd版 -->
-                    <a href="#" onclick="return false;" class="contact-broker leave-word trackrwd">
-                        <h2>我要留言</h2>
-                    </a>
-                    <p style="clear: both;"></p>
-                </div>
-                <ul style=" padding-top: 2%;">
-                    <li class="font-size" style="color: #3ea64f;">【信義房屋 逢甲惠來店】 <a class="text-color" href="tel:04-23692763" onclick="return false;" >04-23692763</a></li>
-                    <li class="font-size">台中市西屯區惠來路三段２５６號</li>
-                    <li class="date-font">更新日期：2020/05/23 21:27</li>
-                </ul>
-            </div>
-            <div class="adjustment-text interval-main">
-                <span>調整字級：</span>
-                <a href="#"  class="text-A" onclick="return false;">大</a>
-                <a href="#"  class="text-B" onclick="return false;">中</a>
-                <a href="#"  class="text-C" onclick="return false;">小</a>
-            </div>
-            <div class="interval-main">
-                <div class="title-box">
-                    <h2 class="title-green">
-                        詳細資料
-                    </h2>
-                </div>
-            </div>
-            <div class="information-content-box interval-main text-remote-control ">
-                <ul class="information-content">
-                    <li>
-                        <span>地址：</span>
-                        <p>台中市西屯區長安路二段</p>
-                    </li>
-                    <li>
-                        <span>產權登記：</span>
-                        <div class="Conditional-content">
-                            <input class="input-show" type="checkbox" id="a5"  onclick="return false;" checked >
-                            <label class="alternative-button alternative-button-1" for="a5">
-                                有
-                            </label>
-                            <input class="input-show" type="checkbox" id="a4" onclick="return false;" >
-                            <label class="alternative-button alternative-button-1" for="a4" >
-                                無
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <span>權狀坪數：</span>
-                        <p style="position:relative;">46.12坪
-						<span class="ping-readme-btn"><span class="ping-readme-link">(坪數說明)</span><span class="ping-readme-txt">主建物 22.16坪<br>附屬建物 2.70坪<br>公共設施 21.26坪<br>土地 --坪<br></span></span>						
-						</p>
-                    </li>
-                    <li>
-                        <span>出租坪數：</span>
-                        <p>46.12坪</p>
-                    </li>
-                    <li>
-                        <span>類型：</span>
-                        <p>成屋</p>
-                    </li>
-                    <li>
-                        <span>型態：</span>
-                        <p>大樓(11層含以上有電梯)</p>
-                    </li>
-                    <li>
-                        <span>屋齡：</span>
-                        <p>6.6年</p>
-                    </li>
-                    <li>
-                        <span>樓層：</span>
-                        <p>12樓/共12樓</p>
-                    </li>
-                    <li>
-                        <span>該層戶數：</span>
-                        <p>該層3戶</p>
-                    </li>
-                    <li>
-                        <span>隔間材質：</span>
-						                        <div class="Conditional-content">
-                            <input class="input-show" type="checkbox"  onclick="return false;" id="a1" >
-                            <label class="alternative-button checked" for="a1">
-                                水泥
-                            </label>
-                            <input class="input-show "  onclick="return false;" type="checkbox" id="a2">
-                            <label class="alternative-button " for="a2">
-                                木板
-                            </label>
-                            <input class="input-show" type="checkbox"  onclick="return false;" id="a3">
-                            <label class="alternative-button " for="a3">
-                                其他
-                            </label>
-                        </div>
-						                    </li>
-                </ul>
-                <ul class="information-content">
-                    <li>
-                        <span>格局：</span>
-                        <p>3房2廳2衛0室</p>
-                    </li>
-                    <li>
-                        <span>加蓋格局：</span>
-                        <p>0房0廳0衛0室</p>
-                    </li>
-                    <li>
-                        <span>頂樓加蓋：</span>
-                        <p>本標的不含頂樓加蓋</p>
-                    </li>
-                    <li>
-                        <span>大樓朝向：</span>
-                        <p>南</p>
-                    </li>
-                    <li>
-                        <span>管理費：</span>
-                        <p>$0元(不含租金內)</p>
-                    </li>
-                    <li>
-                        <span>警衛管理：</span>
-                        <p>有(全天)</p>
-                    </li>
-                    <li>
-                        <span>車位：</span>
-                        <p>1個/坡道*平面</p>
-                    </li>
-                    <li>
-                        <span>開伙：</span>
-                        <p>可</p>
-                    </li>
-                    <li>
-                        <span>寵物：</span>
-                        <p>不可</p>
-                    </li>
-                    <li>
-                        <span>最短租期：</span>
-                        <p>一年</p>
-                    </li>
-                </ul>
-				<!-- RWD版 -->
-                <div class="information-content-1">
-                    <ul class="margin-1">
-                        <li>
-                            <span>地址：</span>
-                            <p>台中市西屯區長安路二段</p>
-                        </li>
-                        <!-- ====================================新增========================================  -->
-                        <li class="phone-add-button">
-                            <span>產權登記：</span>
-                            <div class="phone-topic-box" style="">
-                                <div class="phone-topic-1" style="">
-                                    <form>
-                                        <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" checked style="display: none;">
-                                        <label class="hook-red-checkbox-1" for="love" style="">
-                                            <span style="">有</span>
-                                        </label>
-                                    </form>
-                                </div>
-                                <div class="phone-topic-2" style="">
-                                    <form>
-                                        <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" style="display: none;">
-                                        <label class="hook-red-checkbox-1" for="love" style="">
-                                            <span style="">無</span>
-                                        </label>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ====================================/新增========================================  -->
-                        <li>
-                            <span>權狀坪數：</span>
-                            <p style="position:relative">46.12坪
-						<span class="ping-readme-btn"><span class="ping-readme-link">(坪數說明)</span><span class="ping-readme-txt"><span class="ping-readme-item">主建物 22.16坪<br>附屬建物 2.70坪<br>公共設施 21.26坪<br>土地 --坪<br></span><span class="ping-readme-close" >x</span></span></span>							
-							</p>
-                        </li>
-                        <li>
-                            <span>出租坪數：</span>
-                            <p>46.12坪</p>
-                        </li>
-                        <li>
-                            <span>類型：</span>
-                            <p>成屋</p>
-                        </li>
-                        <li>
-                            <span>型態：</span>
-                            <p>大樓(11層含以上有電梯)</p>
-                        </li>
-                        <li>
-                            <span>屋齡：</span>
-                            <p>6.6年</p>
-                        </li>
-                        <li>
-                            <span>樓層：</span>
-                            <p>12樓/共12樓</p>
-                        </li>
-                        <li>
-                            <span>該層戶數：</span>
-                            <p>該層3戶</p>
-                        </li>
-						<!-- ====================================新增========================================  -->
-						<li>
-                            <span>隔間材質：</span>
-							                            <div class="phone-topic-box" style="">
-                                <div class="phone-topic-2" style="">
-                                    <form>
-                                        <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" checked style="display: none;">
-                                        <label class="hook-red-checkbox-1" for="love" style="">
-                                            <span>水泥</span>
-                                        </label>
-                                    </form>
-                                </div>
-                                <div class="phone-topic-2" style="">
-                                    <form>
-                                        <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;"  style="display: none;">
-                                        <label class="hook-red-checkbox-1" for="love" style="">
-                                            <span>木板</span>
-                                        </label>
-                                    </form>
-                                </div>
-                                <div class="phone-topic-2" style="">
-                                    <form>
-                                        <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;"  style="display: none;">
-                                        <label class="hook-red-checkbox-1" for="love" style="">
-                                            <span>其他</span>
-                                        </label>
-                                    </form>
-                                </div>
-                            </div>
-							                        </li>
-                        <!-- ====================================/新增========================================  -->
-                    </ul>
-                    <ul class="margin-2">
-                        <li>
-                            <span>格局：</span>
-                            <p>3房2廳2衛0室</p>
-                        </li>
-                        <li>
-                            <span>加蓋格局：</span>
-                            <p>0房0廳0衛0室</p>
-                        </li>
-						<!-- ====================================新增========================================  -->
-                        <li>
-                            <span>頂樓加蓋：</span>
-                            <p>本標的不含頂樓加蓋</p>
-                        </li>
-                        <!-- ====================================/新增========================================  -->
-                        <li>
-                            <span>大樓朝向：</span>
-                            <p>南</p>
-                        </li>
-                        <li>
-                            <span>管理費：</span>
-                            <p>$0元(不含租金內)</p>
-                        </li>
-                        <li>
-                            <span>警衛管理：</span>
-                            <p>有(全天)</p>
-                        </li>
-                        <li>
-                            <span>車位：</span>
-                            <p>1個/坡道*平面</p>
-                        </li>
-                        <li>
-                            <span>開伙：</span>
-                            <p>可</p>
-                        </li>
-                        <li>
-                            <span>寵物：</span>
-                            <p>不可</p>
-                        </li>
-                        <li>
-                            <span>最短租期：</span>
-                            <p>一年</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="information-content-1-button" onclick="return false;">
-                    </a>
-                </div>
-            </div>
-            <div class="interval-main">
-                <div class="width-content" style="margin-right: 3%;">
-                    <div class="title-box">
-                        <h2 class="title-green">傢俱設備</h2>
-                    </div>
-                    <div class="information-content-box text-remote-control ">
-                        <ul class="furniture">
-                            <li>
-                                <form>
-																		<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">    
-                                        <span>沙</span>
-                                        <span class="text-distance"></span>
-                                        <span>發</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>電</span>
-                                        <span class="text-distance"></span>
-                                        <span>視</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" for="love" class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>洗</span>
-                                        <span class="text-distance-1">衣</span>
-                                        <span>機</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>網</span>
-                                        <span class="text-distance"></span>
-                                        <span>路</span>
-                                    </label>
-                                </form>
-                            </li>
-                        </ul>
-                        <ul class="furniture">
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" for="love" class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>床</span>
-                                        <span class="text-distance"></span>
-                                        <span>組</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>冰</span>
-                                        <span class="text-distance"></span>
-                                        <span>箱</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>熱</span>
-                                        <span class="text-distance-1">水</span>
-                                        <span>器</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;"  >
-                                    <label for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>第</span>
-                                        <span class="text-distance-1">四</span>
-                                        <span>台</span>
-                                    </label>
-                                </form>
-                            </li>
-                        </ul>
-                        <ul class="furniture">
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>衣</span>
-                                        <span class="text-distance"></span>
-                                        <span>櫃</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love" class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>冷</span>
-                                        <span class="text-distance"></span>
-                                        <span>氣</span>
-                                    </label>
-                                </form>
-                            </li>
-                            <li>
-                                <form>
-									<input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
-                                    <label for="love"  class="hook-red-checkbox">
-                                        <input type="checkbox" name="love" value="love" id="love">
-                                        <span>天</span>
-                                        <span>然</span>
-                                        <span>瓦</span>
-                                        <span>斯</span>
-                                    </label>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="width-content">
-                    <div class="title-box">
-                        <h2 class="title-green">特色說明</h2>
-                    </div>
-                    <ul class="features-description text-remote-control "><li>高樓景觀佳<li><li>傢具傢電完善<li><li>近水湳經貿園區<li><li>採光通風好<li></ul><ul class="features-description text-remote-control "><li>屋內美裝潢<li><li>社區公社完備                <li><li>２４小時社區管理<li><li>近學區市場生活便利<li></ul>                </div>
-                <div>
-                    <div class="title-box">
-                        <h2 class="title-green">周邊環境</h2>
-                    </div>
-                    <div class="environment-title text-remote-control ">
-					<span>近學校</span><span>近傳統市場</span><span>近便利商店</span><span>近公園</span>                    </div>
-                    <div>
-						                        <table class="surroundings text-remote-control ">
-                            <tr>
-                                <td class="form-title-green">
-									捷運資訊
-								</td>
-                                <td class="form-content-White">
-									--                                </td>
-							</tr>
-							<tr>
-                                <td class="form-title-green">
-                                    公車站名
-                                </td>
-                                <td class="form-content-White">
-                                    --                                </td>
-							</tr>
-							<tr>										
-								<td class="form-title-green">
-                                    公車路線
-                                </td>
-                                <td class="form-content-White">
-                                    --                                </td>
-                            </tr>
-                        </table>
-						                        <table class="surroundings-1">
-                            <tr>
-                                <td class="form-title-green">
-									捷運資訊
-                                </td>
-                                <td class="form-content-White">
-									--                                </td>
-                            </tr>
-                            <tr>
-                                <td class="form-title-green">
-                                    公車站名
-                                </td>
-                                <td class="form-content-White">
-                                    --                                </td>
-                            </tr>
-                            <tr>
-                                <td class="form-title-green">
-                                    公車路線
-                                </td>
-                                <td class="form-content-White">
-                                    --                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-				                <div class="community-box">
-                    <div class="title-box" style="margin-bottom: 20px;">
-                        <h2 class="title-green">所屬社區</h2>
-                    </div>
-                    <div class="community-pc">
-                        <div class="community-img">
-                            <img src="https://res.sinyi.com.tw/community/0015253/smallimg/A1.JPG" onerror="loadImgFail(this)">
-                        </div>
-                        <div class="community-content">
-                            <h4>寓上長安</h4>
-                            <p class="text-remote-control ">近未來水湳經貿園區，發展具未來性，就近有水湳市場、大福公園，生活機能便利。社區規劃2~4房、雙大樓、雙中庭、零店面設計。
-基地面積約1180坪，門廳挑高約7米，公設有宴會廳、交誼廳、圖書閱覽室、健身房、(室外)羽球場、KTV、兒童遊戲區。
-2樓以上標準層每層為2~3併、2~3戶共用1部電梯。
-戶戶大門配備防火防爆鑄鋁門、3合1電子門鎖，為您的居家安全把關。
-原配地板皆鋪60×60公分拋光石英磚，輕質隔間牆，戶戶採單層排氣設計。(資料最後更新日：2019/05/10)</p>
-                        </div>
-                        <div class="community-status">
-                            <p><a href="#" style=""><a href="https://www.sinyi.com.tw/communitylist/communityinfo/0015253" target="_blank">詳情社區資訊  ></a></p>
-                            <div class="status-img">
-                                <div class="community-type">
-                                    <span class="community-status-text">大樓</span>
-                                </div>
-                                <div class="community-quantity">
-                                    <span class="community-status-text">171</span>
-                                </div>
-                                <div class="community-age">
-                                    <span class="community-status-text">7年</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="community-phone">
-                        <div>
-                            <div class="community-phone-img">
-                                <img src="https://res.sinyi.com.tw/community/0015253/smallimg/A1.JPG" onerror="loadImgFail(this)">
-                            </div>
-                            <ul class="community-phone-detail">
-                                <li>寓上長安</li>
-                                <li><span>房屋類型</span>大樓</li>
-                                <li><span>社區戶數</span>171戶</li>
-                                <li><span>社區屋齡</span>7 年</li>
-                                <li><a href="https://www.sinyi.com.tw/communitylist/communityinfo/0015253" target="_blank">詳情社區資訊  ></a></li>
-                            </ul>
-                            <p class="community-phone-p">近未來水湳經貿園區，發展具未來性，就近有水湳市場、大福公園，生活機能便利。社區規劃2~4房、雙大樓、雙中庭、零店面設計。
-基地面積約1180坪，門廳挑高約7米，公設有宴會廳、交誼廳、圖書閱覽室、健身房、(室外)羽球場、KTV、兒童遊戲區。
-2樓以上標準層每層為2~3併、2~3戶共用1部電梯。
-戶戶大門配備防火防爆鑄鋁門、3合1電子門鎖，為您的居家安全把關。
-原配地板皆鋪60×60公分拋光石英磚，輕質隔間牆，戶戶採單層排氣設計。(資料最後更新日：2019/05/10)</p>
-							<a href="#" onclick="return false;" class="community-phone-button">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-				                <div class="house-photo">
-                    <div class="title-box">
-                        <h2 class="title-green">屋況照片</h2>
-                    </div>
-                    <div class="photo-box">
-						<div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/B.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/C.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/D.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/G.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/H.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/I.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/J.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/K.JPG" onerror="loadImgFail(this)"></div><div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/L.JPG" onerror="loadImgFail(this)"></div>                    </div>
-                </div>
-                <div>
-                    <div class="title-box">
-                        <h2 class="title-green">周邊物件</h2>
-                    </div>
-                    <div>
-                        <ul class="object-box">
-							                            <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C207513';">
-                                <div class="object-img">
-                                    <img src="https://res.sinyi.com.tw/rent/C207513/smallimg/A.JPG" onerror="loadImgFail(this)">
-									                                    
-                                </div>
-                                <div class="object-detail">
-                                    <p>雷中街庭院大平房</p>
-                                    <span>成屋</span><span>20.96坪</span>
-                                    <div class="object-price">
-                                        <h4>38,000</h4>
-                                        <span>元/月</span>
-                                    </div>
-                                </div>
-                            </li>
-							                            <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C210474';">
-                                <div class="object-img">
-                                    <img src="https://res.sinyi.com.tw/rent/C210474/smallimg/A.JPG" onerror="loadImgFail(this)">
-									                                    
-                                </div>
-                                <div class="object-detail">
-                                    <p>重慶庭院停車別墅</p>
-                                    <span>成屋</span><span>32.54坪</span>
-                                    <div class="object-price">
-                                        <h4>28,000</h4>
-                                        <span>元/月</span>
-                                    </div>
-                                </div>
-                            </li>
-							                            <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C215175';">
-                                <div class="object-img">
-                                    <img src="https://res.sinyi.com.tw/rent/C215175/smallimg/A.JPG" onerror="loadImgFail(this)">
-									                                    
-                                </div>
-                                <div class="object-detail">
-                                    <p>巴六邊間浪白美屋</p>
-                                    <span>成屋</span><span>42.55坪</span>
-                                    <div class="object-price">
-                                        <h4>30,000</h4>
-                                        <span>元/月</span>
-                                    </div>
-                                </div>
-                            </li>
-							    <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C212038';">
-                                <div class="object-img">
-                                    <img src="https://res.sinyi.com.tw/rent/C212038/smallimg/A.JPG" onerror="loadImgFail(this)">
-									                                    
-                                </div>
-                                <div class="object-detail">
-                                    <p>高質感大三房車位</p>
-                                    <span>成屋</span><span>50.01坪</span>
-                                    <div class="object-price">
-                                        <h4>30,000</h4>
-                                        <span>元/月</span>
-                                    </div>
-                                </div>
-                            </li>
-							                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <!-- ================================================== -->
-    <!-- ================================================== -->
-	
-	
-	<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=39&cb=431295263"></script>
-</body>
+         </div>
+      </div>
+      <!-- #box_member_listGroup -->
+      <div id="container2">
 
+
+	
+      <div class="bread-crumbs">
+         <a href="http://www.sinyi.com.tw/">首頁></a>
+         <a href="https://www.sinyi.com.tw/rent/">租屋搜尋></a>
+         <a href="list/Taichung-city/index.html">台中市></a><a href="list/Taichung-city/407-zip/index.html">西屯區></a>         
+         <a href="https://www.sinyi.com.tw/rent/houseno/C214530">長安高樓三房平車<span>(C214530)</span></a>
+      </div>
+
+      <div class="objects-name-phone">
+         <h1 class="product-title">長安高樓三房平車</h1>
+         <h1 class="product-number">(C214530)</h1>
+      </div>
+      <div class="buy-content-detail-bar" style="padding: 30px 0px;display: flex ">
+
+         <div class="buy-content-detail-area" style="margin-right:100px;display: flex ">
+            <img src="/static/assets/images/ic-buy-size.svg" style="margin:0 10px 0 0;width:24px;height:24px">
+            <div>
+               <div><span style="color:#646464;margin-right:10px">建坪</span><span>20.17坪</span></div>
+               <div><span style="color:#646464;margin-right:10px">主 + 陽</span><span>12.9坪</span></div>
+            </div>
+         </div>
+
+         <div class="buy-content-detail-layout" style="margin-right:60px;">
+         	<img src="/static/assets/images/ic-buy-rooms.svg" style="margin:0 10px 0 0;width:24px">1房1廳1衛</div>
+
+         <div class="buy-content-detail-type" style="margin-right:60px;display: flex ">
+         	<img src="/static/assets/images/ic-buy-home-gray.svg" style="margin:0 10px 0 0;width:24px;height:24px">
+            <div>
+               <div><span>1.5年</span></div>
+               <div><span>電梯大樓</span></div>
+            </div>
+         </div>
+
+         <div class="buy-content-detail-floor" style="margin-right:60px;">
+         	<img src="/static/assets/images/ic-buy-floor.svg" style="margin:0 10px 0 0;width:24px">11樓/15樓
+         </div>
+
+         <div class="buy-content-detail-calculation" style="margin-right:60px;display: flex  ">
+            <img src="/static/assets/images/ic-buy-calculator.svg" style="margin:0 10px 0 0;width:24px">
+            <div>
+               <div style="display:inline-block;cursor:pointer">
+                  <div class="tooltip-for-web">
+                     <div><span style="font-size:0.75rem;color:#646464">依據你的設定值計算</span></div>
+                  </div>
+               </div>
+               <br>
+               <span>
+                  24,329元/月
+               </span>
+               <div class="col-md-6 col-sm-6" style="margin-bottom: 10px">
+               		<button class="btn btn-primary" data-toggle="modal" data-target="#feature1">計算</button>
+                        </div>
+         		</div>
+            </div>
+      </div>
+      <div class="main-content">
+         <div class="main-content-box">
+            <span class="main-button-1">照片</span>
+            <span class="main-button-2">地圖</span>
+            <div class="product-display">
+               <div>
+                  <img src="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" class="product-bigpic" onerror="loadImgFail(this)" >
+               </div>
+               <div id="liquid" class="liquid">
+                  <span class="previous"></span>
+                  <div class="wrapper">
+                     <ul>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/A.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/B.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/B.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/C.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/C.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/D.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/D.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/G.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/G.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/H.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/H.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/I.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/I.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/J.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/J.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/K.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/K.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                        <li><a href="#" onclick="return false;"><img src="https://res.sinyi.com.tw/rent/C214530/smallimg/L.JPG" data-big="https://res.sinyi.com.tw/rent/C214530/bigimg/L.JPG" width="58" height="58" alt="image" onerror="loadImgFail(this)" /></a></li>
+                     </ul>
+                  </div>
+                  <span class="next"></span>
+               </div>
+            </div>
+            <div class="product-display-1">
+               <img id="staticMapImg" src="" data-retry="0" data-src="https://res.sinyi.com.tw/rent/C214530/map/C214530map.jpg" style="display:none;" >		
+               <div id='map_canvas' class='map' style='width:100%; height:400px;display:none;' ></div>
+            </div>
+            <p class="note">請注意，以上照片如有街景，為物件附近環境介紹，非物件本身。</p>
+         </div>
+         <div class="main-content-box main-content-content interval-main">
+            <div style="    margin-bottom: 11px;">
+               <h2 class="price-r">22,000</h2>
+               <span>元/月</span>
+               <p class="remarks">
+                  含：網路費                    
+               </p>
+            </div>
+            <ul class="cutting-inline detail-list">
+               <li class="text-Adjustment">押金：兩個月</li>
+               <li class="text-Adjustment">坪數：46.12坪</li>
+               <li class="text-Adjustment">格局：3房2廳2衛0室</li>
+            </ul>
+            <ul class="cutting-inline detail-list">
+               <li class="text-Adjustment">類型：成屋</li>
+               <li class="text-Adjustment">樓層：12樓/共12樓</li>
+            </ul>
+            <ul class=" detail-list">
+               <li class="text-Adjustment">社區：寓上長安</li>
+               <li class="text-Adjustment">地址：台中市西屯區長安路二段</li>
+            </ul>
+            <p style="margin: 2% 0;">租屋專線：</p>
+            <div class="contact-broker-box">
+               <a href="" onclick="return false;" class="contact-broker redred">
+                  <div>
+                     <span>經紀人員</span><span>謝易澂</span>
+                  </div>
+                  <h2>
+                     0988172845	
+                  </h2>
+               </a>
+               <!--pc版 -->
+               <a href="#" onclick="return false;" class="contact-broker leave-word trackpc">
+                  <h2>我要留言</h2>
+               </a>
+               <!--rwd版 -->
+               <a href="#" onclick="return false;" class="contact-broker leave-word trackrwd">
+                  <h2>我要留言</h2>
+               </a>
+               <p style="clear: both;"></p>
+            </div>
+            <ul style=" padding-top: 2%;">
+               <li class="font-size" style="color: #3ea64f;">【信義房屋 逢甲惠來店】 <a class="text-color" href="tel:04-23692763" onclick="return false;" >04-23692763</a></li>
+               <li class="font-size">台中市西屯區惠來路三段２５６號</li>
+               <li class="date-font">更新日期：2020/05/23 21:27</li>
+            </ul>
+         </div>
+         <div class="adjustment-text interval-main">
+            <span>調整字級：</span>
+            <a href="#"  class="text-A" onclick="return false;">大</a>
+            <a href="#"  class="text-B" onclick="return false;">中</a>
+            <a href="#"  class="text-C" onclick="return false;">小</a>
+         </div>
+         <div class="interval-main">
+            <div class="title-box">
+               <h2 class="title-green">
+                  詳細資料
+               </h2>
+            </div>
+         </div>
+         <div class="information-content-box interval-main text-remote-control ">
+            <ul class="information-content">
+               <li>
+                  <span>地址：</span>
+                  <p>台中市西屯區長安路二段</p>
+               </li>
+               <li>
+                  <span>產權登記：</span>
+                  <div class="Conditional-content">
+                     <input class="input-show" type="checkbox" id="a5"  onclick="return false;" checked >
+                     <label class="alternative-button alternative-button-1" for="a5">
+                     有
+                     </label>
+                     <input class="input-show" type="checkbox" id="a4" onclick="return false;" >
+                     <label class="alternative-button alternative-button-1" for="a4" >
+                     無
+                     </label>
+                  </div>
+               </li>
+               <li>
+                  <span>權狀坪數：</span>
+                  <p style="position:relative;">46.12坪
+                     <span class="ping-readme-btn"><span class="ping-readme-link">(坪數說明)</span><span class="ping-readme-txt">主建物 22.16坪<br>附屬建物 2.70坪<br>公共設施 21.26坪<br>土地 --坪<br></span></span>						
+                  </p>
+               </li>
+               <li>
+                  <span>出租坪數：</span>
+                  <p>46.12坪</p>
+               </li>
+               <li>
+                  <span>類型：</span>
+                  <p>成屋</p>
+               </li>
+               <li>
+                  <span>型態：</span>
+                  <p>大樓(11層含以上有電梯)</p>
+               </li>
+               <li>
+                  <span>屋齡：</span>
+                  <p>6.6年</p>
+               </li>
+               <li>
+                  <span>樓層：</span>
+                  <p>12樓/共12樓</p>
+               </li>
+               <li>
+                  <span>該層戶數：</span>
+                  <p>該層3戶</p>
+               </li>
+               <li>
+                  <span>隔間材質：</span>
+                  <div class="Conditional-content">
+                     <input class="input-show" type="checkbox"  onclick="return false;" id="a1" >
+                     <label class="alternative-button checked" for="a1">
+                     水泥
+                     </label>
+                     <input class="input-show "  onclick="return false;" type="checkbox" id="a2">
+                     <label class="alternative-button " for="a2">
+                     木板
+                     </label>
+                     <input class="input-show" type="checkbox"  onclick="return false;" id="a3">
+                     <label class="alternative-button " for="a3">
+                     其他
+                     </label>
+                  </div>
+               </li>
+            </ul>
+            <ul class="information-content">
+               <li>
+                  <span>格局：</span>
+                  <p>3房2廳2衛0室</p>
+               </li>
+               <li>
+                  <span>加蓋格局：</span>
+                  <p>0房0廳0衛0室</p>
+               </li>
+               <li>
+                  <span>頂樓加蓋：</span>
+                  <p>本標的不含頂樓加蓋</p>
+               </li>
+               <li>
+                  <span>大樓朝向：</span>
+                  <p>南</p>
+               </li>
+               <li>
+                  <span>管理費：</span>
+                  <p>$0元(不含租金內)</p>
+               </li>
+               <li>
+                  <span>警衛管理：</span>
+                  <p>有(全天)</p>
+               </li>
+               <li>
+                  <span>車位：</span>
+                  <p>1個/坡道*平面</p>
+               </li>
+               <li>
+                  <span>開伙：</span>
+                  <p>可</p>
+               </li>
+               <li>
+                  <span>寵物：</span>
+                  <p>不可</p>
+               </li>
+               <li>
+                  <span>最短租期：</span>
+                  <p>一年</p>
+               </li>
+            </ul>
+            <!-- RWD版 -->
+            <div class="information-content-1">
+               <ul class="margin-1">
+                  <li>
+                     <span>地址：</span>
+                     <p>台中市西屯區長安路二段</p>
+                  </li>
+                  <!-- ====================================新增========================================  -->
+                  <li class="phone-add-button">
+                     <span>產權登記：</span>
+                     <div class="phone-topic-box" style="">
+                        <div class="phone-topic-1" style="">
+                           <form>
+                              <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" checked style="display: none;">
+                              <label class="hook-red-checkbox-1" for="love" style="">
+                              <span style="">有</span>
+                              </label>
+                           </form>
+                        </div>
+                        <div class="phone-topic-2" style="">
+                           <form>
+                              <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" style="display: none;">
+                              <label class="hook-red-checkbox-1" for="love" style="">
+                              <span style="">無</span>
+                              </label>
+                           </form>
+                        </div>
+                     </div>
+                  </li>
+                  <!-- ====================================/新增========================================  -->
+                  <li>
+                     <span>權狀坪數：</span>
+                     <p style="position:relative">46.12坪
+                        <span class="ping-readme-btn"><span class="ping-readme-link">(坪數說明)</span><span class="ping-readme-txt"><span class="ping-readme-item">主建物 22.16坪<br>附屬建物 2.70坪<br>公共設施 21.26坪<br>土地 --坪<br></span><span class="ping-readme-close" >x</span></span></span>							
+                     </p>
+                  </li>
+                  <li>
+                     <span>出租坪數：</span>
+                     <p>46.12坪</p>
+                  </li>
+                  <li>
+                     <span>類型：</span>
+                     <p>成屋</p>
+                  </li>
+                  <li>
+                     <span>型態：</span>
+                     <p>大樓(11層含以上有電梯)</p>
+                  </li>
+                  <li>
+                     <span>屋齡：</span>
+                     <p>6.6年</p>
+                  </li>
+                  <li>
+                     <span>樓層：</span>
+                     <p>12樓/共12樓</p>
+                  </li>
+                  <li>
+                     <span>該層戶數：</span>
+                     <p>該層3戶</p>
+                  </li>
+                  <!-- ====================================新增========================================  -->
+                  <li>
+                     <span>隔間材質：</span>
+                     <div class="phone-topic-box" style="">
+                        <div class="phone-topic-2" style="">
+                           <form>
+                              <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;" checked style="display: none;">
+                              <label class="hook-red-checkbox-1" for="love" style="">
+                              <span>水泥</span>
+                              </label>
+                           </form>
+                        </div>
+                        <div class="phone-topic-2" style="">
+                           <form>
+                              <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;"  style="display: none;">
+                              <label class="hook-red-checkbox-1" for="love" style="">
+                              <span>木板</span>
+                              </label>
+                           </form>
+                        </div>
+                        <div class="phone-topic-2" style="">
+                           <form>
+                              <input class="hook-red-1" type="checkbox" name="love" value="love" id="love" onclick="return false;"  style="display: none;">
+                              <label class="hook-red-checkbox-1" for="love" style="">
+                              <span>其他</span>
+                              </label>
+                           </form>
+                        </div>
+                     </div>
+                  </li>
+                  <!-- ====================================/新增========================================  -->
+               </ul>
+               <ul class="margin-2">
+                  <li>
+                     <span>格局：</span>
+                     <p>3房2廳2衛0室</p>
+                  </li>
+                  <li>
+                     <span>加蓋格局：</span>
+                     <p>0房0廳0衛0室</p>
+                  </li>
+                  <!-- ====================================新增========================================  -->
+                  <li>
+                     <span>頂樓加蓋：</span>
+                     <p>本標的不含頂樓加蓋</p>
+                  </li>
+                  <!-- ====================================/新增========================================  -->
+                  <li>
+                     <span>大樓朝向：</span>
+                     <p>南</p>
+                  </li>
+                  <li>
+                     <span>管理費：</span>
+                     <p>$0元(不含租金內)</p>
+                  </li>
+                  <li>
+                     <span>警衛管理：</span>
+                     <p>有(全天)</p>
+                  </li>
+                  <li>
+                     <span>車位：</span>
+                     <p>1個/坡道*平面</p>
+                  </li>
+                  <li>
+                     <span>開伙：</span>
+                     <p>可</p>
+                  </li>
+                  <li>
+                     <span>寵物：</span>
+                     <p>不可</p>
+                  </li>
+                  <li>
+                     <span>最短租期：</span>
+                     <p>一年</p>
+                  </li>
+               </ul>
+               <a href="#" class="information-content-1-button" onclick="return false;">
+               </a>
+            </div>
+         </div>
+         <div class="interval-main">
+            <div class="width-content" style="margin-right: 3%;">
+               <div class="title-box">
+                  <h2 class="title-green">傢俱設備</h2>
+               </div>
+               <div class="information-content-box text-remote-control ">
+                  <ul class="furniture">
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">    
+                           <span>沙</span>
+                           <span class="text-distance"></span>
+                           <span>發</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>電</span>
+                           <span class="text-distance"></span>
+                           <span>視</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" for="love" class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>洗</span>
+                           <span class="text-distance-1">衣</span>
+                           <span>機</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>網</span>
+                           <span class="text-distance"></span>
+                           <span>路</span>
+                           </label>
+                        </form>
+                     </li>
+                  </ul>
+                  <ul class="furniture">
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" for="love" class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>床</span>
+                           <span class="text-distance"></span>
+                           <span>組</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>冰</span>
+                           <span class="text-distance"></span>
+                           <span>箱</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>熱</span>
+                           <span class="text-distance-1">水</span>
+                           <span>器</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;"  >
+                           <label for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>第</span>
+                           <span class="text-distance-1">四</span>
+                           <span>台</span>
+                           </label>
+                        </form>
+                     </li>
+                  </ul>
+                  <ul class="furniture">
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>衣</span>
+                           <span class="text-distance"></span>
+                           <span>櫃</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love" class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>冷</span>
+                           <span class="text-distance"></span>
+                           <span>氣</span>
+                           </label>
+                        </form>
+                     </li>
+                     <li>
+                        <form>
+                           <input type="checkbox" name="love" value="love" id="love" class="hook-red" onclick="return false;" checked >
+                           <label for="love"  class="hook-red-checkbox">
+                           <input type="checkbox" name="love" value="love" id="love">
+                           <span>天</span>
+                           <span>然</span>
+                           <span>瓦</span>
+                           <span>斯</span>
+                           </label>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="width-content">
+               <div class="title-box">
+                  <h2 class="title-green">特色說明</h2>
+               </div>
+               <ul class="features-description text-remote-control ">
+                  <li>高樓景觀佳
+                  <li>
+                  <li>傢具傢電完善
+                  <li>
+                  <li>近水湳經貿園區
+                  <li>
+                  <li>採光通風好
+                  <li>
+               </ul>
+               <ul class="features-description text-remote-control ">
+                  <li>屋內美裝潢
+                  <li>
+                  <li>社區公社完備                
+                  <li>
+                  <li>２４小時社區管理
+                  <li>
+                  <li>近學區市場生活便利
+                  <li>
+               </ul>
+            </div>
+            <div>
+               <div class="title-box">
+                  <h2 class="title-green">周邊環境</h2>
+               </div>
+               <div class="environment-title text-remote-control ">
+                  <span>近學校</span><span>近傳統市場</span><span>近便利商店</span><span>近公園</span>                    
+               </div>
+               <div>
+                  <table class="surroundings text-remote-control ">
+                     <tr>
+                        <td class="form-title-green">
+                           捷運資訊
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="form-title-green">
+                           公車站名
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="form-title-green">
+                           公車路線
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                  </table>
+                  <table class="surroundings-1">
+                     <tr>
+                        <td class="form-title-green">
+                           捷運資訊
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="form-title-green">
+                           公車站名
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="form-title-green">
+                           公車路線
+                        </td>
+                        <td class="form-content-White">
+                           --                                
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="community-box">
+               <div class="title-box" style="margin-bottom: 20px;">
+                  <h2 class="title-green">所屬社區</h2>
+               </div>
+               <div class="community-pc">
+                  <div class="community-img">
+                     <img src="https://res.sinyi.com.tw/community/0015253/smallimg/A1.JPG" onerror="loadImgFail(this)">
+                  </div>
+                  <div class="community-content">
+                     <h4>寓上長安</h4>
+                     <p class="text-remote-control ">近未來水湳經貿園區，發展具未來性，就近有水湳市場、大福公園，生活機能便利。社區規劃2~4房、雙大樓、雙中庭、零店面設計。
+                        基地面積約1180坪，門廳挑高約7米，公設有宴會廳、交誼廳、圖書閱覽室、健身房、(室外)羽球場、KTV、兒童遊戲區。
+                        2樓以上標準層每層為2~3併、2~3戶共用1部電梯。
+                        戶戶大門配備防火防爆鑄鋁門、3合1電子門鎖，為您的居家安全把關。
+                        原配地板皆鋪60×60公分拋光石英磚，輕質隔間牆，戶戶採單層排氣設計。(資料最後更新日：2019/05/10)
+                     </p>
+                  </div>
+                  <div class="community-status">
+                     <p><a href="#" style=""><a href="https://www.sinyi.com.tw/communitylist/communityinfo/0015253" target="_blank">詳情社區資訊  ></a></p>
+                     <div class="status-img">
+                        <div class="community-type">
+                           <span class="community-status-text">大樓</span>
+                        </div>
+                        <div class="community-quantity">
+                           <span class="community-status-text">171</span>
+                        </div>
+                        <div class="community-age">
+                           <span class="community-status-text">7年</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="community-phone">
+                  <div>
+                     <div class="community-phone-img">
+                        <img src="https://res.sinyi.com.tw/community/0015253/smallimg/A1.JPG" onerror="loadImgFail(this)">
+                     </div>
+                     <ul class="community-phone-detail">
+                        <li>寓上長安</li>
+                        <li><span>房屋類型</span>大樓</li>
+                        <li><span>社區戶數</span>171戶</li>
+                        <li><span>社區屋齡</span>7 年</li>
+                        <li><a href="https://www.sinyi.com.tw/communitylist/communityinfo/0015253" target="_blank">詳情社區資訊  ></a></li>
+                     </ul>
+                     <p class="community-phone-p">近未來水湳經貿園區，發展具未來性，就近有水湳市場、大福公園，生活機能便利。社區規劃2~4房、雙大樓、雙中庭、零店面設計。
+                        基地面積約1180坪，門廳挑高約7米，公設有宴會廳、交誼廳、圖書閱覽室、健身房、(室外)羽球場、KTV、兒童遊戲區。
+                        2樓以上標準層每層為2~3併、2~3戶共用1部電梯。
+                        戶戶大門配備防火防爆鑄鋁門、3合1電子門鎖，為您的居家安全把關。
+                        原配地板皆鋪60×60公分拋光石英磚，輕質隔間牆，戶戶採單層排氣設計。(資料最後更新日：2019/05/10)
+                     </p>
+                     <a href="#" onclick="return false;" class="community-phone-button">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="v1.0.5 1030001 instant-message">
+               <div id="float-button" class="on-open-btn">
+                  <div>
+                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMEUwRTBFIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE5LjA5MyAyNC44NTdsLTcuOTYgNC44MWEuODU3Ljg1NyAwIDAgMS0xLjMtLjczNHYtNC4wNzZINy43MTRBMS43MTQgMS43MTQgMCAwIDEgNiAyMy4xNDNWNy43MTRDNiA2Ljc2OCA2Ljc2OCA2IDcuNzE0IDZoMjAuNTcyQzI5LjIzMiA2IDMwIDYuNzY4IDMwIDcuNzE0djE1LjQyOWMwIC45NDctLjc2OCAxLjcxNC0xLjcxNCAxLjcxNGgtOS4xOTN6Ii8+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjIuNCIgeD0iMTEiIHk9IjE0LjUiIGZpbGw9IiMwRTBFMEUiIHJ4PSIxIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" style="margin-top: 10px;">
+                     <div class="text-black-1" style="margin-top: -5px;">即時聊</div>
+                  </div>
+               </div>
+               <div class="house-photo">
+                  <div class="title-box">
+                     <h2 class="title-green">屋況照片</h2>
+                  </div>
+                  <div class="photo-box">
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/A.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/B.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/C.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/D.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/G.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/H.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/I.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/J.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/K.JPG" onerror="loadImgFail(this)"></div>
+                     <div><img src="https://res.sinyi.com.tw/rent/C214530/bigimg/L.JPG" onerror="loadImgFail(this)"></div>
+                  </div>
+               </div>
+               <div>
+                  <div class="title-box">
+                     <h2 class="title-green">周邊物件</h2>
+                  </div>
+                  <div>
+                     <ul class="object-box">
+                        <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C207513';">
+                           <div class="object-img">
+                              <img src="https://res.sinyi.com.tw/rent/C207513/smallimg/A.JPG" onerror="loadImgFail(this)">
+                           </div>
+                           <div class="object-detail">
+                              <p>雷中街庭院大平房</p>
+                              <span>成屋</span><span>20.96坪</span>
+                              <div class="object-price">
+                                 <h4>38,000</h4>
+                                 <span>元/月</span>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C210474';">
+                           <div class="object-img">
+                              <img src="https://res.sinyi.com.tw/rent/C210474/smallimg/A.JPG" onerror="loadImgFail(this)">
+                           </div>
+                           <div class="object-detail">
+                              <p>重慶庭院停車別墅</p>
+                              <span>成屋</span><span>32.54坪</span>
+                              <div class="object-price">
+                                 <h4>28,000</h4>
+                                 <span>元/月</span>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C215175';">
+                           <div class="object-img">
+                              <img src="https://res.sinyi.com.tw/rent/C215175/smallimg/A.JPG" onerror="loadImgFail(this)">
+                           </div>
+                           <div class="object-detail">
+                              <p>巴六邊間浪白美屋</p>
+                              <span>成屋</span><span>42.55坪</span>
+                              <div class="object-price">
+                                 <h4>30,000</h4>
+                                 <span>元/月</span>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="object object-margin-1" onclick="location.href=www_web_root+'houseno/C212038';">
+                           <div class="object-img">
+                              <img src="https://res.sinyi.com.tw/rent/C212038/smallimg/A.JPG" onerror="loadImgFail(this)">
+                           </div>
+                           <div class="object-detail">
+                              <p>高質感大三房車位</p>
+                              <span>成屋</span><span>50.01坪</span>
+                              <div class="object-price">
+                                 <h4>30,000</h4>
+                                 <span>元/月</span>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clear"></div>
+      <!-- ================================================== -->
+      <!-- ================================================== -->
+      <script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=39&cb=431295263"></script>
+   </body>
 </html>
