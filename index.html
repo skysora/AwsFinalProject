@@ -6,6 +6,26 @@
       <title>Test</title>
       <meta property="og:type" content="website">
       <!-- <meta property="og:url" content="https://www.sinyi.com.tw/rent/"> -->
+    <style>
+        .weatherbtn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+            font-family: Microsoft JhengHei;
+        }
+
+        .weatherbtn:hover {
+            background-color: #ddd;
+        }
+
+        .weatherbtn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+
       <meta property="og:site_name" content="信義房屋">
       <meta property="og:title" content="[租屋]-長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月">
       <meta property="og:description" content="長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月,46.12坪,3房2廳2衛0室,沙發、床組、衣櫃、電視、冰箱、冷氣、洗衣機、熱水器、天然瓦斯、網路,可開伙、近學校、近傳統市場、近便利商店、近公園、有警衛管理,信義房屋給您最即時的租屋訊息。">
@@ -1662,9 +1682,9 @@
                     </div>
                     <div style="text-align: center; margin: 4% 0;">
                         <div id="myBtnContainer">
-                            <button class="btn" id="Temperature">溫度</button>
-                            <button class="btn" id="AirQuality"> 空氣指數</button>
-                            <button class="btn" id="WindSpeed"> 風速</button>
+                            <button class="weatherbtn" id="Temperature">溫度</button>
+                            <button class="weatherbtn" id="AirQuality"> 空氣指數</button>
+                            <button class="weatherbtn" id="WindSpeed"> 風速</button>
                         </div>
                         <p>天氣狀況</p>
                         <img id="change-image" src="https://i.ibb.co/TgRwwdQ/Temperature.png" alt="Temperature" />
