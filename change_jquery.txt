@@ -1,0 +1,43 @@
+<!--add new data-->
+                <script>
+                    jQuery(document).ready(function ($) {
+                        $('#AirQuality').on({
+                            'click': function () {
+                                $('#change-image').attr('src', 'https://i.ibb.co/rkkvcyT/Air-Quality.png');
+                                $('#change-image_2').attr('src','https://i.ibb.co/tD76Bz1/image.jpg')
+                            }
+                        });
+                        $('#Temperature').on({
+                            'click': function () {
+                                $('#change-image').attr('src', 'https://i.ibb.co/TgRwwdQ/Temperature.png');
+                                $('#change-image_2').attr('src','https://i.ibb.co/cgmpT1y/image.jpg')
+                            }
+                        });
+                        $('#WindSpeed').on({
+                            'click': function(){
+                                $('#change-image').attr('src', 'https://i.ibb.co/740P1py/Wind-Speed.png');
+                                $('#change-image_2').attr('src','https://i.ibb.co/HPHr50C/image.jpg')
+                            }
+                        })
+
+
+                    });
+                </script>
+                <div class="interval-main">
+                    <div class="title-box">
+                        <h2 class="title-green">
+                            資料顯示
+                        </h2>
+                    </div>
+                    <div style="text-align: center; margin: 4% 0;">
+                        <div id="myBtnContainer">
+                            <button class="btn" id="Temperature">溫度</button>
+                            <button class="btn" id="AirQuality"> 空氣指數</button>
+                            <button class="btn" id="WindSpeed"> 風速</button>
+                        </div>
+                        <p>天氣狀況</p>
+                        <img id="change-image" src="https://i.ibb.co/TgRwwdQ/Temperature.png" alt="Temperature" />
+                        <img id="change-image_2" src="https://i.ibb.co/cgmpT1y/image.jpg" width="30%">
+                    </div>
+                </div>
+                <!--add new data-->
