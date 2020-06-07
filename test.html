@@ -4,7 +4,7 @@
 <head>
     <!-- <base href="https://www.sinyi.com.tw/rent/"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>AirQuality</title>
+    <title>humidity</title>
     <meta property="og:type" content="website">
     <!-- <meta property="og:url" content="https://www.sinyi.com.tw/rent/"> -->
     <style>
@@ -1810,6 +1810,37 @@
                 </div>
             </div>
 
+            <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        
+        
+            <script type="text/javascript">
+              // popovers initialization - on hover
+              $('[data-toggle="popover-hover"]').popover({
+                html: true,
+                trigger: 'hover',
+                placement: 'bottom',
+                content: function() {
+                  return '<img src="' + $(this).data('img') + '" />';
+                }
+              });
+        
+              // popovers initialization - on click
+              $('[data-toggle="popover-click"]').popover({
+                html: true,
+                trigger: 'click',
+                placement: 'bottom',
+                content: function() {
+                  return '<img src="' + $(this).data('img') + '" />';
+                }
+              });
+            </script>
 
             <div class="community-box">
                 <div class="title-box" style="margin-bottom: 20px;">
