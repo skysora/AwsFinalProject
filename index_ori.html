@@ -36,40 +36,6 @@
     <link href="css/style_s.css" rel="stylesheet">
     <!-- 0606 -->
 
-    <!-- 0606 -->
-    <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
-    <!-- Bootstrap tooltips -->
-    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
-
-    <script type="text/javascript">
-        // popovers initialization - on hover
-        // $('[data-toggle="popover-hover"]').popover({
-        //     html: true,
-        //     trigger: 'hover',
-        //     placement: 'bottom',
-        //     content: function () {
-        //         return '<img src="' + $(this).data('img') + '" />';
-        //     }
-        // });
-
-        // popovers initialization - on click
-        // $('[data-toggle="popover-click"]').popover({
-        //     html: true,
-        //     trigger: 'click',
-        //     placement: 'bottom',
-        //     content: function () {
-        //         return '<img src="' + $(this).data('img') + '" />';
-        //     }
-        // });
-    </script>
-
-
-
-    <!-- 0606 -->
     <meta property="og:site_name" content="信義房屋">
     <meta property="og:title" content="[租屋]-長安高樓三房平車,台中市西屯區長安路二段,$22,000元/月">
     <meta property="og:description"
@@ -1798,6 +1764,12 @@
                     </div>
                     <!-- <p>天氣狀況</p> -->
                     <img id="change-image" src="https://i.ibb.co/frzpkk5/1.png" width="90%" />
+                    <div>
+                        <a class="btn btn-indigo" data-toggle="popover-click"
+                        data-img="https://i.ibb.co/2ScBvtY/image.png" width="30px">Click
+                        me</a>
+                    </div>
+                    
                     <!-- <button class="btn btn-indigo" data-toggle="modal"
                             data-target="#weatherdetail_1">參考數據</button> -->
                     <!-- <a class="btn btn-indigo" data-toggle="popover-click"
@@ -1810,6 +1782,38 @@
                 </div>
             </div>
 
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    
+    
+        <script type="text/javascript">
+          // popovers initialization - on hover
+          $('[data-toggle="popover-hover"]').popover({
+            html: true,
+            trigger: 'hover',
+            placement: 'bottom',
+            content: function() {
+              return '<img src="' + $(this).data('img') + '" />';
+            }
+          });
+    
+          // popovers initialization - on click
+          $('[data-toggle="popover-click"]').popover({
+            html: true,
+            trigger: 'click',
+            placement: 'bottom',
+            content: function() {
+              return '<img src="' + $(this).data('img') + '" />';
+            }
+          });
+        </script>
 
             <div class="community-box">
                 <div class="title-box" style="margin-bottom: 20px;">

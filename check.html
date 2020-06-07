@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- 0606 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style_s.css" rel="stylesheet">
+    <!-- 0606 -->
+
+
+
+
+</head>
+
+<body>
+    <a class="btn btn-primary" data-toggle="popover-hover"
+        data-img="https://mdbootstrap.com/img/logo/mdb192x192.jpg">Hover
+        over me</a>
+    <a class="btn btn-indigo" data-toggle="popover-click"
+        data-img="https://mdbootstrap.com/img/Others/documentation/img%20(30)-mini.jpg">Click
+        me</a>
+
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    
+    
+        <script type="text/javascript">
+          // popovers initialization - on hover
+          $('[data-toggle="popover-hover"]').popover({
+            html: true,
+            trigger: 'hover',
+            placement: 'bottom',
+            content: function() {
+              return '<img src="' + $(this).data('img') + '" />';
+            }
+          });
+    
+          // popovers initialization - on click
+          $('[data-toggle="popover-click"]').popover({
+            html: true,
+            trigger: 'click',
+            placement: 'bottom',
+            content: function() {
+              return '<img src="' + $(this).data('img') + '" />';
+            }
+          });
+        </script>
+    </body>
+
+</html>
