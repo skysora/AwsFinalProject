@@ -1,0 +1,2245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- <base href="https://www.sinyi.com.tw/rent/"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>信義房仲網，提供買屋、賣屋、租屋、設計裝潢、房地產成交行情資訊</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sinyi.com.tw/rent/">
+    <meta property="og:site_name" content="信義房屋">
+    <meta property="og:title" content="信義房仲網，提供買屋、賣屋、租屋、設計裝潢、房地產成交行情資訊">
+    <meta property="og:description" content="信義房屋給您專業買屋租屋、不動產、房地產以及土地買賣等房屋仲介諮詢。提供您專業的房仲服務。信義房屋是房地產及不動產資訊第一站，提供全台灣買屋、售屋、租屋的最新房屋仲介物件以及設計裝潢、實價登錄與成交行情資訊。結合個人化買屋需求檢測服務與多樣化搜尋功能，讓您快速找到房屋買賣所需物件，請上信義房屋房仲網！">
+    <meta property="og:image" content="https://res.sinyi.com.tw/rent/img/buy_og_img.jpg">
+    <meta name="description" content="信義房屋給您專業買屋租屋、不動產、房地產以及土地買賣等房屋仲介諮詢。提供您專業的房仲服務。信義房屋是房地產及不動產資訊第一站，提供全台灣買屋、售屋、租屋的最新房屋仲介物件以及設計裝潢、實價登錄與成交行情資訊。結合個人化買屋需求檢測服務與多樣化搜尋功能，讓您快速找到房屋買賣所需物件，請上信義房屋房仲網！">
+    <meta name="keywords" content="租屋,找店面,租房">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://res.sinyi.com.tw/img/icon/favicon.ico">
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://www.sinyi.com.tw/component/header.js.php?header=green&site=sinyirent"></script>
+    <script src="https://www.sinyi.com.tw/component/footer.js.php"></script>
+   
+    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/module/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="https://res.sinyi.com.tw/rent/css/buy.css">
+    <link rel="stylesheet" type="text/css" href="css/buy_fix.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mrt-style.css">
+    <link rel="stylesheet" type="text/css" href="css/fix.css">
+   
+   
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+   var areaAry=[{"cityid":"1","zipcode":"100","areaname":"\u4e2d\u6b63\u5340","lat":"25.042141","lng":"121.519872"},{"cityid":"1","zipcode":"103","areaname":"\u5927\u540c\u5340","lat":"25.062724","lng":"121.511306"},{"cityid":"1","zipcode":"104","areaname":"\u4e2d\u5c71\u5340","lat":"25.079202","lng":"121.542709"},{"cityid":"1","zipcode":"105","areaname":"\u677e\u5c71\u5340","lat":"25.054159","lng":"121.563862"},{"cityid":"1","zipcode":"106","areaname":"\u5927\u5b89\u5340","lat":"25.026158","lng":"121.542709"},{"cityid":"1","zipcode":"108","areaname":"\u842c\u83ef\u5340","lat":"25.026286","lng":"121.497029"},{"cityid":"1","zipcode":"110","areaname":"\u4fe1\u7fa9\u5340","lat":"25.028702","lng":"121.576957"},{"cityid":"1","zipcode":"111","areaname":"\u58eb\u6797\u5340","lat":"25.095049","lng":"121.524608"},{"cityid":"1","zipcode":"112","areaname":"\u5317\u6295\u5340","lat":"25.115176","lng":"121.515018"},{"cityid":"1","zipcode":"114","areaname":"\u5167\u6e56\u5340","lat":"25.068942","lng":"121.590903"},{"cityid":"1","zipcode":"115","areaname":"\u5357\u6e2f\u5340","lat":"25.031235","lng":"121.611195"},{"cityid":"1","zipcode":"116","areaname":"\u6587\u5c71\u5340","lat":"24.992921","lng":"121.57125"},{"cityid":"3","zipcode":"200","areaname":"\u4ec1\u611b\u5340","lat":"25.118716","lng":"121.745193"},{"cityid":"3","zipcode":"201","areaname":"\u4fe1\u7fa9\u5340","lat":"25.128434","lng":"121.782228"},{"cityid":"3","zipcode":"202","areaname":"\u4e2d\u6b63\u5340","lat":"25.148999","lng":"121.773682"},{"cityid":"3","zipcode":"203","areaname":"\u4e2d\u5c71\u5340","lat":"25.152587","lng":"121.725246"},{"cityid":"3","zipcode":"204","areaname":"\u5b89\u6a02\u5340","lat":"25.147414","lng":"121.702445"},{"cityid":"3","zipcode":"205","areaname":"\u6696\u6696\u5340","lat":"25.083616","lng":"121.748042"},{"cityid":"3","zipcode":"206","areaname":"\u4e03\u5835\u5340","lat":"25.114392","lng":"121.685341"},{"cityid":"2","zipcode":"207","areaname":"\u842c\u91cc\u5340","lat":"25.167602","lng":"121.639718"},{"cityid":"2","zipcode":"208","areaname":"\u91d1\u5c71\u5340","lat":"25.222362","lng":"121.636777"},{"cityid":"22","zipcode":"209","areaname":"\u5357\u7aff\u9109","lat":"26.153436","lng":"119.930686"},{"cityid":"22","zipcode":"210","areaname":"\u5317\u7aff\u9109","lat":"26.224482","lng":"119.994287"},{"cityid":"22","zipcode":"211","areaname":"\u8392\u5149\u9109","lat":"25.976847","lng":"119.930686"},{"cityid":"22","zipcode":"212","areaname":"\u6771\u5f15\u9109","lat":"26.376667","lng":"120.506667"},{"cityid":"2","zipcode":"220","areaname":"\u677f\u6a4b\u5340","lat":"25.01141","lng":"121.461842"},{"cityid":"2","zipcode":"221","areaname":"\u6c50\u6b62\u5340","lat":"25.061606","lng":"121.639718"},{"cityid":"2","zipcode":"222","areaname":"\u6df1\u5751\u5340","lat":"25.003379","lng":"121.6169"},{"cityid":"2","zipcode":"223","areaname":"\u77f3\u7887\u5340","lat":"25.009866","lng":"121.645283"},{"cityid":"2","zipcode":"224","areaname":"\u745e\u82b3\u5340","lat":"25.103052","lng":"121.822098"},{"cityid":"2","zipcode":"226","areaname":"\u5e73\u6eaa\u5340","lat":"25.024831","lng":"121.740865"},{"cityid":"2","zipcode":"227","areaname":"\u96d9\u6eaa\u5340","lat":"24.997184","lng":"121.822098"},{"cityid":"2","zipcode":"228","areaname":"\u8ca2\u5bee\u5340","lat":"25.016876","lng":"121.945979"},{"cityid":"2","zipcode":"231","areaname":"\u65b0\u5e97\u5340","lat":"24.978282","lng":"121.539482"},{"cityid":"2","zipcode":"232","areaname":"\u576a\u6797\u5340","lat":"24.935084","lng":"121.710761"},{"cityid":"2","zipcode":"233","areaname":"\u70cf\u4f86\u5340","lat":"24.866372","lng":"121.54978"},{"cityid":"2","zipcode":"234","areaname":"\u6c38\u548c\u5340","lat":"25.010325","lng":"121.514535"},{"cityid":"2","zipcode":"235","areaname":"\u4e2d\u548c\u5340","lat":"24.996218","lng":"121.48531"},{"cityid":"2","zipcode":"236","areaname":"\u571f\u57ce\u5340","lat":"24.968371","lng":"121.438034"},{"cityid":"2","zipcode":"237","areaname":"\u4e09\u5cfd\u5340","lat":"24.935861","lng":"121.37449"},{"cityid":"2","zipcode":"238","areaname":"\u6a39\u6797\u5340","lat":"24.981561","lng":"121.419861"},{"cityid":"2","zipcode":"239","areaname":"\u9daf\u6b4c\u5340","lat":"24.961497","lng":"121.342726"},{"cityid":"2","zipcode":"241","areaname":"\u4e09\u91cd\u5340","lat":"25.061453","lng":"121.486711"},{"cityid":"2","zipcode":"242","areaname":"\u65b0\u838a\u5340","lat":"25.026599","lng":"121.417835"},{"cityid":"2","zipcode":"243","areaname":"\u6cf0\u5c71\u5340","lat":"25.058164","lng":"121.432792"},{"cityid":"2","zipcode":"244","areaname":"\u6797\u53e3\u5340","lat":"25.079011","lng":"121.388138"},{"cityid":"2","zipcode":"247","areaname":"\u8606\u6d32\u5340","lat":"25.086891","lng":"121.471524"},{"cityid":"2","zipcode":"248","areaname":"\u4e94\u80a1\u5340","lat":"25.084832","lng":"121.438659"},{"cityid":"2","zipcode":"249","areaname":"\u516b\u91cc\u5340","lat":"25.14439","lng":"121.398302"},{"cityid":"2","zipcode":"251","areaname":"\u6de1\u6c34\u5340","lat":"25.171981","lng":"121.443371"},{"cityid":"2","zipcode":"252","areaname":"\u4e09\u829d\u5340","lat":"25.259345","lng":"121.502434"},{"cityid":"2","zipcode":"253","areaname":"\u77f3\u9580\u5340","lat":"25.290828","lng":"121.567138"},{"cityid":"4","zipcode":"260","areaname":"\u5b9c\u862d\u5e02","lat":"24.759115","lng":"121.75374"},{"cityid":"4","zipcode":"261","areaname":"\u982d\u57ce\u93ae","lat":"24.857612","lng":"121.823469"},{"cityid":"4","zipcode":"262","areaname":"\u7901\u6eaa\u9109","lat":"24.821421","lng":"121.769696"},{"cityid":"4","zipcode":"263","areaname":"\u58ef\u570d\u9109","lat":"24.769569","lng":"121.799317"},{"cityid":"4","zipcode":"264","areaname":"\u54e1\u5c71\u9109","lat":"24.738129","lng":"121.662532"},{"cityid":"4","zipcode":"265","areaname":"\u7f85\u6771\u93ae","lat":"24.675587","lng":"121.770825"},{"cityid":"4","zipcode":"266","areaname":"\u4e09\u661f\u9109","lat":"24.666454","lng":"121.652449"},{"cityid":"4","zipcode":"267","areaname":"\u5927\u540c\u9109","lat":"24.549821","lng":"121.514162"},{"cityid":"4","zipcode":"268","areaname":"\u4e94\u7d50\u9109","lat":"24.688763","lng":"121.805013"},{"cityid":"4","zipcode":"269","areaname":"\u51ac\u5c71\u9109","lat":"24.631919","lng":"121.75374"},{"cityid":"4","zipcode":"270","areaname":"\u8607\u6fb3\u93ae","lat":"24.594229","lng":"121.853326"},{"cityid":"4","zipcode":"272","areaname":"\u5357\u6fb3\u9109","lat":"24.4066","lng":"121.673937"},{"cityid":"4","zipcode":"290","areaname":"\u91e3\u9b5a\u53f0\u5217\u5dbc","lat":"25.833333","lng":"123.583333"},{"cityid":"5","zipcode":"300","areaname":"\u65b0\u7af9\u5e02","lat":"24.813829","lng":"120.96748"},{"cityid":"6","zipcode":"302","areaname":"\u7af9\u5317\u5e02","lat":"24.82871","lng":"121.016946"},{"cityid":"6","zipcode":"303","areaname":"\u6e56\u53e3\u9109","lat":"24.881446","lng":"121.044977"},{"cityid":"6","zipcode":"304","areaname":"\u65b0\u8c50\u9109","lat":"24.913286","lng":"120.999103"},{"cityid":"6","zipcode":"305","areaname":"\u65b0\u57d4\u93ae","lat":"24.849606","lng":"121.090833"},{"cityid":"6","zipcode":"306","areaname":"\u95dc\u897f\u93ae","lat":"24.804485","lng":"121.148128"},{"cityid":"6","zipcode":"307","areaname":"\u828e\u6797\u9109","lat":"24.765792","lng":"121.108024"},{"cityid":"6","zipcode":"308","areaname":"\u5bf6\u5c71\u9109","lat":"24.742791","lng":"120.999103"},{"cityid":"6","zipcode":"310","areaname":"\u7af9\u6771\u93ae","lat":"24.774922","lng":"121.044977"},{"cityid":"6","zipcode":"311","areaname":"\u4e94\u5cf0\u9109","lat":"24.629824","lng":"121.119462"},{"cityid":"6","zipcode":"312","areaname":"\u6a6b\u5c71\u9109","lat":"24.711301","lng":"121.136672"},{"cityid":"6","zipcode":"313","areaname":"\u5c16\u77f3\u9109","lat":"24.576067","lng":"121.308409"},{"cityid":"6","zipcode":"314","areaname":"\u5317\u57d4\u9109","lat":"24.663139","lng":"121.067907"},{"cityid":"6","zipcode":"315","areaname":"\u5ce8\u7709\u9109","lat":"24.678841","lng":"120.999103"},{"cityid":"7","zipcode":"320","areaname":"\u4e2d\u58e2\u5340","lat":"24.972151","lng":"121.205396"},{"cityid":"7","zipcode":"324","areaname":"\u5e73\u93ae\u5340","lat":"24.929602","lng":"121.205396"},{"cityid":"7","zipcode":"325","areaname":"\u9f8d\u6f6d\u5340","lat":"24.844493","lng":"121.205396"},{"cityid":"7","zipcode":"326","areaname":"\u694a\u6885\u5340","lat":"24.924211","lng":"121.136672"},{"cityid":"7","zipcode":"327","areaname":"\u65b0\u5c4b\u5340","lat":"24.98266","lng":"121.067907"},{"cityid":"7","zipcode":"328","areaname":"\u89c0\u97f3\u5340","lat":"25.035937","lng":"121.113754"},{"cityid":"7","zipcode":"330","areaname":"\u6843\u5712\u5340","lat":"24.99341","lng":"121.296967"},{"cityid":"32","zipcode":"33233","areaname":"\u85cd\u773c\u6dda\u5340","lat":"25.113","lng":"113.33"},{"cityid":"7","zipcode":"333","areaname":"\u9f9c\u5c71\u5340","lat":"25.019909","lng":"121.365599"},{"cityid":"32","zipcode":"33322","areaname":"\u99ac\u7956\u9109","lat":"25.119","lng":"124.111"},{"cityid":"7","zipcode":"334","areaname":"\u516b\u5fb7\u5340","lat":"24.946906","lng":"121.291246"},{"cityid":"7","zipcode":"335","areaname":"\u5927\u6eaa\u5340","lat":"24.865842","lng":"121.296967"},{"cityid":"7","zipcode":"336","areaname":"\u5fa9\u8208\u5340","lat":"24.709089","lng":"121.377034"},{"cityid":"7","zipcode":"337","areaname":"\u5927\u5712\u5340","lat":"25.049263","lng":"121.193945"},{"cityid":"7","zipcode":"338","areaname":"\u8606\u7af9\u5340","lat":"25.078436","lng":"121.296967"},{"cityid":"8","zipcode":"350","areaname":"\u7af9\u5357\u93ae","lat":"24.700922","lng":"120.878603"},{"cityid":"8","zipcode":"351","areaname":"\u982d\u4efd\u5e02","lat":"24.688444","lng":"120.902484"},{"cityid":"8","zipcode":"352","areaname":"\u4e09\u7063\u9109","lat":"24.630529","lng":"120.93026"},{"cityid":"8","zipcode":"353","areaname":"\u5357\u5e84\u9109","lat":"24.60415","lng":"121.000851"},{"cityid":"8","zipcode":"354","areaname":"\u7345\u6f6d\u9109","lat":"24.523866","lng":"120.93026"},{"cityid":"8","zipcode":"356","areaname":"\u5f8c\u9f8d\u93ae","lat":"24.619037","lng":"120.792458"},{"cityid":"8","zipcode":"357","areaname":"\u901a\u9704\u93ae","lat":"24.489262","lng":"120.680378"},{"cityid":"8","zipcode":"358","areaname":"\u82d1\u88e1\u93ae","lat":"24.409826","lng":"120.677505"},{"cityid":"8","zipcode":"360","areaname":"\u82d7\u6817\u5e02","lat":"24.563167","lng":"120.818539"},{"cityid":"8","zipcode":"361","areaname":"\u9020\u6a4b\u9109","lat":"24.624807","lng":"120.861379"},{"cityid":"8","zipcode":"362","areaname":"\u982d\u5c4b\u9109","lat":"24.576586","lng":"120.854543"},{"cityid":"8","zipcode":"363","areaname":"\u516c\u9928\u9109","lat":"24.501921","lng":"120.838409"},{"cityid":"8","zipcode":"364","areaname":"\u5927\u6e56\u9109","lat":"24.398097","lng":"120.872862"},{"cityid":"8","zipcode":"365","areaname":"\u6cf0\u5b89\u9109","lat":"24.383196","lng":"121.03351"},{"cityid":"8","zipcode":"366","areaname":"\u9285\u947c\u9109","lat":"24.448194","lng":"120.792458"},{"cityid":"8","zipcode":"367","areaname":"\u4e09\u7fa9\u9109","lat":"24.389263","lng":"120.769476"},{"cityid":"8","zipcode":"368","areaname":"\u897f\u6e56\u9109","lat":"24.538794","lng":"120.769476"},{"cityid":"8","zipcode":"369","areaname":"\u5353\u862d\u93ae","lat":"24.325951","lng":"120.861379"},{"cityid":"9","zipcode":"400","areaname":"\u4e2d\u5340","lat":"24.14026","lng":"120.681818"},{"cityid":"9","zipcode":"401","areaname":"\u6771\u5340","lat":"24.14277","lng":"120.694423"},{"cityid":"9","zipcode":"402","areaname":"\u5357\u5340","lat":"24.120845","lng":"120.662412"},{"cityid":"9","zipcode":"403","areaname":"\u897f\u5340","lat":"24.14306","lng":"120.663129"},{"cityid":"9","zipcode":"404","areaname":"\u5317\u5340","lat":"24.157317","lng":"120.683256"},{"cityid":"9","zipcode":"406","areaname":"\u5317\u5c6f\u5340","lat":"24.181524","lng":"120.686102"},{"cityid":"9","zipcode":"407","areaname":"\u897f\u5c6f\u5340","lat":"24.176976","lng":"120.642433"},{"cityid":"9","zipcode":"408","areaname":"\u5357\u5c6f\u5340","lat":"24.147118","lng":"120.608483"},{"cityid":"9","zipcode":"411","areaname":"\u592a\u5e73\u5340","lat":"24.124072","lng":"120.71707"},{"cityid":"9","zipcode":"412","areaname":"\u5927\u91cc\u5340","lat":"24.10469","lng":"120.681211"},{"cityid":"9","zipcode":"413","areaname":"\u9727\u5cf0\u5340","lat":"24.044295","lng":"120.734995"},{"cityid":"9","zipcode":"414","areaname":"\u70cf\u65e5\u5340","lat":"24.107787","lng":"120.638094"},{"cityid":"9","zipcode":"420","areaname":"\u8c50\u539f\u5340","lat":"24.252116","lng":"120.722357"},{"cityid":"9","zipcode":"421","areaname":"\u540e\u91cc\u5340","lat":"24.308877","lng":"120.722371"},{"cityid":"9","zipcode":"422","areaname":"\u77f3\u5ca1\u5340","lat":"24.274243","lng":"120.777155"},{"cityid":"9","zipcode":"423","areaname":"\u6771\u52e2\u5340","lat":"24.25999","lng":"120.827209"},{"cityid":"9","zipcode":"424","areaname":"\u548c\u5e73\u5340","lat":"24.320726","lng":"121.308409"},{"cityid":"9","zipcode":"426","areaname":"\u65b0\u793e\u5340","lat":"24.186719","lng":"120.815436"},{"cityid":"9","zipcode":"427","areaname":"\u6f6d\u5b50\u5340","lat":"24.216361","lng":"120.706254"},{"cityid":"9","zipcode":"428","areaname":"\u5927\u96c5\u5340","lat":"24.222502","lng":"120.654502"},{"cityid":"9","zipcode":"429","areaname":"\u795e\u5ca1\u5340","lat":"24.246615","lng":"120.683098"},{"cityid":"9","zipcode":"432","areaname":"\u5927\u809a\u5340","lat":"24.135873","lng":"120.562447"},{"cityid":"9","zipcode":"433","areaname":"\u6c99\u9e7f\u5340","lat":"24.237794","lng":"120.585467"},{"cityid":"9","zipcode":"434","areaname":"\u9f8d\u4e95\u5340","lat":"24.210243","lng":"120.516395"},{"cityid":"9","zipcode":"435","areaname":"\u68a7\u68f2\u5340","lat":"24.247974","lng":"120.539423"},{"cityid":"9","zipcode":"436","areaname":"\u6e05\u6c34\u5340","lat":"24.301983","lng":"120.585467"},{"cityid":"9","zipcode":"437","areaname":"\u5927\u7532\u5340","lat":"24.378823","lng":"120.648751"},{"cityid":"9","zipcode":"438","areaname":"\u5916\u57d4\u5340","lat":"24.331773","lng":"120.653322"},{"cityid":"9","zipcode":"439","areaname":"\u5927\u5b89\u5340","lat":"24.370236","lng":"120.591222"},{"cityid":"10","zipcode":"500","areaname":"\u5f70\u5316\u5e02","lat":"24.071658","lng":"120.562447"},{"cityid":"10","zipcode":"502","areaname":"\u82ac\u5712\u9109","lat":"24.013313","lng":"120.628356"},{"cityid":"10","zipcode":"503","areaname":"\u82b1\u58c7\u9109","lat":"24.028845","lng":"120.562447"},{"cityid":"10","zipcode":"504","areaname":"\u79c0\u6c34\u9109","lat":"24.03486","lng":"120.510637"},{"cityid":"10","zipcode":"505","areaname":"\u9e7f\u6e2f\u93ae","lat":"24.075513","lng":"120.447285"},{"cityid":"10","zipcode":"506","areaname":"\u798f\u8208\u9109","lat":"24.037701","lng":"120.42424"},{"cityid":"10","zipcode":"507","areaname":"\u7dda\u897f\u9109","lat":"24.133161","lng":"120.453046"},{"cityid":"10","zipcode":"508","areaname":"\u548c\u7f8e\u93ae","lat":"24.112286","lng":"120.498396"},{"cityid":"10","zipcode":"509","areaname":"\u4f38\u6e2f\u9109","lat":"24.158174","lng":"120.498265"},{"cityid":"10","zipcode":"510","areaname":"\u54e1\u6797\u5e02","lat":"23.959574","lng":"120.585467"},{"cityid":"10","zipcode":"511","areaname":"\u793e\u982d\u9109","lat":"23.899204","lng":"120.58272"},{"cityid":"10","zipcode":"512","areaname":"\u6c38\u9756\u9109","lat":"23.920228","lng":"120.54518"},{"cityid":"10","zipcode":"513","areaname":"\u57d4\u5fc3\u9109","lat":"23.943001","lng":"120.559292"},{"cityid":"10","zipcode":"514","areaname":"\u6eaa\u6e56\u93ae","lat":"23.958327","lng":"120.493362"},{"cityid":"10","zipcode":"515","areaname":"\u5927\u6751\u9109","lat":"23.98907","lng":"120.566222"},{"cityid":"10","zipcode":"516","areaname":"\u57d4\u9e7d\u9109","lat":"23.989814","lng":"120.447285"},{"cityid":"10","zipcode":"520","areaname":"\u7530\u4e2d\u93ae","lat":"23.85254","lng":"120.585467"},{"cityid":"10","zipcode":"521","areaname":"\u5317\u6597\u93ae","lat":"23.869208","lng":"120.533667"},{"cityid":"10","zipcode":"522","areaname":"\u7530\u5c3e\u9109","lat":"23.903846","lng":"120.522152"},{"cityid":"10","zipcode":"523","areaname":"\u57e4\u982d\u9109","lat":"23.877662","lng":"120.470326"},{"cityid":"10","zipcode":"524","areaname":"\u6eaa\u5dde\u9109","lat":"24.11611","lng":"120.534802"},{"cityid":"10","zipcode":"525","areaname":"\u7af9\u5858\u9109","lat":"23.844826","lng":"120.42424"},{"cityid":"10","zipcode":"526","areaname":"\u4e8c\u6797\u93ae","lat":"23.914136","lng":"120.401191"},{"cityid":"10","zipcode":"527","areaname":"\u5927\u57ce\u9109","lat":"23.848361","lng":"120.308954"},{"cityid":"10","zipcode":"528","areaname":"\u82b3\u82d1\u9109","lat":"23.945595","lng":"120.355081"},{"cityid":"10","zipcode":"530","areaname":"\u4e8c\u6c34\u9109","lat":"23.81152","lng":"120.616071"},{"cityid":"11","zipcode":"540","areaname":"\u5357\u6295\u5e02","lat":"23.917964","lng":"120.677505"},{"cityid":"11","zipcode":"541","areaname":"\u4e2d\u5bee\u9109","lat":"23.905867","lng":"120.780968"},{"cityid":"11","zipcode":"542","areaname":"\u8349\u5c6f\u93ae","lat":"23.993382","lng":"120.723499"},{"cityid":"11","zipcode":"544","areaname":"\u570b\u59d3\u9109","lat":"24.02402","lng":"120.827155"},{"cityid":"11","zipcode":"545","areaname":"\u57d4\u91cc\u93ae","lat":"23.993287","lng":"120.964687"},{"cityid":"11","zipcode":"546","areaname":"\u4ec1\u611b\u9109","lat":"24.021375","lng":"121.125214"},{"cityid":"11","zipcode":"551","areaname":"\u540d\u9593\u9109","lat":"23.853784","lng":"120.677505"},{"cityid":"11","zipcode":"552","areaname":"\u96c6\u96c6\u93ae","lat":"23.827988","lng":"120.792504"},{"cityid":"11","zipcode":"553","areaname":"\u6c34\u91cc\u9109","lat":"23.791952","lng":"120.861379"},{"cityid":"11","zipcode":"555","areaname":"\u9b5a\u6c60\u9109","lat":"23.875385","lng":"120.918783"},{"cityid":"11","zipcode":"556","areaname":"\u4fe1\u7fa9\u9109","lat":"23.667976","lng":"120.987632"},{"cityid":"11","zipcode":"557","areaname":"\u7af9\u5c71\u93ae","lat":"23.712201","lng":"120.689006"},{"cityid":"11","zipcode":"558","areaname":"\u9e7f\u8c37\u9109","lat":"23.734837","lng":"120.780968"},{"cityid":"13","zipcode":"600","areaname":"\u5609\u7fa9\u5e02","lat":"23.480075","lng":"120.449111"},{"cityid":"14","zipcode":"602","areaname":"\u756a\u8def\u9109","lat":"23.440736","lng":"120.608483"},{"cityid":"14","zipcode":"603","areaname":"\u6885\u5c71\u9109","lat":"23.541025","lng":"120.689006"},{"cityid":"14","zipcode":"604","areaname":"\u7af9\u5d0e\u9109","lat":"23.504972","lng":"120.608483"},{"cityid":"14","zipcode":"605","areaname":"\u963f\u91cc\u5c71\u9109","lat":"23.435468","lng":"120.780968"},{"cityid":"14","zipcode":"606","areaname":"\u4e2d\u57d4\u9109","lat":"23.399594","lng":"120.550936"},{"cityid":"14","zipcode":"607","areaname":"\u5927\u57d4\u9109","lat":"23.304018","lng":"120.596976"},{"cityid":"14","zipcode":"608","areaname":"\u6c34\u4e0a\u9109","lat":"23.437515","lng":"120.42424"},{"cityid":"14","zipcode":"611","areaname":"\u9e7f\u8349\u9109","lat":"23.419257","lng":"120.308954"},{"cityid":"14","zipcode":"612","areaname":"\u592a\u4fdd\u5e02","lat":"23.496449","lng":"120.383709"},{"cityid":"14","zipcode":"613","areaname":"\u6734\u5b50\u5e02","lat":"23.446415","lng":"120.257042"},{"cityid":"14","zipcode":"614","areaname":"\u6771\u77f3\u9109","lat":"23.470192","lng":"120.170477"},{"cityid":"14","zipcode":"615","areaname":"\u516d\u8173\u9109","lat":"23.514949","lng":"120.262811"},{"cityid":"14","zipcode":"616","areaname":"\u65b0\u6e2f\u9109","lat":"23.538123","lng":"120.355081"},{"cityid":"14","zipcode":"621","areaname":"\u6c11\u96c4\u9109","lat":"23.547995","lng":"120.458806"},{"cityid":"14","zipcode":"622","areaname":"\u5927\u6797\u93ae","lat":"23.604071","lng":"120.4542"},{"cityid":"14","zipcode":"623","areaname":"\u6eaa\u53e3\u9109","lat":"23.592556","lng":"120.401191"},{"cityid":"14","zipcode":"624","areaname":"\u7fa9\u7af9\u9109","lat":"23.353011","lng":"120.216652"},{"cityid":"14","zipcode":"625","areaname":"\u5e03\u888b\u93ae","lat":"23.373356","lng":"120.186804"},{"cityid":"12","zipcode":"630","areaname":"\u6597\u5357\u93ae","lat":"23.677137","lng":"120.476081"},{"cityid":"12","zipcode":"631","areaname":"\u5927\u57e4\u9109","lat":"23.651908","lng":"120.42424"},{"cityid":"12","zipcode":"632","areaname":"\u864e\u5c3e\u93ae","lat":"23.716218","lng":"120.42424"},{"cityid":"12","zipcode":"633","areaname":"\u571f\u5eab\u93ae","lat":"23.688264","lng":"120.355081"},{"cityid":"12","zipcode":"634","areaname":"\u8912\u5fe0\u9109","lat":"23.694437","lng":"120.31032"},{"cityid":"12","zipcode":"635","areaname":"\u6771\u52e2\u9109","lat":"23.693257","lng":"120.257042"},{"cityid":"12","zipcode":"636","areaname":"\u81fa\u897f\u9109","lat":"23.700431","lng":"120.19891"},{"cityid":"12","zipcode":"637","areaname":"\u5d19\u80cc\u9109","lat":"23.760159","lng":"120.353175"},{"cityid":"12","zipcode":"638","areaname":"\u9ea5\u5bee\u9109","lat":"23.77746","lng":"120.239734"},{"cityid":"12","zipcode":"640","areaname":"\u6597\u516d\u5e02","lat":"23.707795","lng":"120.540909"},{"cityid":"12","zipcode":"643","areaname":"\u6797\u5167\u9109","lat":"23.761884","lng":"120.608483"},{"cityid":"12","zipcode":"646","areaname":"\u53e4\u5751\u9109","lat":"23.644978","lng":"120.563741"},{"cityid":"12","zipcode":"647","areaname":"\u83bf\u6850\u9109","lat":"23.776934","lng":"120.539423"},{"cityid":"12","zipcode":"648","areaname":"\u897f\u87ba\u93ae","lat":"23.775529","lng":"120.447285"},{"cityid":"12","zipcode":"649","areaname":"\u4e8c\u5d19\u9109","lat":"23.815579","lng":"120.40622"},{"cityid":"12","zipcode":"651","areaname":"\u5317\u6e2f\u93ae","lat":"23.595863","lng":"120.285885"},{"cityid":"12","zipcode":"652","areaname":"\u6c34\u6797\u9109","lat":"23.562809","lng":"120.239734"},{"cityid":"12","zipcode":"653","areaname":"\u53e3\u6e56\u9109","lat":"23.617833","lng":"120.163086"},{"cityid":"12","zipcode":"654","areaname":"\u56db\u6e56\u9109","lat":"23.637083","lng":"120.193566"},{"cityid":"12","zipcode":"655","areaname":"\u5143\u9577\u9109","lat":"23.628877","lng":"120.33202"},{"cityid":"15","zipcode":"700","areaname":"\u4e2d\u897f\u5340","lat":"22.994821","lng":"120.196452"},{"cityid":"15","zipcode":"701","areaname":"\u6771\u5340","lat":"22.98133","lng":"120.222423"},{"cityid":"15","zipcode":"702","areaname":"\u5357\u5340","lat":"22.956352","lng":"120.187794"},{"cityid":"15","zipcode":"704","areaname":"\u5317\u5340","lat":"23.008515","lng":"120.207995"},{"cityid":"15","zipcode":"708","areaname":"\u5b89\u5e73\u5340","lat":"22.993404","lng":"120.164704"},{"cityid":"15","zipcode":"709","areaname":"\u5b89\u5357\u5340","lat":"23.058534","lng":"120.135835"},{"cityid":"15","zipcode":"710","areaname":"\u6c38\u5eb7\u5340","lat":"23.021178","lng":"120.262811"},{"cityid":"15","zipcode":"711","areaname":"\u6b78\u4ec1\u5340","lat":"22.951927","lng":"120.285885"},{"cityid":"15","zipcode":"712","areaname":"\u65b0\u5316\u5340","lat":"23.028087","lng":"120.33202"},{"cityid":"15","zipcode":"713","areaname":"\u5de6\u93ae\u5340","lat":"23.030079","lng":"120.42424"},{"cityid":"15","zipcode":"714","areaname":"\u7389\u4e95\u5340","lat":"23.106082","lng":"120.470326"},{"cityid":"15","zipcode":"715","areaname":"\u6960\u897f\u5340","lat":"23.182015","lng":"120.516395"},{"cityid":"15","zipcode":"716","areaname":"\u5357\u5316\u5340","lat":"23.043524","lng":"120.476989"},{"cityid":"15","zipcode":"717","areaname":"\u4ec1\u5fb7\u5340","lat":"22.940123","lng":"120.239734"},{"cityid":"15","zipcode":"718","areaname":"\u95dc\u5edf\u5340","lat":"22.963705","lng":"120.33202"},{"cityid":"15","zipcode":"719","areaname":"\u9f8d\u5d0e\u5340","lat":"22.954005","lng":"120.378138"},{"cityid":"15","zipcode":"720","areaname":"\u5b98\u7530\u5340","lat":"23.194877","lng":"120.355081"},{"cityid":"15","zipcode":"721","areaname":"\u9ebb\u8c46\u5340","lat":"23.17634","lng":"120.239734"},{"cityid":"15","zipcode":"722","areaname":"\u4f73\u91cc\u5340","lat":"23.169447","lng":"120.170477"},{"cityid":"15","zipcode":"723","areaname":"\u897f\u6e2f\u5340","lat":"23.125785","lng":"120.199338"},{"cityid":"15","zipcode":"724","areaname":"\u4e03\u80a1\u5340","lat":"23.119517","lng":"120.101184"},{"cityid":"15","zipcode":"725","areaname":"\u5c07\u8ecd\u5340","lat":"23.205495","lng":"120.101184"},{"cityid":"15","zipcode":"726","areaname":"\u5b78\u7532\u5340","lat":"23.25538","lng":"120.170477"},{"cityid":"15","zipcode":"727","areaname":"\u5317\u9580\u5340","lat":"23.286603","lng":"120.124285"},{"cityid":"15","zipcode":"730","areaname":"\u65b0\u71df\u5340","lat":"23.311957","lng":"120.308954"},{"cityid":"15","zipcode":"731","areaname":"\u5f8c\u58c1\u5340","lat":"23.36651","lng":"120.355081"},{"cityid":"15","zipcode":"732","areaname":"\u767d\u6cb3\u5340","lat":"23.333637","lng":"120.458806"},{"cityid":"15","zipcode":"733","areaname":"\u6771\u5c71\u5340","lat":"23.282501","lng":"120.447285"},{"cityid":"15","zipcode":"734","areaname":"\u516d\u7532\u5340","lat":"23.242681","lng":"120.33202"},{"cityid":"15","zipcode":"735","areaname":"\u4e0b\u71df\u5340","lat":"23.229292","lng":"120.26858"},{"cityid":"15","zipcode":"736","areaname":"\u67f3\u71df\u5340","lat":"23.280696","lng":"120.355081"},{"cityid":"15","zipcode":"737","areaname":"\u9e7d\u6c34\u5340","lat":"23.262231","lng":"120.239734"},{"cityid":"15","zipcode":"741","areaname":"\u5584\u5316\u5340","lat":"23.140261","lng":"120.308954"},{"cityid":"15","zipcode":"742","areaname":"\u5927\u5167\u5340","lat":"23.142196","lng":"120.401191"},{"cityid":"15","zipcode":"743","areaname":"\u5c71\u4e0a\u5340","lat":"23.089307","lng":"120.372374"},{"cityid":"15","zipcode":"744","areaname":"\u65b0\u5e02\u5340","lat":"23.080732","lng":"120.285885"},{"cityid":"15","zipcode":"745","areaname":"\u5b89\u5b9a\u5340","lat":"23.095298","lng":"120.216652"},{"cityid":"16","zipcode":"800","areaname":"\u65b0\u8208\u5340","lat":"22.628389","lng":"120.306071"},{"cityid":"16","zipcode":"801","areaname":"\u524d\u91d1\u5340","lat":"22.625416","lng":"120.294536"},{"cityid":"16","zipcode":"802","areaname":"\u82d3\u96c5\u5340","lat":"22.626881","lng":"120.326254"},{"cityid":"16","zipcode":"803","areaname":"\u9e7d\u57d5\u5340","lat":"22.622441","lng":"120.283001"},{"cityid":"16","zipcode":"804","areaname":"\u9f13\u5c71\u5340","lat":"22.649587","lng":"120.26858"},{"cityid":"16","zipcode":"805","areaname":"\u65d7\u6d25\u5340","lat":"22.614177","lng":"120.265939"},{"cityid":"16","zipcode":"806","areaname":"\u524d\u93ae\u5340","lat":"22.597079","lng":"120.314721"},{"cityid":"16","zipcode":"807","areaname":"\u4e09\u6c11\u5340","lat":"22.648344","lng":"120.326254"},{"cityid":"16","zipcode":"811","areaname":"\u6960\u6893\u5340","lat":"22.717537","lng":"120.303187"},{"cityid":"16","zipcode":"812","areaname":"\u5c0f\u6e2f\u5340","lat":"22.555319","lng":"120.360846"},{"cityid":"16","zipcode":"813","areaname":"\u5de6\u71df\u5340","lat":"22.687736","lng":"120.291652"},{"cityid":"16","zipcode":"814","areaname":"\u4ec1\u6b66\u5340","lat":"22.694793","lng":"120.360846"},{"cityid":"16","zipcode":"815","areaname":"\u5927\u793e\u5340","lat":"22.737708","lng":"120.360846"},{"cityid":"16","zipcode":"817","areaname":"\u6771\u6c99\u7fa4\u5cf6","lat":"20.617825","lng":"116.887613"},{"cityid":"16","zipcode":"819","areaname":"\u5357\u6c99\u7fa4\u5cf6","lat":"10.723282","lng":"115.826466"},{"cityid":"16","zipcode":"820","areaname":"\u5ca1\u5c71\u5340","lat":"22.801647","lng":"120.285885"},{"cityid":"16","zipcode":"821","areaname":"\u8def\u7af9\u5340","lat":"22.849404","lng":"120.262811"},{"cityid":"16","zipcode":"822","areaname":"\u963f\u84ee\u5340","lat":"22.877861","lng":"120.33202"},{"cityid":"16","zipcode":"823","areaname":"\u7530\u5bee\u5340","lat":"22.863347","lng":"120.401191"},{"cityid":"16","zipcode":"824","areaname":"\u71d5\u5de2\u5340","lat":"22.78237","lng":"120.378138"},{"cityid":"16","zipcode":"825","areaname":"\u6a4b\u982d\u5340","lat":"22.753901","lng":"120.308954"},{"cityid":"16","zipcode":"826","areaname":"\u6893\u5b98\u5340","lat":"22.74861","lng":"120.257042"},{"cityid":"16","zipcode":"827","areaname":"\u5f4c\u9640\u5340","lat":"22.783223","lng":"120.245503"},{"cityid":"16","zipcode":"828","areaname":"\u6c38\u5b89\u5340","lat":"22.811269","lng":"120.239734"},{"cityid":"16","zipcode":"829","areaname":"\u6e56\u5167\u5340","lat":"22.895418","lng":"120.222423"},{"cityid":"16","zipcode":"830","areaname":"\u9cf3\u5c71\u5340","lat":"22.611359","lng":"120.349316"},{"cityid":"16","zipcode":"831","areaname":"\u5927\u5bee\u5340","lat":"22.584481","lng":"120.401191"},{"cityid":"16","zipcode":"832","areaname":"\u6797\u5712\u5340","lat":"22.498676","lng":"120.401191"},{"cityid":"16","zipcode":"833","areaname":"\u9ce5\u677e\u5340","lat":"22.660205","lng":"120.372374"},{"cityid":"16","zipcode":"840","areaname":"\u5927\u6a39\u5340","lat":"22.708371","lng":"120.42424"},{"cityid":"16","zipcode":"842","areaname":"\u65d7\u5c71\u5340","lat":"22.870249","lng":"120.470326"},{"cityid":"16","zipcode":"843","areaname":"\u7f8e\u6fc3\u5340","lat":"22.885385","lng":"120.550936"},{"cityid":"16","zipcode":"844","areaname":"\u516d\u9f9c\u5340","lat":"23.00262","lng":"120.654502"},{"cityid":"16","zipcode":"845","areaname":"\u5167\u9580\u5340","lat":"22.956009","lng":"120.470326"},{"cityid":"16","zipcode":"846","areaname":"\u6749\u6797\u5340","lat":"23.00079","lng":"120.562447"},{"cityid":"16","zipcode":"847","areaname":"\u7532\u4ed9\u5340","lat":"23.114592","lng":"120.631495"},{"cityid":"16","zipcode":"848","areaname":"\u6843\u6e90\u5340","lat":"23.228076","lng":"120.849894"},{"cityid":"16","zipcode":"849","areaname":"\u90a3\u746a\u590f\u5340","lat":"23.274298","lng":"120.734995"},{"cityid":"16","zipcode":"851","areaname":"\u8302\u6797\u5340","lat":"22.931941","lng":"120.734995"},{"cityid":"16","zipcode":"852","areaname":"\u8304\u8423\u5340","lat":"22.876348","lng":"120.210881"},{"cityid":"20","zipcode":"880","areaname":"\u99ac\u516c\u5e02","lat":"23.570627","lng":"119.577462"},{"cityid":"20","zipcode":"881","areaname":"\u897f\u5dbc\u9109","lat":"23.605458","lng":"119.513671"},{"cityid":"20","zipcode":"882","areaname":"\u671b\u5b89\u9109","lat":"23.383333","lng":"119.5"},{"cityid":"20","zipcode":"883","areaname":"\u4e03\u7f8e\u9109","lat":"23.208056","lng":"119.428611"},{"cityid":"20","zipcode":"884","areaname":"\u767d\u6c99\u9109","lat":"23.664044","lng":"119.594854"},{"cityid":"20","zipcode":"885","areaname":"\u6e56\u897f\u9109","lat":"23.584681","lng":"119.658826"},{"cityid":"21","zipcode":"890","areaname":"\u91d1\u6c99\u93ae","lat":"24.481109","lng":"118.427993"},{"cityid":"21","zipcode":"891","areaname":"\u91d1\u6e56\u93ae","lat":"24.441335","lng":"118.416032"},{"cityid":"21","zipcode":"892","areaname":"\u91d1\u5be7\u9109","lat":"24.456577","lng":"118.305852"},{"cityid":"21","zipcode":"893","areaname":"\u91d1\u57ce\u93ae","lat":"24.4114","lng":"118.316971"},{"cityid":"21","zipcode":"894","areaname":"\u70c8\u5dbc\u9109","lat":"24.427974","lng":"118.235119"},{"cityid":"21","zipcode":"896","areaname":"\u70cf\u5775\u9109","lat":"24.991155","lng":"119.454205"},{"cityid":"17","zipcode":"900","areaname":"\u5c4f\u6771\u5e02","lat":"22.655844","lng":"120.470326"},{"cityid":"17","zipcode":"901","areaname":"\u4e09\u5730\u9580\u9109","lat":"22.813309","lng":"120.689006"},{"cityid":"17","zipcode":"902","areaname":"\u9727\u81fa\u9109","lat":"22.750989","lng":"120.780968"},{"cityid":"17","zipcode":"903","areaname":"\u746a\u5bb6\u9109","lat":"22.690358","lng":"120.637879"},{"cityid":"17","zipcode":"904","areaname":"\u4e5d\u5982\u9109","lat":"22.733573","lng":"120.489152"},{"cityid":"17","zipcode":"905","areaname":"\u91cc\u6e2f\u9109","lat":"22.796236","lng":"120.516395"},{"cityid":"17","zipcode":"906","areaname":"\u9ad8\u6a39\u9109","lat":"22.825492","lng":"120.600382"},{"cityid":"17","zipcode":"907","areaname":"\u9e7d\u57d4\u9109","lat":"22.741404","lng":"120.557281"},{"cityid":"17","zipcode":"908","areaname":"\u9577\u6cbb\u9109","lat":"22.700828","lng":"120.562447"},{"cityid":"17","zipcode":"909","areaname":"\u9e9f\u6d1b\u9109","lat":"22.65152","lng":"120.525963"},{"cityid":"17","zipcode":"911","areaname":"\u7af9\u7530\u9109","lat":"22.593914","lng":"120.532668"},{"cityid":"17","zipcode":"912","areaname":"\u5167\u57d4\u9109","lat":"22.615134","lng":"120.56632"},{"cityid":"17","zipcode":"913","areaname":"\u842c\u4e39\u9109","lat":"22.591522","lng":"120.470326"},{"cityid":"17","zipcode":"920","areaname":"\u6f6e\u5dde\u93ae","lat":"22.529417","lng":"120.562447"},{"cityid":"17","zipcode":"921","areaname":"\u6cf0\u6b66\u9109","lat":"22.577954","lng":"120.634803"},{"cityid":"17","zipcode":"922","areaname":"\u4f86\u7fa9\u9109","lat":"22.513616","lng":"120.689006"},{"cityid":"17","zipcode":"923","areaname":"\u842c\u5dd2\u9109","lat":"22.584046","lng":"120.608483"},{"cityid":"17","zipcode":"924","areaname":"\u5d01\u9802\u9109","lat":"22.515843","lng":"120.499121"},{"cityid":"17","zipcode":"925","areaname":"\u65b0\u57e4\u9109","lat":"22.481759","lng":"120.585467"},{"cityid":"17","zipcode":"926","areaname":"\u5357\u5dde\u9109","lat":"22.474734","lng":"120.516395"},{"cityid":"17","zipcode":"927","areaname":"\u6797\u908a\u9109","lat":"22.434704","lng":"120.514727"},{"cityid":"17","zipcode":"928","areaname":"\u6771\u6e2f\u93ae","lat":"22.462878","lng":"120.470326"},{"cityid":"17","zipcode":"929","areaname":"\u7409\u7403\u9109","lat":"22.340416","lng":"120.371515"},{"cityid":"17","zipcode":"931","areaname":"\u4f73\u51ac\u9109","lat":"22.423654","lng":"120.563644"},{"cityid":"17","zipcode":"932","areaname":"\u65b0\u5712\u9109","lat":"22.510551","lng":"120.447285"},{"cityid":"17","zipcode":"940","areaname":"\u678b\u5bee\u9109","lat":"22.396069","lng":"120.585467"},{"cityid":"17","zipcode":"941","areaname":"\u678b\u5c71\u9109","lat":"22.260644","lng":"120.657378"},{"cityid":"17","zipcode":"942","areaname":"\u6625\u65e5\u9109","lat":"22.385178","lng":"120.689006"},{"cityid":"17","zipcode":"943","areaname":"\u7345\u5b50\u9109","lat":"22.247169","lng":"120.734995"},{"cityid":"17","zipcode":"944","areaname":"\u8eca\u57ce\u9109","lat":"22.072636","lng":"120.71402"},{"cityid":"17","zipcode":"945","areaname":"\u7261\u4e39\u9109","lat":"22.152022","lng":"120.780968"},{"cityid":"17","zipcode":"946","areaname":"\u6046\u6625\u93ae","lat":"22.000828","lng":"120.744764"},{"cityid":"17","zipcode":"947","areaname":"\u6eff\u5dde\u9109","lat":"22.04385","lng":"120.838409"},{"cityid":"18","zipcode":"950","areaname":"\u81fa\u6771\u5e02","lat":"22.761321","lng":"121.143815"},{"cityid":"18","zipcode":"951","areaname":"\u7da0\u5cf6\u9109","lat":"22.662089","lng":"121.490144"},{"cityid":"18","zipcode":"952","areaname":"\u862d\u5dbc\u9109","lat":"22.026902","lng":"121.541597"},{"cityid":"18","zipcode":"953","areaname":"\u5ef6\u5e73\u9109","lat":"22.931996","lng":"121.03351"},{"cityid":"18","zipcode":"954","areaname":"\u5351\u5357\u9109","lat":"22.78482","lng":"121.083445"},{"cityid":"18","zipcode":"955","areaname":"\u9e7f\u91ce\u9109","lat":"22.958051","lng":"121.159584"},{"cityid":"18","zipcode":"956","areaname":"\u95dc\u5c71\u93ae","lat":"23.017059","lng":"121.182493"},{"cityid":"18","zipcode":"957","areaname":"\u6d77\u7aef\u9109","lat":"23.130561","lng":"121.175686"},{"cityid":"18","zipcode":"958","areaname":"\u6c60\u4e0a\u9109","lat":"23.120733","lng":"121.216178"},{"cityid":"18","zipcode":"959","areaname":"\u6771\u6cb3\u9109","lat":"23.069172","lng":"121.285525"},{"cityid":"18","zipcode":"961","areaname":"\u6210\u529f\u93ae","lat":"23.126153","lng":"121.365599"},{"cityid":"18","zipcode":"962","areaname":"\u9577\u6ff1\u9109","lat":"23.316868","lng":"121.454858"},{"cityid":"18","zipcode":"963","areaname":"\u592a\u9ebb\u91cc\u9109","lat":"22.610228","lng":"121.004463"},{"cityid":"18","zipcode":"964","areaname":"\u91d1\u5cf0\u9109","lat":"22.560415","lng":"120.872862"},{"cityid":"18","zipcode":"965","areaname":"\u5927\u6b66\u9109","lat":"22.414195","lng":"120.907304"},{"cityid":"18","zipcode":"966","areaname":"\u9054\u4ec1\u9109","lat":"22.399059","lng":"120.826923"},{"cityid":"19","zipcode":"970","areaname":"\u82b1\u84ee\u5e02","lat":"23.991073","lng":"121.611195"},{"cityid":"19","zipcode":"971","areaname":"\u65b0\u57ce\u9109","lat":"24.054804","lng":"121.611195"},{"cityid":"19","zipcode":"972","areaname":"\u79c0\u6797\u9109","lat":"24.225858","lng":"121.537"},{"cityid":"19","zipcode":"973","areaname":"\u5409\u5b89\u9109","lat":"23.973202","lng":"121.584178"},{"cityid":"19","zipcode":"974","areaname":"\u58fd\u8c50\u9109","lat":"23.859341","lng":"121.559835"},{"cityid":"19","zipcode":"975","areaname":"\u9cf3\u6797\u93ae","lat":"23.744384","lng":"121.457045"},{"cityid":"19","zipcode":"976","areaname":"\u5149\u5fa9\u9109","lat":"23.635065","lng":"121.422761"},{"cityid":"19","zipcode":"977","areaname":"\u8c50\u6ff1\u9109","lat":"23.58519","lng":"121.50274"},{"cityid":"19","zipcode":"978","areaname":"\u745e\u7a57\u9109","lat":"23.520562","lng":"121.411331"},{"cityid":"19","zipcode":"979","areaname":"\u842c\u69ae\u9109","lat":"23.724574","lng":"121.308409"},{"cityid":"19","zipcode":"981","areaname":"\u7389\u91cc\u93ae","lat":"23.389822","lng":"121.377034"},{"cityid":"19","zipcode":"982","areaname":"\u5353\u6eaa\u9109","lat":"23.404007","lng":"121.216847"},{"cityid":"19","zipcode":"983","areaname":"\u5bcc\u91cc\u9109","lat":"23.154416","lng":"121.285525"}];
+   
+   var filter={"limit":30} 
+   var search_limit=30;
+   
+    var search_type = "list",
+        www_web_root = "https://www.sinyi.com.tw/rent/",
+        www_web_rootns = "https://www.sinyi.com.tw/rent",
+        file_web_root = "https://www.sinyi.com.tw/rent/",
+        rema_img_root = "http://www.sinyi-rema.com.tw";
+      
+   var ssobase="SSOBASE_URL";
+   var sid_check=false;
+   var no_img="./i/noimg-thumb.jpg";
+   var url_json = {};
+    $(document).ready(function() {
+      addFavoriteHouse(null,null);
+      set_page(1, 156);
+        $('#search_result_count .num').html(nwc(4666));
+      
+      
+      $("input.input_keyword.ui-autocomplete-input.placeholder").on({
+         focus:function(event){
+            if (typeof pcKeyword == 'undefined') { pcKeyword=$(this).attr("placeholder"); }
+            $(this).attr("placeholder","");
+      
+         },blur:function (){
+            if($(this).val()==""){ $(this).attr("placeholder",pcKeyword); }
+         }
+      },'');      
+   
+        $(".arrow-right").click(function() {
+            $(".display-right").addClass("disappears-right");
+            $(".arrow-right").css("z-index", "-1");
+            $(".arrow-right").css("opacity", "0");
+            $(".arrow-left").css("z-index", "0");
+            $(".arrow-left").css("opacity", "1");
+        });
+
+        $(".arrow-left").click(function() {
+            $(".display-right").removeClass("disappears-right");
+            $(".arrow-right").css("z-index", "0");
+            $(".arrow-right").css("opacity", "1");
+            $(".arrow-left").css("z-index", "-1");
+            $(".arrow-left").css("opacity", "0");
+        });
+   
+        
+        $(".mobile-search").click(function() {
+            $(".phone-down-menu-box-3").css("display","none");
+            $(".phone-down-menu-box").css("display","none");
+        });
+
+        $(".phone-down-menu-1").click(function() {
+            $(".phone-down-menu-box").slideToggle("slow");
+        });
+    });
+    </script>
+    <script src="js/url_json.js"></script>
+   
+    <script src="js/jquery_sinyiLibrary.js"></script>
+    <script src="js/jquery_sinyiLibrary2.js"></script>
+    <script src="https://res.sinyi.com.tw/rent/js/integrate.js"></script>
+    <script src="https://res.sinyi.com.tw/rent/js/jquery-ui.js"></script>
+   <script src="js/jquery.fancybox.js"></script>
+   <script src="js/functions.js"></script>
+    <script src="js/buy.js"></script>
+    <!--<script src="js/l-slide.js"></script>-->
+<script src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+<script>
+$(function (){
+      //chkLogin($('#login_error'));
+      
+   
+   chkMember(localStorage.getItem("memberId"),localStorage.getItem("sid"));
+
+});
+
+function chkMember(memberId,sid){
+    if(memberId!=null){
+        memberId=aes_decrypt2(memberId);
+    }
+    if(sid!=null){
+        sid=aes_decrypt2(sid);
+    }
+    
+   $.ajax({
+      type: 'POST',
+      url: 'ajaxChkMember.php',
+      xhrFields: { withCredentials:true },
+      data: {
+         "memberId":memberId,
+         "sid":sid,
+         "end":""
+      },
+      dataType: 'json'
+   }).done(function(obj) {
+      if(obj.rs){
+            if(obj.act=="ini"){
+                localStorage.setItem("sid",aes_encrypt2(obj.sid));
+            }
+         sid_check=true;
+      }
+   });
+
+   
+}
+
+function aes_encrypt2(text){
+    var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
+      // 定義初始向量（16 bytes）
+    var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
+    var textBytes = aesjs.utils.utf8.toBytes(text);
+    textBytes = aesjs.padding.pkcs7.pad(textBytes);
+    var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
+    var encryptedBytes = aesCbc.encrypt(textBytes);
+    var encryptedHex = aesjs.utils.hex.fromBytes(encryptedBytes);
+    return encryptedHex; 
+}
+function aes_decrypt2(text){
+    var AES_KEY = [ 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 ];
+      // 定義初始向量（16 bytes）
+    var AES_IV = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
+    var encryptedBytes = aesjs.utils.hex.toBytes(text);
+    var aesCbc = new aesjs.ModeOfOperation.cbc(AES_KEY, AES_IV);
+    var decryptedBytes = aesCbc.decrypt(encryptedBytes);
+    decryptedBytes = aesjs.padding.pkcs7.strip(decryptedBytes);
+decryptedText = aesjs.utils.utf8.fromBytes(decryptedBytes);
+      return decryptedText;
+}
+</script>
+
+<style>
+  .async-hide {
+      opacity: 0 !important;
+  }
+</style>
+<script>
+  (function (a, s, y, n, c, h, i, d, e) {
+      s.className += ' ' + y; h.start = 1 * new Date;
+      h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+      (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+  })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+      { 'GTM-TS765C4': true });
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TS765C4');</script>
+<!-- End Google Tag Manager -->
+<script>
+// for cross domain
+try{document.domain = "sinyi.com.tw";}
+catch(e){}</script>
+</head>
+
+
+<body class="ch-index">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS765C4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   
+
+    <!-- #box_member_listGroup -->
+
+   
+    <div id="container">
+              <div id="buy_header">
+            <div id="buy_header_nav">
+                <ul>
+                    <li class="nav_item current">
+                        <a href="https://www.sinyi.com.tw/rent/list/index.html">條件搜尋</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="https://www.sinyi.com.tw/rent/map/index.html">地圖搜尋</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="https://www.sinyi.com.tw/rent/mrt/index.html">捷運搜尋</a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!-- #buy_header_nav -->
+            <div id="search_bar" class="parse_url">
+                <ul>
+                    <li>
+                        <div class="search_item">
+                            <div class="search_item_name">地區</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_city" class="search_item_detail">
+                            <div class="search_item_open"></div>
+                            <table>
+                                <tbody>
+                                                               <tr>
+                                        <td class="city_title">北部</td>
+                                                                      <td>
+                                            <a href="/list/Taipei-city/index.html" data-cityid="1">
+                                                <div class="radio_btn"></div>台北</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/NewTaipei-city/index.html" data-cityid="2">
+                                                <div class="radio_btn"></div>新北</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Taoyuan-city/index.html" data-cityid="7">
+                                                <div class="radio_btn"></div>桃園</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Hsinchu-city/index.html" data-cityid="5">
+                                                <div class="radio_btn"></div>竹市</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/HsinchuCounty-city/index.html" data-cityid="6">
+                                                <div class="radio_btn"></div>竹縣</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Keelung-city/index.html" data-cityid="3">
+                                                <div class="radio_btn"></div>基隆</a>
+                                        </td>
+                                                                  </tr>
+                                                               <tr>
+                                        <td class="city_title">中部</td>
+                                                                      <td>
+                                            <a href="/list/Taichung-city/index.html" data-cityid="9">
+                                                <div class="radio_btn"></div>台中</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Changhua-city/index.html" data-cityid="10">
+                                                <div class="radio_btn"></div>彰化</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Miaoli-city/index.html" data-cityid="8">
+                                                <div class="radio_btn"></div>苗栗</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Nantou-city/index.html" data-cityid="11">
+                                                <div class="radio_btn"></div>南投</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Yunlin-city/index.html" data-cityid="12">
+                                                <div class="radio_btn"></div>雲林</a>
+                                        </td>
+                                                                  </tr>
+                                                               <tr>
+                                        <td class="city_title">南部</td>
+                                                                      <td>
+                                            <a href="/list/Kaohsiung-city/index.html" data-cityid="16">
+                                                <div class="radio_btn"></div>高雄</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Tainan-city/index.html" data-cityid="15">
+                                                <div class="radio_btn"></div>台南</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Chiayi-city/index.html" data-cityid="13">
+                                                <div class="radio_btn"></div>嘉市</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/ChiayiCounty-city/index.html" data-cityid="14">
+                                                <div class="radio_btn"></div>嘉縣</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Pingtung-city/index.html" data-cityid="17">
+                                                <div class="radio_btn"></div>屏東</a>
+                                        </td>
+                                                                  </tr>
+                                                               <tr>
+                                        <td class="city_title">東部</td>
+                                                                      <td>
+                                            <a href="/list/Yilan-city/index.html" data-cityid="4">
+                                                <div class="radio_btn"></div>宜蘭</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Hualien-city/index.html" data-cityid="19">
+                                                <div class="radio_btn"></div>花蓮</a>
+                                        </td>
+                                                                      <td>
+                                            <a href="/list/Taitung-city/index.html" data-cityid="18">
+                                                <div class="radio_btn"></div>台東</a>
+                                        </td>
+                                                                  </tr>
+                                                               <tr>
+                                        <td class="city_title">離島</td>
+                                                                      <td>
+                                            <a href="/list/Penghu-city/index.html" data-cityid="20">
+                                                <div class="radio_btn"></div>澎湖</a>
+                                        </td>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>金門</a>
+                                        </td>
+                                                                  </tr>
+                                                           </tbody>
+                            </table>
+                        </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                    <li>
+                        <div class="search_item">
+                            <div class="search_item_name">家庭人數</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_zip" class="search_item_detail">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>1</a>
+                                        </td>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>2</a>
+                                        </td>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>3</a>
+                                        </td>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>4</a>
+                                        </td>
+                                        <td>
+                                            <a href="/list/Kinmen-city/index.html" data-cityid="21">
+                                                <div class="radio_btn"></div>5</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                    <li>
+                        <div class="search_item">
+                            <div class="search_item_name">租金</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_price" class="search_item_detail">
+                            <div class="search_item_open"></div>
+                            <ul>
+                                <li style="display: inline-block;">
+                                    <table id="search_table_price" class="search_table selected">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/0-up-price/index.html">
+                                                        <div class="radio_btn"></div>不限</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/5000-down-price/index.html">
+                                                        <div class="radio_btn"></div>5000以下</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/5000-10000-price/index.html">
+                                                        <div class="radio_btn"></div>5000-10000</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/10000-20000-price/index.html">
+                                                        <div class="radio_btn"></div>10000-20000</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/20000-30000-price/index.html">
+                                                        <div class="radio_btn"></div>20000-30000</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/30000-40000-price/index.html">
+                                                        <div class="radio_btn"></div>30000-40000</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/40000-50000-price/index.html">
+                                                        <div class="radio_btn"></div>40000-50000</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/50000-60000-price/index.html">
+                                                        <div class="radio_btn"></div>50000-60000</a>
+                                                </td>
+                                            </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="search_label">
+                                          <div class="radio_btn"></div>
+                                          <input type="text" class="min min_price" value="">元 -
+                                          <input type="text" class="max max_price" value="">元
+                                          <input type="button" value="送出" name="price">
+                                       </div>
+                                    </td>
+                                 </tr>
+                                        </tbody>
+                                    </table>                            
+                        </li>
+                     </ul>                   
+                                             </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                    <li>
+                        <div class="search_item">
+                            <div class="search_item_name">類型</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_use" class="search_item_detail">
+                            <div class="search_item_open"></div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/house-use/index.html">
+                                                <div class="checkbox_btn"></div>整層住家</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/rent1-use/index.html">
+                                                <div class="checkbox_btn"></div>獨立套房</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/rent2-use/index.html">
+                                                <div class="checkbox_btn"></div>分租套房</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/rent3-use/index.html">
+                                                <div class="checkbox_btn"></div>雅房</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/store-use/index.html">
+                                                <div class="checkbox_btn"></div>店面</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/office-use/index.html">
+                                                <div class="checkbox_btn"></div>辦公</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/factory-use/index.html">
+                                                <div class="checkbox_btn"></div>廠房</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/parking-use/index.html">
+                                                <div class="checkbox_btn"></div>車位</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/land-use/index.html">
+                                                <div class="checkbox_btn"></div>土地</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/other-use/index.html">
+                                                <div class="checkbox_btn"></div>其他</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                    <li>
+                        <div class="search_item search_item_area">
+                            <div class="search_item_name">主題</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_area" class="search_item_detail">
+                            <div class="search_item_open"></div>
+                            <div class="search_optionGroup">
+                                <!-- <div id="search_option_area" class="search_option selected">建坪</div> -->
+                                <div id="search_option_area" class="search_option selected">出租坪數</div>
+                                <!-- <div id="search_option_landarea" class="search_option">地坪</div> -->
+                                <div class="clear"></div>
+                            </div>
+                            <table id="search_table_area" class="search_table selected">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/0-up-area/index.html">
+                                                <div class="radio_btn"></div>0坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/20-up-area/index.html">
+                                                <div class="radio_btn"></div>20坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/30-up-area/index.html">
+                                                <div class="radio_btn"></div>30坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/40-up-area/index.html">
+                                                <div class="radio_btn"></div>40坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/50-up-area/index.html">
+                                                <div class="radio_btn"></div>50坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/60-up-area/index.html">
+                                                <div class="radio_btn"></div>60坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/list/100-up-area/index.html">
+                                                <div class="radio_btn"></div>100坪以上</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="search_label">
+                                                <div class="radio_btn"></div>
+                                                <input type="text" class="min min_area" value=""> -
+                                                <input type="text" class="max max_area" value="">坪
+                                                <input type="button" value="送出" name="area">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                    <li>
+                        <div class="search_item s">
+                            <div class="search_item_name">更多</div>
+                            <div class="icon i_drop_down"></div>
+                        </div>
+                        <!-- .search_item -->
+                        <div id="search_more" class="search_item_detail">
+                            <div class="utton-left-right">
+                                <a href="javascript:void(0)" class="arrow-left">
+                                    <img src="img/arrow-left.png">
+                                </a>
+                                <a href="javascript:void(0)" class="arrow-right">
+                                    <img src="img/arrow-right.png">
+                                </a>
+                            </div>
+                            <div class="search_item_open s"></div>
+                            <div id="search_more_container">
+                                <div id="search_more_content">
+                                    <table class="display-right">
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">房數</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="roomtotal_check">
+                                                    <div class="checkbox_btn"></div>含加蓋</td>
+                                            </tr>
+                                            <tr id="search_room_choice">
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="/list/0-up-room/index.html">
+                                                                <div class="radio_btn"></div>0房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/1-up-room/index.html">
+                                                                <div class="radio_btn"></div>1房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/2-up-room/index.html">
+                                                                <div class="radio_btn"></div>2房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/3-up-room/index.html">
+                                                                <div class="radio_btn"></div>3房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/4-up-room/index.html">
+                                                                <div class="radio_btn"></div>4房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/5-up-room/index.html">
+                                                                <div class="radio_btn"></div>5房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/6-up-room/index.html">
+                                                                <div class="radio_btn"></div>6房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="search_label">
+                                                                <div class="radio_btn"></div>
+                                                                <input type="text" class="min_room" value=""> -
+                                                                <input type="text" class="max_room" value="">房
+                                                                <input type="button" value="送出" name="room">
+                                                            </div>
+                                                            <div class="search_item_desc">3房以上: 3 - 空值</div>
+                                                            <div class="search_item_desc">3房以下: 空值 - 3</div>
+                                                        </li>                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr id="search_roomtotal_choice">
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="/list/0-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>0房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/1-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>1房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/2-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>2房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/3-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>3房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/4-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>4房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/5-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>5房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/list/6-up-roomtotal/index.html">
+                                                                <div class="radio_btn"></div>6房以上</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="search_label">
+                                                                <div class="radio_btn"></div>
+                                                                <input type="text" class="min_roomtotal" value=""> -
+                                                                <input type="text" class="max_roomtotal" value="">房
+                                                                <input type="button" value="送出" name="roomtotal">
+                                                            </div>
+                                                            <div class="search_item_desc">3房以上: 3 - 空值</div>
+                                                            <div class="search_item_desc">3房以下: 空值 - 3</div>
+                                                        </li>                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="search_more_sp"></div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">樓層</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/1-1-floor/index.html">
+                                                        <div class="radio_btn"></div>1樓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/2-7-floor/index.html">
+                                                        <div class="radio_btn"></div>2~7樓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/8-10-floor/index.html">
+                                                        <div class="radio_btn"></div>8~10樓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/11-up-floor/index.html">
+                                                        <div class="radio_btn"></div>11樓以上</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="search_label">
+                                                        <div class="radio_btn"></div>
+                                                        <input type="text" class="min_floor" value="">-
+                                                        <input type="text" class="max_floor" value="">樓
+                                                        <input type="button" value="送出" name="floor">
+                                                    </div>
+                                                    <div class="search_item_desc">3樓以上: 3 - 空值</div>
+                                                    <div class="search_item_desc">3樓以下: 空值 - 3</div>
+                                                    <div class="search_item_desc">地下室1樓: B1</div>
+                                                </td>
+                                            </tr>                                        </tbody>
+                                    </table>
+                                    <div class="search_more_sp"></div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">型態</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/t1-type/index.html">
+                                                        <div class="checkbox_btn"></div>公寓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/t2-type/index.html">
+                                                        <div class="checkbox_btn"></div>電梯華廈大樓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/t3-type/index.html">
+                                                        <div class="checkbox_btn"></div>多層樓</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/t4-type/index.html">
+                                                        <div class="checkbox_btn"></div>透天厝</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/t5-type/index.html">
+                                                        <div class="checkbox_btn"></div>其他</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="search_more_sp"></div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">車位</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/yes-parking/index.html">
+                                                        <div class="radio_btn"></div>有</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/no-parking/index.html">
+                                                        <div class="radio_btn"></div>無</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="search_more_sp"></div>
+                                    <table id="search_tools_choice">
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">家俱設備</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/1-tools/index.html">
+                                                        <div class="checkbox_btn"></div>沙發</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/2-tools/index.html">
+                                                        <div class="checkbox_btn"></div>床組</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/3-tools/index.html">
+                                                        <div class="checkbox_btn"></div>衣櫃</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/4-tools/index.html">
+                                                        <div class="checkbox_btn"></div>電視</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/5-tools/index.html">
+                                                        <div class="checkbox_btn"></div>冰箱</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/6-tools/index.html">
+                                                        <div class="checkbox_btn"></div>冷氣</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/7-tools/index.html">
+                                                        <div class="checkbox_btn"></div>洗衣機</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/8-tools/index.html">
+                                                        <div class="checkbox_btn"></div>熱水器</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/9-tools/index.html">
+                                                        <div class="checkbox_btn"></div>天然瓦斯</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/10-tools/index.html">
+                                                        <div class="checkbox_btn"></div>第四台</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/11-tools/index.html">
+                                                        <div class="checkbox_btn"></div>網路</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="search_more_sp"></div>
+                                    <table id="search_tags_choice" class="mw">
+                                        <tbody>
+                                            <tr>
+                                                <td class="detail_title">物件特色</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/1-tags/index.html">
+                                                        <div class="checkbox_btn"></div>可開伙</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/2-tags/index.html">
+                                                        <div class="checkbox_btn"></div>可養寵物</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/3-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近學校</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/4-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近傳統市場</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/5-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近超市</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/6-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近便利商店</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/7-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近百貨公司</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/8-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近公園</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/9-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近醫院</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/10-tags/index.html">
+                                                        <div class="checkbox_btn"></div>近銀行</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="/list/11-tags/index.html">
+                                                        <div class="checkbox_btn"></div>有警衛管理</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- #search_more_content -->
+                            </div>
+                            <!-- #search_more_container -->
+                            <div class="search_more_btnGroup">
+                                <div id="search_reset_btn">清除所有條件</div>
+                                <div id="search_more_btn">確認</div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- .search_more_btnGroup -->
+                        </div>
+                        <!-- .search_item_detail -->
+                    </li>
+                </ul>
+                <div id="search_keyword">
+                    <div id="clear_kw">
+                        <div class="icon i_clear_kw"></div>
+                    </div>
+                    <input type="text" class="input_keyword placeholder ui-autocomplete-input" placeholder="請輸入路街、社區、關鍵字或物件編號" autocomplete="off">
+                    <a href="index_ori.html"><input type="button" class="button_keyword" value="租屋搜尋"></a>
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+            <!-- #search_bar -->
+        </div>
+            <!-- #buy_header -->
+        <div id="buy_container" class="left rwdsearch">
+            <div id="buy_content">
+                <h1 class="title">信義房仲網，提供買屋、賣屋、租屋、設計裝潢、房地產成交行情資訊</h1>
+                <h2 class="desc">信義房屋,仲介,房仲,房屋,買屋,購屋,買房子,售屋,租屋,租房子,店面,房屋交易,房屋網,設計裝潢,房地產,出租,求租,房屋出租</h2>
+                <div class="phone-down-menu">
+                    <div class="phone-down-menu-1">
+                        搜尋條件
+                    </div>
+                    <div class="phone-down-menu-box">
+                        <div class="rwdSearch rwdSearchcity">
+                            <div class="phone-down-menu-2 county-button">
+                                縣市
+                            </div>
+                            <div class="phone-down-menu-box-3 county-content phone-down-content">
+                                <div class="phone-down-menu-3">
+                                                               <ul  class="Interval-control-1">
+                              <li>
+                                            <form>
+                                                <label for="city1">
+                                                    <input type="checkbox" name="city1" data-id="Taipei" data-name="北市" data-name2="台北市" value="1" id="city1"> 北市
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city3">
+                                                    <input type="checkbox" name="city3" data-id="Keelung" data-name="基隆" data-name2="基隆市" value="3" id="city3"> 基隆
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city12">
+                                                    <input type="checkbox" name="city12" data-id="Yunlin" data-name="雲林" data-name2="雲林縣" value="12" id="city12"> 雲林
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city17">
+                                                    <input type="checkbox" name="city17" data-id="Pingtung" data-name="屏東" data-name2="屏東縣" value="17" id="city17"> 屏東
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city21">
+                                                    <input type="checkbox" name="city21" data-id="Kinmen" data-name="金門" data-name2="金門縣" value="21" id="city21"> 金門
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-1">
+                                        <li>
+                                            <form>
+                                                <label for="city2">
+                                                    <input type="checkbox" name="city2" data-id="NewTaipei" data-name="新北" data-name2="新北市" value="2" id="city2"> 新北
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city9">
+                                                    <input type="checkbox" name="city9" data-id="Taichung" data-name="台中" data-name2="台中市" value="9" id="city9"> 台中
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city16">
+                                                    <input type="checkbox" name="city16" data-id="Kaohsiung" data-name="高雄" data-name2="高雄市" value="16" id="city16"> 高雄
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city4">
+                                                    <input type="checkbox" name="city4" data-id="Yilan" data-name="宜蘭" data-name2="宜蘭縣" value="4" id="city4"> 宜蘭
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-1">
+                                        <li>
+                                            <form>
+                                                <label for="city7">
+                                                    <input type="checkbox" name="city7" data-id="Taoyuan" data-name="桃園" data-name2="桃園縣" value="7" id="city7"> 桃園
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city10">
+                                                    <input type="checkbox" name="city10" data-id="Changhua" data-name="彰化" data-name2="彰化縣" value="10" id="city10"> 彰化
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city15">
+                                                    <input type="checkbox" name="city15" data-id="Tainan" data-name="台南" data-name2="台南市" value="15" id="city15"> 台南
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city19">
+                                                    <input type="checkbox" name="city19" data-id="Hualien" data-name="花蓮" data-name2="花蓮縣" value="19" id="city19"> 花蓮
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-1">
+                                        <li>
+                                            <form>
+                                                <label for="city5">
+                                                    <input type="checkbox" name="city5" data-id="Hsinchu" data-name="竹市" data-name2="新竹市" value="5" id="city5"> 竹市
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city8">
+                                                    <input type="checkbox" name="city8" data-id="Miaoli" data-name="苗栗" data-name2="苗栗市" value="8" id="city8"> 苗栗
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city13">
+                                                    <input type="checkbox" name="city13" data-id="Chiayi" data-name="嘉市" data-name2="嘉義市" value="13" id="city13"> 嘉市
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city18">
+                                                    <input type="checkbox" name="city18" data-id="Taitung" data-name="台東" data-name2="台東縣" value="18" id="city18"> 台東
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-1">
+                                        <li>
+                                            <form>
+                                                <label for="city6">
+                                                    <input type="checkbox" name="city6" data-id="HsinchuCounty" data-name="竹縣" data-name2="新竹縣" value="6" id="city6"> 竹縣
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city11">
+                                                    <input type="checkbox" name="city11" data-id="Nantou" data-name="南投" data-name2="南投縣" value="11" id="city11"> 南投
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city14">
+                                                    <input type="checkbox" name="city14" data-id="ChiayiCounty" data-name="嘉縣" data-name2="嘉義縣" value="14" id="city14"> 嘉縣
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="city20">
+                                                    <input type="checkbox" name="city20" data-id="Penghu" data-name="澎湖" data-name2="澎湖縣" value="20" id="city20"> 澎湖
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                                           </div>
+                            </div>
+                        </div>
+                        <div class="rwdSearch rwdSearchzip">
+                            <div class="phone-down-menu-2 administrative-button">
+                                行政區
+                            </div>
+                            <div class="phone-down-menu-box-3 administrative-content phone-down-content">
+                                <div class="phone-down-menu-3 square">
+                                    <span class="green-title">可複選擇行政區</span>
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rwdSearch rwdSearchprice">
+                            <div class="phone-down-menu-2 unlimited-button">
+                                租金
+                            </div>
+                            <div class="phone-down-menu-box-3 unlimited-content phone-down-content">
+                                <div class="phone-down-menu-3">
+                                    <div class="price">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="price0">
+                                                        <input type="checkbox" name="price0" value="0-up" data-name="不限" id="price0"> 不限
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price1" class="">
+                                                        <input type="checkbox" name="price1" value="5000-10000" data-name="5000-10000" id="price1"> 5000元~10000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price2" class="">
+                                                        <input type="checkbox" name="price2" value="20000-30000" data-name="20000-30000" id="price2">20000元~30000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price3" class="">
+                                                        <input type="checkbox" name="price3" value="40000-50000" data-name="40000-50000" id="price3">40000元~50000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="price4">
+                                                        <input type="checkbox" name="price4" value="5000-down" data-name="5000-down" id="price4"> 5000以下
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price5" class="">
+                                                        <input type="checkbox" name="price5" value="10000-20000" data-name="10000-20000" id="price5"> 10000元~20000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price6" class="">
+                                                        <input type="checkbox" name="price6" value="30000-40000" data-name="30000-40000" id="price6"> 30000元~40000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="price7" class="">
+                                                        <input type="checkbox" name="price7" value="50000-60000" data-name="50000-60000" id="price7"> 50000元~60000元
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form>
+                                        <label for="rwdmin_price" class="rwdDiylabel_price">
+                                        </label>
+                              <input type="checkbox" name="pricenullck" value="" data-name="" id="pricenullck">
+
+                              <input class="enter enter-1 rwdmin_price" type="text" name="rwdmin_price" value="" id="rwdmin_price">-
+                              <input class="enter enter-1 rwdmax_price" type="text" name="rwdmax_price" value="" id="rwdmax_price">
+                              元
+                              <input type="button" name="rwdprice" value="自訂金額" style="opacity:0;" >
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rwdSearch rwdSearchuse">
+                            <div class="phone-down-menu-2 home-button">
+                                類型
+                            </div>
+                            <div class="phone-down-menu-box-3 home-content phone-down-content">
+                                <div class="phone-down-menu-3">
+                                    <ul class="Interval-control-2">
+                                        <li>
+                                            <form>
+                                                <label for="use1" class="checkbox-cover">
+                                                    <input type="checkbox" name="use1" value="house" data-name="整層住家" id="use1"> 整層住家
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use2" class="checkbox-cover">
+                                                    <input type="checkbox" name="use2" value="rent1" data-name="獨立套房" id="use2"> 獨立套房
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use3" class="checkbox-cover">
+                                                    <input type="checkbox" name="use3" value="rent2" data-name="分租套房" id="use3"> 分租套房
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use4" class="checkbox-cover">
+                                                    <input type="checkbox" name="use4" value="rent3" data-name="雅房" id="use4"> 雅房
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-2"  style="margin: 0 10%;">
+                                        <li>
+                                            <form>
+                                                <label for="use5" class="checkbox-cover">
+                                                    <input type="checkbox" name="use5" value="store" data-name="店面" id="use5"> 店面
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use6" class="checkbox-cover">
+                                                    <input type="checkbox" name="use6" value="office" data-name="辦公" id="use6"> 辦公
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use7" class="checkbox-cover">
+                                                    <input type="checkbox" name="use7" value="factory" data-name="廠房" id="use7"> 廠房
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <ul class="Interval-control-2">
+                                        <li>
+                                            <form>
+                                                <label for="use8" class="checkbox-cover">
+                                                    <input type="checkbox" name="use8" value="parking" data-name="車位" id="use8"> 車位
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use9" class="checkbox-cover">
+                                                    <input type="checkbox" name="use9" value="land" data-name="土地" id="use9"> 土地
+                                                </label>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <label for="use10" class="checkbox-cover">
+                                                    <input type="checkbox" name="use10" value="other" data-name="其他" id="use10"> 其他
+                                                </label>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rwdSearch rwdSearcharea">
+                            <div class="phone-down-menu-2 size-button">
+                                出租坪數
+                            </div>
+                            <div class="phone-down-menu-box-3 size-content phone-down-content">
+                                <div class="phone-down-menu-3">
+                                    <div class="price">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="area1" class="">
+                                                        <input type="checkbox" name="area1" value="0-up" data-name="0坪以上" id="area1"> 0坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="area2" class="">
+                                                        <input type="checkbox" name="area2" value="30-up" data-name="30坪以上" id="area2"> 30坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="area3" class="">
+                                                        <input type="checkbox" name="area3" value="50-up" data-name="50坪以上" id="area3"> 50坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="area4" class="">
+                                                        <input type="checkbox" name="area4" value="100-up" data-name="100坪以上" id="area4"> 100坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="area5" class="">
+                                                        <input type="checkbox" name="area5" value="20-up" data-name="20坪以上" id="area5"> 20坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="area6" class="">
+                                                        <input type="checkbox" name="area6" value="40-up" data-name="40坪以上" id="area6"> 40坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="area7" class="">
+                                                        <input type="checkbox" name="area7" value="60-up" data-name="60坪以上" id="area6"> 60坪以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                                                             <!--                                             <li>
+                                                <form>
+                                                    <label for="love" class="enter-2-box">
+                                                        <input class="enter enter-2" type="text" name="rwdmin_area" value="" id="love">-
+                                                        <input class="enter enter-2" type="text" name="rwdmax_area" value="" id="love"> 坪
+                                                    </label>
+                                                </form>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    <form>
+                                        <label for="rwdmin_area" class="rwdDiylabel_area">
+                                        </label>
+                                        <input type="checkbox" id="areanullck" name="arean" value="" >
+                                        <input type="hidden" name="area_type" value="area" >
+                                        <input class="enter enter-1 rwdmin_area" type="text" name="rwdmin_area" value="" id="rwdmin_area">-
+                                        <input class="enter enter-1 rwdmax_area" type="text" name="rwdmax_area" value="" id="rwdmax_area"> 坪
+                                        <input type="button" name="rwdarea" value="自訂坪數" style="opacity:0;" >
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rwdSearch rwdSearchmore">
+                            <div class="phone-down-menu-2 more-button">
+                                更多
+                            </div>
+                            <div class="phone-down-menu-box-3 more-content phone-down-content">
+                                <div class="phone-down-menu-3">
+                                    <span class="green-title">房數</span>
+                                    <div class="price rwdSearch rwdSearchroom">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                       <input type="hidden" name="room_type" value="room" >
+                                                    <label for="roomtotal" class="roomtotal checkbox-cover">
+                                                        <input type="checkbox" class="roomtotal" name="roomtotal" value="total" id="roomtotal">含加蓋
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="room1" class="room">
+                                                        <input type="checkbox" class="room" name="room1" value="1-up" data-name="1房以上" id="room1">1房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="room2" class="room">
+                                                        <input type="checkbox" class="room" name="room2" value="3-up" data-name="3房以上" id="room2">3房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="room3" class="room">
+                                                        <input type="checkbox" class="room" name="room3" value="5-up" data-name="5房以上" id="room3">5房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <form>
+                                                <label for="rwdmin_room" class="room rwdDiylabel_room">
+                                                </label>
+                                                <input class="enter enter-1 rwdmin_room" type="text" name="rwdmin_room" value="" id="rwdmin_room">-
+                                                <input class="enter enter-1 rwdmax_room" type="text" name="rwdmax_room" value="" id="rwdmax_room"> 房
+                                                <input type="button" name="rwdroom" value="自訂房數" style="opacity:0;" >
+                                            </form>
+                                        </ul>
+                                    </div>
+                                    <div class="price rwdSearch rwdSearchroom">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="room4" class="room">
+                                                        <input type="checkbox" class="room" name="room4" value="0-up" data-name="0房以上" id="room4">0房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="room5" class="room">
+                                                        <input type="checkbox" class="room" name="room5" value="2-up" data-name="2房以上" id="room5">2房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="room6" class="room">
+                                                        <input type="checkbox" class="room" name="room6" value="4-up" data-name="4房以上" id="room6">4房以上
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="green-title">型態</span>
+                                    <div class="price rwdSearch rwdSearchtype">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="type1" class="checkbox-cover">
+                                                        <input type="checkbox" name="type1" value="t1" id="type1">公寓
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="type3" class="checkbox-cover">
+                                                        <input type="checkbox" name="type3" value="t3" id="type3">多層樓
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="type5" class="checkbox-cover">
+                                                        <input type="checkbox" name="type5" value="t5" id="type5">其他
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price rwdSearch rwdSearchtype">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="type2" class="checkbox-cover">
+                                                        <input type="checkbox" name="type2" value="t2" id="type2">電梯華廈大樓
+                                                    </label>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <label for="type4" class="checkbox-cover">
+                                                        <input type="checkbox" name="type4" value="t4" id="type4">透天厝
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>                           
+                                    <span class="green-title" >車位</span>
+                                    <div class="price rwdSearch rwdSearchparking">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="parkingY">
+                                                        <input type="checkbox" name="parkingY" value="yes" id="parkingY">有
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price rwdSearch rwdSearchparking">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <label for="parkingN">
+                                                        <input type="checkbox" name="parkingN" value="no" id="parkingN">無
+                                                    </label>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="green-title">家俱設備</span>
+                           <div class="price Shrink rwdSearch rwdSearchtools"><ul><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="2" id="tools6">床組
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="5" id="tools6">冰箱
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="8" id="tools6">熱水器
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="11" id="tools6">網路
+</label></form></li></ul></div><div class="price Shrink rwdSearch rwdSearchtools"><ul><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="1" id="tools6">沙發
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="4" id="tools6">電視
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="7" id="tools6">洗衣機
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="10" id="tools6">第四台
+</label></form></li></ul></div><div class="price Shrink rwdSearch rwdSearchtools"><ul><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="3" id="tools6">衣櫃
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="6" id="tools6">冷氣
+</label></form></li><li><form><label for="tools6" class="checkbox-cover">
+<input type="checkbox" name="tools6" value="9" id="tools6">天然瓦斯
+</label></form></li></ul></div>
+                                    <span class="green-title">物件特色</span>
+                           <div class="price rwdSearch rwdSearchtags"><ul><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="1" id="tag6">可開伙</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="3" id="tag6">近學校</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="5" id="tag6">近超市</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="7" id="tag6">近百貨公司</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="9" id="tag6">近醫院</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="11" id="tag6">有警衛管理</label></form></li></ul></div><div class="price rwdSearch rwdSearchtags"><ul><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="2" id="tag6">可養寵物</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="4" id="tag6">近傳統市場</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="6" id="tag6">近便利商店</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="8" id="tag6">近公園</label></form></li><li><form><label for="tag6" class="checkbox-cover"><input type="checkbox" name="tag6" value="10" id="tag6">近銀行</label></form></li></ul></div>                                    <div class="Send">
+                                        <a class="Send-Clear" href="#" onclick="return false;">清除所有條件</a>
+                                        <a class="Send-OK" href="#" onclick="return false;">確認</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="enter-text rwdSearchkeyword" type="text" placeholder="請輸入路街、社區、關鍵字或物件編號" autocomplete="off">
+                            <a class="mobile-search" href="#" onclick="return false;">租屋搜尋</a>
+                        </div>
+                    </div>
+                </div>
+                            <div id="breadcrumb">
+                    <a href="https://www.sinyi.com.tw/rent/"><span class="breadcrumb_item big">首頁</span></a>
+                    <span class="breadcrumb_sign">&gt;</span>
+                    <a href="https://www.sinyi.com.tw/rent/"><span class="breadcrumb_item big">租屋搜尋</span></a>
+                    <span class="breadcrumb_sign">&gt;</span>
+                    <div id="breadcrumb_city" class="breadcrumb_dropdown">
+                        <div class="dropdown_head">
+                            <a href="">
+                                <div class="dropdown_name">縣市</div>
+                                <div class="icon i_drop_down"></div>
+                            </a>
+                        </div>
+                        <ul class="dropdown_itemGroup">
+                     <li class="dropdown_item"><a href="/list/Taipei-city/index.html" data-cityid="1" data-value="1" data-name="台北市">台北市</a></li><li class="dropdown_item"><a href="/list/NewTaipei-city/index.html" data-cityid="2" data-value="2" data-name="新北市">新北市</a></li><li class="dropdown_item"><a href="/list/Taoyuan-city/index.html" data-cityid="7" data-value="7" data-name="桃園市">桃園市</a></li><li class="dropdown_item"><a href="/list/Hsinchu-city/index.html" data-cityid="5" data-value="5" data-name="新竹市">新竹市</a></li><li class="dropdown_item"><a href="/list/HsinchuCounty-city/index.html" data-cityid="6" data-value="6" data-name="新竹縣">新竹縣</a></li><li class="dropdown_item"><a href="/list/Keelung-city/index.html" data-cityid="3" data-value="3" data-name="基隆市">基隆市</a></li><li class="dropdown_item"><a href="/list/Taichung-city/index.html" data-cityid="9" data-value="9" data-name="台中市">台中市</a></li><li class="dropdown_item"><a href="/list/Changhua-city/index.html" data-cityid="10" data-value="10" data-name="彰化縣">彰化縣</a></li><li class="dropdown_item"><a href="/list/Miaoli-city/index.html" data-cityid="8" data-value="8" data-name="苗栗縣">苗栗縣</a></li><li class="dropdown_item"><a href="/list/Nantou-city/index.html" data-cityid="11" data-value="11" data-name="南投縣">南投縣</a></li><li class="dropdown_item"><a href="/list/Yunlin-city/index.html" data-cityid="12" data-value="12" data-name="雲林縣">雲林縣</a></li><li class="dropdown_item"><a href="/list/Kaohsiung-city/index.html" data-cityid="16" data-value="16" data-name="高雄市">高雄市</a></li><li class="dropdown_item"><a href="/list/Tainan-city/index.html" data-cityid="15" data-value="15" data-name="台南市">台南市</a></li><li class="dropdown_item"><a href="/list/Chiayi-city/index.html" data-cityid="13" data-value="13" data-name="嘉義市">嘉義市</a></li><li class="dropdown_item"><a href="/list/ChiayiCounty-city/index.html" data-cityid="14" data-value="14" data-name="嘉義縣">嘉義縣</a></li><li class="dropdown_item"><a href="/list/Pingtung-city/index.html" data-cityid="17" data-value="17" data-name="屏東縣">屏東縣</a></li><li class="dropdown_item"><a href="/list/Yilan-city/index.html" data-cityid="4" data-value="4" data-name="宜蘭縣">宜蘭縣</a></li><li class="dropdown_item"><a href="/list/Hualien-city/index.html" data-cityid="19" data-value="19" data-name="花蓮縣">花蓮縣</a></li><li class="dropdown_item"><a href="/list/Taitung-city/index.html" data-cityid="18" data-value="18" data-name="台東縣">台東縣</a></li><li class="dropdown_item"><a href="/list/Penghu-city/index.html" data-cityid="20" data-value="20" data-name="澎湖縣">澎湖縣</a></li><li class="dropdown_item"><a href="/list/Kinmen-city/index.html" data-cityid="21" data-value="21" data-name="金門縣">金門縣</a></li>                        </ul>
+                        <!-- .dropdown_itemGroup -->
+                    </div>
+                    <!-- #breadcrumb_city -->
+                    <span class="breadcrumb_sign">&gt;</span>
+                    <div id="breadcrumb_zip" class="breadcrumb_dropdown">
+                        <div class="dropdown_head">
+                            <a href="">
+                                <div class="dropdown_name">不分區</div>
+                                <div class="icon i_drop_down"></div>
+                            </a>
+                        </div>
+                        <ul class="dropdown_itemGroup">
+                            <li class="dropdown_item">不分區</li>
+                        </ul>
+                        <!-- #dropdown_itemGroup -->
+                    </div>
+                    <!-- #breadcrumb_zip -->
+                    <span class="breadcrumb_sign">&gt;</span>
+                    <div id="breadcrumb_params" class="breadcrumb_dropdown"></div>
+                    <!-- #breadcrumb_params -->
+                    <div class="clear"></div>
+                </div>
+                <!-- #breadcrumb -->
+                <div id="search_suggest" class="hide">
+                    <div class="search_suggest_line"><span id="search_criteria"></span> 搜尋結果為 0 間房屋</div>
+                    <div class="search_suggest_line">建議： ● 檢查是否有錯別字 ● 放寬篩選條件 ● 縮短關鍵字查詢字數 ● 嘗試其他常用關鍵字</div>
+                </div>
+                <div id="search_suggest_link" class="hide">您是否要搜尋：<span>
+                                        </span>
+                </div>
+                <div id="search_result_loading_bg"></div>
+                <div id="search_result_loading">
+                    <div class="loading_icon"></div>資料讀取中...</div>
+                <div id="search_info" class="">
+                    <div id="search_result_count" class="left">共有
+                        <div class="num">4,666</div>間房屋</div>
+                    <div id="search_order" class="left">
+                        <div id="search_order_name">更新時間:新→舊</div>
+                        <div class="icon i_down_blue"></div>
+                        <ul id="search_order_itemGroup">
+                     <li id="item_default_sort" class="search_order_item">更新時間:新→舊</li><li  class="search_order_item"><a href="/list/price-desc/index.html">租金:高→低</a></li><li  class="search_order_item"><a href="/list/price-asc/index.html">租金:低→高</a></li><li  class="search_order_item"><a href="/list/ping-asc/index.html">坪數:小→大</a></li><li  class="search_order_item"><a href="/list/ping-desc/index.html">坪數：大→小</a></li>                        </ul>
+                        <!-- #search_order_itemGroup -->
+                    </div>
+                    <!-- #search_order -->
+                    <div class="clear"></div>
+                </div>
+                <div id="search_result_list" class="ddhouse">
+                    <div id="index_ori.html" class="search_result_item">
+                        <a href="index_ori.html" target="_blank">
+                            <div class="item_box item_box_left">
+                                <div class="item_imagebox">
+                                    <div class="item_recommend_bg"></div>
+                                    <div class="item_recommend">店長推薦</div>
+                                    <div class="item_img">
+                                        <img alt="名人巷小金店面 - C218514" title="名人巷小金店面 - C218514" src="https://res.sinyi.com.tw/rent/C218514/smallimg/A.JPG" onerror="loadImgFail(this)">
+                                    </div>
+                                    <div class="item_img_count">
+                                        <div class="icon i_img_cnt"></div>
+                                        <div class="img_count_txt">12</div>
+                                    </div>
+                                </div>
+                                <!-- .item_imagebox -->
+                                <span class="phone-building-name"></span>
+                                <!-- .item_imagepop-77 -->
+                            </div>
+                            <!-- .item_box item_box_left-->
+                            <div class="item_box item_box_right">
+                                <div class="item_titlebox">
+                                    <span class="item_title" alt="名人巷小金店面 - C218514" title="名人巷小金店面 - C218514">名人巷小金店面</span>
+                                    <span class="item_subtitle"><!-- 信義房屋品牌、台灣松下營造 --></span>
+                                </div>
+                                <!-- .item_titlebox -->
+                                <div class="item_detailbox">
+                                    <div class="detail_left left">
+                                        <div class="detail_line1">
+                                            <span><!-- 台北市士林區天母北路 --></span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span><span class="num num-1">成屋</span></span>
+                                            <span>
+                                                <span class="num">7.24</span>坪                                            </span>
+                                            <span>
+                                                <span class="num">0</span>房
+                                            <span class="num">1</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            <span><span class="num">1/7</span>樓</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span class="num-ss">
+                                                <span class="num num-text">台北市大安區大安路一段</span>
+                                            </span>
+                                        </div>
+                              <span class="gray-date">更新日期：</span>
+                                        <span class="gray-date-1">2020/06/07 14:33</span>
+                                        <div class="detail_tagGroup">
+                                            <div class="detail_tag" data-tagid="16">近公園</div>
+                                            <div class="detail_tag" data-tagid="18">近市場</div>
+                                            <div class="detail_tag" data-tagid="19">近學校</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .detail_left .left -->
+                                    <div class="detail_right right">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">66,000</span>元/月</div>
+                                        </div>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="detail_right-1 left">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">66,000</span>元/月</div>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span class="big-chinese" >成屋</span>
+                                            </span>
+                                            <span><span class="num">7.24</span>坪</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span>
+                                                    <span class="num">0</span>房
+                                            <span class="num">1</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            </span>
+                                            <span><span class="num">1/7</span>樓</span>
+                                        </div>
+                                        <p class="phone-address">台北市大安區大安路一段</p>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .detail_right .right -->
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- .item_detailbox -->
+                            </div>
+                            <!-- .item_box item_box_right-->
+                            <div class="clear"></div>
+                        </a>
+                        <div class="detail_btnGroup">
+                            <div class="detail_btn appoint_btn" onclick="addFavoriteHouse('C218514', 'add');"><a href="#" onclick="return false;">快速收藏</a></div>
+                        </div>
+                        <!-- .detail_btnGroup -->
+                    </div>
+                    <!-- .search_result_item -->
+                </div>
+                
+                <!-- #search_result_list -->
+               <div id="search_result_list" class="ddhouse">
+                    <div id="search_result_C219806" class="search_result_item">
+                        <a href="index_ori.html" target="_blank">
+                            <div class="item_box item_box_left">
+                                <div class="item_imagebox">
+                                    <div class="item_recommend_bg"></div>
+                                    <div class="item_recommend">店長推薦</div>
+                                    <div class="item_img">
+                                        <img alt="園區街搶手２房 - C219806" title="園區街搶手２房 - C219806" src="https://res.sinyi.com.tw/rent/C219806/smallimg/A.JPG" onerror="loadImgFail(this)">
+                                    </div>
+                                    <div class="item_img_count">
+                                        <div class="icon i_img_cnt"></div>
+                                        <div class="img_count_txt">7</div>
+                                    </div>
+                                </div>
+                                <!-- .item_imagebox -->
+                                <span class="phone-building-name">四季紅</span>
+                                <!-- .item_imagepop-77 -->
+                            </div>
+                            <!-- .item_box item_box_left-->
+                            <div class="item_box item_box_right">
+                                <div class="item_titlebox">
+                                    <span class="item_title" alt="園區街搶手２房 - C219806" title="園區街搶手２房 - C219806">園區街搶手２房</span>
+                                    <span class="item_subtitle"><!-- 信義房屋品牌、台灣松下營造 --></span>
+                                </div>
+                                <!-- .item_titlebox -->
+                                <div class="item_detailbox">
+                                    <div class="detail_left left">
+                                        <div class="detail_line1">
+                                            <span><!-- 台北市士林區天母北路 --></span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span><span class="num num-1">成屋</span></span>
+                                            <span>
+                                                <span class="num">34.32</span>坪                                            </span>
+                                            <span>
+                                                <span class="num">2</span>房
+                                            <span class="num">2</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            <span><span class="num">3/12</span>樓</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span class="num-ss">
+                                                <span class="num num-text">四季紅   /   台北市南港區園區街</span>
+                                            </span>
+                                        </div>
+                              <span class="gray-date">更新日期：</span>
+                                        <span class="gray-date-1">2020/06/07 14:15</span>
+                                        <div class="detail_tagGroup">
+                                            <div class="detail_tag" data-tagid="16">近公園</div>
+                                            <div class="detail_tag" data-tagid="18">近市場</div>
+                                            <div class="detail_tag" data-tagid="19">近學校</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .detail_left .left -->
+                                    <div class="detail_right right">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">36,000</span>元/月</div>
+                                        </div>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="detail_right-1 left">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">36,000</span>元/月</div>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span class="big-chinese" >成屋</span>
+                                            </span>
+                                            <span><span class="num">34.32</span>坪</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span>
+                                                    <span class="num">2</span>房
+                                            <span class="num">2</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            </span>
+                                            <span><span class="num">3/12</span>樓</span>
+                                        </div>
+                                        <p class="phone-address">台北市南港區園區街</p>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .detail_right .right -->
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- .item_detailbox -->
+                            </div>
+                            <!-- .item_box item_box_right-->
+                            <div class="clear"></div>
+                        </a>
+                        <div class="detail_btnGroup">
+                            <div class="detail_btn appoint_btn" onclick="addFavoriteHouse('C219806', 'add');"><a href="#" onclick="return false;">快速收藏</a></div>
+                        </div>
+                        <!-- .detail_btnGroup -->
+                    </div>
+                    <!-- .search_result_item -->
+                </div>
+                <!-- #search_result_list -->
+                            <div id="search_result_list" class="ddhouse">
+                    <div id="search_result_C192727" class="search_result_item">
+                        <a href="houseno/C192727" target="_blank">
+                            <div class="item_box item_box_left">
+                                <div class="item_imagebox">
+                                    <div class="item_recommend_bg"></div>
+                                    <div class="item_recommend">店長推薦</div>
+                                    <div class="item_img">
+                                        <img alt="大直明水辦公Ａ - C192727" title="大直明水辦公Ａ - C192727" src="https://res.sinyi.com.tw/rent/C192727/smallimg/A.JPG" onerror="loadImgFail(this)">
+                                    </div>
+                                    <div class="item_img_count">
+                                        <div class="icon i_img_cnt"></div>
+                                        <div class="img_count_txt">9</div>
+                                    </div>
+                                </div>
+                                <!-- .item_imagebox -->
+                                <span class="phone-building-name"></span>
+                                <!-- .item_imagepop-77 -->
+                            </div>
+                            <!-- .item_box item_box_left-->
+                            <div class="item_box item_box_right">
+                                <div class="item_titlebox">
+                                    <span class="item_title" alt="大直明水辦公Ａ - C192727" title="大直明水辦公Ａ - C192727">大直明水辦公Ａ</span>
+                                    <span class="item_subtitle"><!-- 信義房屋品牌、台灣松下營造 --></span>
+                                </div>
+                                <!-- .item_titlebox -->
+                                <div class="item_detailbox">
+                                    <div class="detail_left left">
+                                        <div class="detail_line1">
+                                            <span><!-- 台北市士林區天母北路 --></span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span><span class="num num-1">成屋</span></span>
+                                            <span>
+                                                <span class="num">275.85</span>坪                                            </span>
+                                            <span>
+                                                <span class="num">0</span>房
+                                            <span class="num">1</span>廳
+                                            <span class="num">0</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            <span><span class="num">3/10</span>樓</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span class="num-ss">
+                                                <span class="num num-text">台北市中山區明水路</span>
+                                            </span>
+                                        </div>
+                              <span class="gray-date">更新日期：</span>
+                                        <span class="gray-date-1">2020/06/07 13:28</span>
+                                        <div class="detail_tagGroup">
+                                            <div class="detail_tag" data-tagid="16">近公園</div>
+                                            <div class="detail_tag" data-tagid="18">近市場</div>
+                                            <div class="detail_tag" data-tagid="19">近學校</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .detail_left .left -->
+                                    <div class="detail_right right">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">400,000</span>元/月</div>
+                                        </div>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="detail_right-1 left">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">400,000</span>元/月</div>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span class="big-chinese" >成屋</span>
+                                            </span>
+                                            <span><span class="num">275.85</span>坪</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span>
+                                                    <span class="num">0</span>房
+                                            <span class="num">1</span>廳
+                                            <span class="num">0</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            </span>
+                                            <span><span class="num">3/10</span>樓</span>
+                                        </div>
+                                        <p class="phone-address">台北市中山區明水路</p>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .detail_right .right -->
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- .item_detailbox -->
+                            </div>
+                            <!-- .item_box item_box_right-->
+                            <div class="clear"></div>
+                        </a>
+                        <div class="detail_btnGroup">
+                            <div class="detail_btn appoint_btn" onclick="addFavoriteHouse('C192727', 'add');"><a href="#" onclick="return false;">快速收藏</a></div>
+                        </div>
+                        <!-- .detail_btnGroup -->
+                    </div>
+                    <!-- .search_result_item -->
+                </div>
+                <!-- #search_result_list -->
+                <!-- #search_result_list -->
+                            <div id="search_result_list" class="ddhouse">
+                    <div id="search_result_C208816" class="search_result_item">
+                        <a href="index_ori.html" target="_blank">
+                            <div class="item_box item_box_left">
+                                <div class="item_imagebox">
+                                    <div class="item_recommend_bg"></div>
+                                    <div class="item_recommend">店長推薦</div>
+                                    <div class="item_img">
+                                        <img alt="安中商圈大坪店面 - C208816" title="安中商圈大坪店面 - C208816" src="https://res.sinyi.com.tw/rent/C208816/smallimg/A.JPG" onerror="loadImgFail(this)">
+                                    </div>
+                                    <div class="item_img_count">
+                                        <div class="icon i_img_cnt"></div>
+                                        <div class="img_count_txt">14</div>
+                                    </div>
+                                </div>
+                                <!-- .item_imagebox -->
+                                <span class="phone-building-name"></span>
+                                <!-- .item_imagepop-77 -->
+                            </div>
+                            <!-- .item_box item_box_left-->
+                            <div class="item_box item_box_right">
+                                <div class="item_titlebox">
+                                    <span class="item_title" alt="安中商圈大坪店面 - C208816" title="安中商圈大坪店面 - C208816">安中商圈大坪店面</span>
+                                    <span class="item_subtitle"><!-- 信義房屋品牌、台灣松下營造 --></span>
+                                </div>
+                                <!-- .item_titlebox -->
+                                <div class="item_detailbox">
+                                    <div class="detail_left left">
+                                        <div class="detail_line1">
+                                            <span><!-- 台北市士林區天母北路 --></span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span><span class="num num-1">成屋</span></span>
+                                            <span>
+                                                <span class="num">45.92</span>坪                                            </span>
+                                            <span>
+                                                <span class="num">0</span>房
+                                            <span class="num">2</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            <span><span class="num">1/4</span>樓</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span class="num-ss">
+                                                <span class="num num-text">台南市安南區安中路一段</span>
+                                            </span>
+                                        </div>
+                              <span class="gray-date">更新日期：</span>
+                                        <span class="gray-date-1">2020/06/07 12:56</span>
+                                        <div class="detail_tagGroup">
+                                            <div class="detail_tag" data-tagid="16">近公園</div>
+                                            <div class="detail_tag" data-tagid="18">近市場</div>
+                                            <div class="detail_tag" data-tagid="19">近學校</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .detail_left .left -->
+                                    <div class="detail_right right">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">50,000</span>元/月</div>
+                                        </div>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="detail_right-1 left">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">50,000</span>元/月</div>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span class="big-chinese" >成屋</span>
+                                            </span>
+                                            <span><span class="num">45.92</span>坪</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span>
+                                                    <span class="num">0</span>房
+                                            <span class="num">2</span>廳
+                                            <span class="num">1</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            </span>
+                                            <span><span class="num">1/4</span>樓</span>
+                                        </div>
+                                        <p class="phone-address">台南市安南區安中路一段</p>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .detail_right .right -->
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- .item_detailbox -->
+                            </div>
+                            <!-- .item_box item_box_right-->
+                            <div class="clear"></div>
+                        </a>
+                        <div class="detail_btnGroup">
+                            <div class="detail_btn appoint_btn" onclick="addFavoriteHouse('C208816', 'add');"><a href="#" onclick="return false;">快速收藏</a></div>
+                        </div>
+                        <!-- .detail_btnGroup -->
+                    </div>
+                    <!-- .search_result_item -->
+                </div>
+                <!-- #search_result_list -->
+                            <div id="search_result_list" class="ddhouse">
+                    <div id="search_result_C217176" class="search_result_item">
+                        <a href="index_ori.html" target="_blank">
+                            <div class="item_box item_box_left">
+                                <div class="item_imagebox">
+                                    <div class="item_recommend_bg"></div>
+                                    <div class="item_recommend">店長推薦</div>
+                                    <div class="item_img">
+                                        <img alt="五分埔稀有店面 - C217176" title="五分埔稀有店面 - C217176" src="https://res.sinyi.com.tw/rent/C217176/smallimg/A.JPG" onerror="loadImgFail(this)">
+                                    </div>
+                                    <div class="item_img_count">
+                                        <div class="icon i_img_cnt"></div>
+                                        <div class="img_count_txt">7</div>
+                                    </div>
+                                </div>
+                                <!-- .item_imagebox -->
+                                <span class="phone-building-name"></span>
+                                <!-- .item_imagepop-77 -->
+                            </div>
+                            <!-- .item_box item_box_left-->
+                            <div class="item_box item_box_right">
+                                <div class="item_titlebox">
+                                    <span class="item_title" alt="五分埔稀有店面 - C217176" title="五分埔稀有店面 - C217176">五分埔稀有店面</span>
+                                    <span class="item_subtitle"><!-- 信義房屋品牌、台灣松下營造 --></span>
+                                </div>
+                                <!-- .item_titlebox -->
+                                <div class="item_detailbox">
+                                    <div class="detail_left left">
+                                        <div class="detail_line1">
+                                            <span><!-- 台北市士林區天母北路 --></span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span><span class="num num-1">成屋</span></span>
+                                            <span>
+                                                <span class="num">22.46</span>坪                                            </span>
+                                            <span>
+                                                <span class="num">0</span>房
+                                            <span class="num">3</span>廳
+                                            <span class="num">2</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            <span><span class="num">1-3/3</span>樓</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span class="num-ss">
+                                                <span class="num num-text">台北市信義區永吉路</span>
+                                            </span>
+                                        </div>
+                              <span class="gray-date">更新日期：</span>
+                                        <span class="gray-date-1">2020/06/07 12:43</span>
+                                        <div class="detail_tagGroup">
+                                            <div class="detail_tag" data-tagid="16">近公園</div>
+                                            <div class="detail_tag" data-tagid="18">近市場</div>
+                                            <div class="detail_tag" data-tagid="19">近學校</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .detail_left .left -->
+                                    <div class="detail_right right">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">42,000</span>元/月</div>
+                                        </div>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="detail_right-1 left">
+                                        <div class="detail_price">
+                                            <div class="price_new"><span class="num">42,000</span>元/月</div>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span class="big-chinese" >成屋</span>
+                                            </span>
+                                            <span><span class="num">22.46</span>坪</span>
+                                        </div>
+                                        <div class="detail_line2">
+                                            <span style="border-left: 1px solid #ddd;">
+                                                <span>
+                                                    <span class="num">0</span>房
+                                            <span class="num">3</span>廳
+                                            <span class="num">2</span>衛
+                                            <span class="num">0</span>室
+                                            </span>
+                                            </span>
+                                            <span><span class="num">1-3/3</span>樓</span>
+                                        </div>
+                                        <p class="phone-address">台北市信義區永吉路</p>
+                                        <!-- .detail_price -->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .detail_right .right -->
+                                    <div class="clear"></div>
+                                </div>
+                                <!-- .item_detailbox -->
+                            </div>
+                            <!-- .item_box item_box_right-->
+                            <div class="clear"></div>
+                        </a>
+                        <div class="detail_btnGroup">
+                            <div class="detail_btn appoint_btn" onclick="addFavoriteHouse('C217176', 'add');"><a href="#" onclick="return false;">快速收藏</a></div>
+                        </div>
+                        <!-- .detail_btnGroup -->
+                    </div>
+                    <!-- .search_result_item -->
+                </div>
+            
+            <div id="search_result_list_end" style="display:none" ></div>
+            
+                <ul id="search_pagination">
+                    <li class="page current" data-url="1-page">1</li>
+                    <li class="page" data-url="2-page">2</li>
+                    <li class="page" data-url="3-page">3</li>
+                    <li class="page" data-url="4-page">4</li>
+                    <li class="page" data-url="5-page">5</li>
+                    <li class="page" data-url="2-page">»</li>
+                    <li class="page_dot">…</li>
+                    <li class="page" data-url="2437-page">2437</li>
+                </ul>
+                <!-- #search_page -->
+            </div>
+            <!-- #buy_content -->
+        </div>
+        <!-- #buy_container -->
+        <div id="buy_sidebox" class="right" style="height: inherit;">
+            <div id="track_box">
+                <div class="track_title">快速收藏清單：</div>
+                <div id="track_result_list">
+                                 
+               <div class="clear"></div>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                </div>
+                <!-- #track_result_list -->
+                <div id="track_all_btn">
+                    <div class="icon i_heart_w"></div>全部加入追蹤</div>
+            </div>
+            <!-- #track_box -->
+            <div id="ad_boxGroup" style="position: static;">
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+   
+   
+   
+   </body>
+
+</html>
